@@ -1,0 +1,53 @@
+# name of the software
+name: ProtoCentral Sensything
+
+project:
+    version: 3.1.0
+    download_url: https://github.com/Protocentral/protocentral_sensything/releases
+
+license:
+    software: MIT License
+    software_url: http://opensource.org/licenses/MIT
+
+    docs: CC BY 3.0
+    docs_url: http://creativecommons.org/licenses/by/3.0/
+
+links:
+    header:
+      - title: Buy Sensything
+        url: https://www.crowdsupply.com/protocentral/sensything
+      - title: GitHub
+        url: https://github.com/Protocentral/protocentral_sensything
+    footer:
+      - title: GitHub
+        url: https://github.com/Protocentral/protocentral_sensything
+      - title: Issues
+        url: https://github.com/Protocentral/protocentral_sensything/issues?state=open
+
+ui:
+    header:
+        color1: "#69B921"
+        color2: "#000000"
+        trianglify: true
+
+social:
+    github:
+        user: protocentral
+        repo: protocentral_sensything
+    twitter:
+        enabled: true
+        via:
+        hash: #heartypatch
+        account: protocentral
+    facebook:
+        enabled: true
+        profileUrl: https://www.facebook.com/protocentral
+
+analytics:
+    google: UA-123456-1
+
+# Build settings
+markdown: kramdown
+exclude:
+    - Gemfile
+    - Gemfile.lock
