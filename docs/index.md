@@ -99,6 +99,7 @@ Video: Water level sensor working
 
 Excerpts from the code:
 
+```c
 float Vout = (float)((bit32*VFSR*1000)/FSR);     //In  mV
 // convert the value to resistance
  float reading = (1023 / Vout)  - 1;
