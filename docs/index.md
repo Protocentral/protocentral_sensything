@@ -13,7 +13,7 @@ If you don't already have one, you can now buy Sensything from [Crowd Supply](ht
 
 # Getting started with the Sensything Basic kit
 
-The Sensything basic kit is put together to work **out of the box**, which means that is is ready to without any additional programming required.
+The Sensything basic kit is put together to work **out of the box**, which means that it is ready to use without any additional programming required.
 
 ### What’s in the box?
 * 1x Sensything main Board
@@ -47,6 +47,60 @@ A sensor is a measure of the changes that occur in the physical environment, or 
 
 Some basic examples of how to connect to Analog sensors
 
+## Experiments
+
+## 1) Alcohol detector
+
+## Aim: To determine the level of Alcohol in any liquid
+
+## Application:
+
+Since this sensor has a good level of sensitivity it can be used a portable alcohol detector.
+
+ ## Procedure:
+				
+Video: Alcohol sensor working
+
+```c
+float adc_data = (float)((bit32*VFSR*1000)/FSR);     //In  mV
+float v = (adc_data/10) * (5.0/1024.0);
+float mgL = 0.67 * v;
+channel1 = (float) mgL;
+printf("channel1 : %f \n",channel1);
+
+if(mgL > 0.8)
+{    printf("mg/L : %f \n",mgL); 
+     printf(" Alcohol Detected");  }
+else
+{    printf("mg/L : %f \n",mgL); 
+     printf(" Normal - No Alcohol found");
+   }  
+ 
+```
+
+## 2) Water level check
+
+## Aim: To determine the level of any liquid
+
+## Application:
+It can determine the continuous liquid level monitoring of water, non corrosive water or dry fluids.
+
+## Procedure:
+
+			
+Video: Water level sensor working
+
+The eTape Liquid Level Sensor is a solid-state sensor with a resistive output that varies with the level of the fluid. It does away with clunky mechanical floats, and easily interfaces with electronic control systems. The eTape sensor's envelope is compressed by the hydrostatic pressure of the fluid in which it is immersed. This results in a change in resistance that corresponds to the distance from the top of the sensor to the surface of the fluid. The sensor's resistive output is inversely proportional to the height of the liquid: the lower the liquid level, the higher the output resistance; the higher the liquid level, the lower the output resistance.
+Here we can calculate the output resistance from converting the adc data in sensything. Below we measure the etape liquid level sensor output resistance.
+
+```c
+float adc_data = (float)((bit32*VFSR*1000)/FSR);     //In  mV
+float sensor_volt = adc_data/1024*5.0;
+
+Serial.print("sensor_volt = ");
+
+Video: Water Level
+```
 # Using Sensything with Arduino
 
 Welcome to Sensything with Arduino! Before you start measuring the world around you, you will need to set up the Arduino IDE software to work with the ESP32 platform.
