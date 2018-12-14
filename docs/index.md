@@ -23,10 +23,6 @@ The Sensything basic kit is put together to work **out of the box**, which means
 
 If you have purchased the *Sensything - board only* version then you will have to bring your own battery, and cables.
 
-<iframe width="640" height="564" src="https://player.vimeo.com/video/306374413" frameborder="0" allowFullScreen mozallowfullscreen webkitAllowFullScreen></iframe>
-
-Test
-
 ### Power it up
 
 This video throws light on how to set up your Sensything device.
@@ -59,6 +55,8 @@ Since this sensor has a good level of sensitivity it can be used a portable alco
 
 **Procedure**:
 	MQ303A is a semiconductor sensor for Alcohol detection. It has very good sensitivity and fast response to alcohol, suitable for portable alcohol detector just plugging with sensything.Below you find the conversion of adc data to the content of alcohol to be detected with milligram per litre.When the content of alcohol is more than 0.8 it detects the presence of alcohol.
+
+![Alcohol sensor (2)](images/Alcohol sensor (2).jpg)
 		
 Video: Alcohol sensor working
 
@@ -92,13 +90,11 @@ Serial.println(mgL);
 It can determine the continuous liquid level monitoring of water, non corrosive water or dry fluids.
 
 **Procedure**:
-
-			
-Video: Water level sensor working
-
 The eTape Liquid Level Sensor is a solid-state sensor with a resistive output that varies with the level of the fluid. It does away with clunky mechanical floats, and easily interfaces with electronic control systems. The eTape sensor's envelope is compressed by the hydrostatic pressure of the fluid in which it is immersed. This results in a change in resistance that corresponds to the distance from the top of the sensor to the surface of the fluid. The sensor's resistive output is inversely proportional to the height of the liquid: the lower the liquid level, the higher the output resistance; the higher the liquid level, the lower the output resistance.
 Here we can calculate the output resistance from converting the adc data in sensything. Below we measure the etape liquid level sensor output resistance.
 
+![e-tape](images/e-tape.jpg)
+			
 Video: Water level sensor working
 
 Excerpts from the code:
