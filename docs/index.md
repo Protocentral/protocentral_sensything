@@ -103,13 +103,13 @@ Video: Water level sensor working
 
 Excerpts from the code:
 
-```c
-float adc_data = (float)((bit32*VFSR*1000)/FSR);     //In  mV
-float sensor_volt = adc_data/1024*5.0;
+float Vout = (float)((bit32*VFSR*1000)/FSR);     //In  mV
+// convert the value to resistance
+ float reading = (1023 / Vout)  - 1;
+  reading = 560 / reading;
+  Serial.print("Sensor resistance "); 
+  Serial.println(reading);
 
-Serial.print("sensor_volt = ");
-
-Video: Water Level
 ```
 # Using Sensything with Arduino
 
