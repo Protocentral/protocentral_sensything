@@ -23,7 +23,9 @@ The Sensything basic kit is put together to work **out of the box**, which means
 
 If you have purchased the *Sensything - board only* version then you will have to bring your own battery, and cables.
 
-![Sensything what's in the box](images/sensything-all-items.jpg)
+<iframe width="640" height="564" src="https://player.vimeo.com/video/306374413" frameborder="0" allowFullScreen mozallowfullscreen webkitAllowFullScreen></iframe>
+
+Test
 
 ### Power it up
 
