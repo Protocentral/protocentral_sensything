@@ -3,8 +3,6 @@ layout: page
 homepage: true
 ---
 
-# ***This page is still work in progress. Please check back for updates***
-
 ![Sensything](images/sensything-top-iso.jpg)
 
 Sensything is a Data- acquisition board with the added capabilities of ADC precision (ADS1220). The board contains an ESP-32 microcontroller with Qwiic connectivity that is most suitable for IOT applications. Using one single platform to monitor sensor readings along with the support of an BLE Application and Web server just makes it all the more advanced and simplifies solutions.
