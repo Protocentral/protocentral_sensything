@@ -51,7 +51,7 @@ Some basic examples of how to connect to Analog sensors
 
  1) Alcohol detector
 
-** Aim**: To determine the level of Alcohol in any liquid
+**Aim**: To determine the level of Alcohol in any liquid
 
 **Application**:
 
@@ -80,7 +80,7 @@ else
 
 2) Water level check
 
-** Aim**: To determine the level of any liquid
+**Aim**: To determine the level of any liquid
 
 **Application**:
 It can determine the continuous liquid level monitoring of water, non corrosive water or dry fluids.
