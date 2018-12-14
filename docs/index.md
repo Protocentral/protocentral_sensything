@@ -56,7 +56,7 @@ Since this sensor has a good level of sensitivity it can be used a portable alco
 **Procedure**:
 	MQ303A is a semiconductor sensor for Alcohol detection. It has very good sensitivity and fast response to alcohol, suitable for portable alcohol detector just plugging with sensything.Below you find the conversion of adc data to the content of alcohol to be detected with milligram per litre.When the content of alcohol is more than 0.8 it detects the presence of alcohol.
 
-![Alcohol sensor](images/Alcohol sensor.jpg = 60x20)
+![Alcohol sensor](images/Alcohol sensor.jpg = 60x20){:Height= "20%" width="30%"}
 		
 Video: Alcohol sensor working
 
