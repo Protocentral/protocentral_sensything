@@ -68,15 +68,18 @@ Excerpts from the code:
 float adc_data = (float)((bit32*VFSR*1000)/FSR);     //In  mV
 float v = (adc_data/10) * (5.0/1024.0);
 float mgL = 0.67 * v;
-channel1 = (float) mgL;
-printf("channel1 : %f \n",channel1);
 
 if(mgL > 0.8)
-{    printf("mg/L : %f \n",mgL); 
-     printf(" Alcohol Detected");  }
+{   
+Serial.print("mg/L : %f \n"); 
+Serial.print(" Alcohol Detected"); 
+Serial.println(mgL);
+ }
 else
-{    printf("mg/L : %f \n",mgL); 
-     printf(" Normal - No Alcohol found");
+{    Serial.print("mg/L : %f \n"); 
+Serial.print(" Alcohol Not Detected"); 
+Serial.println(mgL);
+
    }  
  
 ```
