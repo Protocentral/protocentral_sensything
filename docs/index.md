@@ -56,7 +56,7 @@ Since this sensor has a good level of sensitivity it can be used a portable alco
 **Procedure**:
 	MQ303A is a semiconductor sensor for Alcohol detection. It has very good sensitivity and fast response to alcohol, suitable for portable alcohol detector just plugging with sensything.Below you find the conversion of adc data to the content of alcohol to be detected with milligram per litre.When the content of alcohol is more than 0.8 it detects the presence of alcohol.
 
-![Alcohol sensor (2)](images//Alcohol sensor (2).jpg)
+![Alcohol sensor (2)](images/Alcohol sensor (2).jpg)
 		
 Video: Alcohol sensor working
 
@@ -93,7 +93,7 @@ It can determine the continuous liquid level monitoring of water, non corrosive 
 The eTape Liquid Level Sensor is a solid-state sensor with a resistive output that varies with the level of the fluid. It does away with clunky mechanical floats, and easily interfaces with electronic control systems. The eTape sensor's envelope is compressed by the hydrostatic pressure of the fluid in which it is immersed. This results in a change in resistance that corresponds to the distance from the top of the sensor to the surface of the fluid. The sensor's resistive output is inversely proportional to the height of the liquid: the lower the liquid level, the higher the output resistance; the higher the liquid level, the lower the output resistance.
 Here we can calculate the output resistance from converting the adc data in sensything. Below we measure the etape liquid level sensor output resistance.
 
-![etape](images//etape.png)
+![etape](images/etape.png)
 			
 Video: Water level sensor working
 
@@ -151,7 +151,6 @@ float convertToMilliV(int32_t i32data)
     return (float)((i32data*VFSR*1000)/FULL_SCALE);
 }
 ```
-
 Getting the above code is as easy as installing the Arduino library https://github.com/Protocentral/Protocentral_ADS1220 and loading the simple ads1220 data acquisition example from  the Arduino IDE's menu: *File > Open > Protocentral_ADS1220*.
 
 ![ADS1220read](images/ads1220_read.png)
