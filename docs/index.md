@@ -25,7 +25,6 @@ If you have purchased the *Sensything - board only* version then you will have t
 This video throws light on how to set up your Sensything device. Get set Go!
 
 <iframe width="640" height="564" src="https://player.vimeo.com/video/306540871" frameborder="0" allowFullScreen mozallowfullscreen webkitAllowFullScreen></iframe>
-
 ### Install the Sensything app for Android
 
 Downloading the App and connecting couldn’t have been much easier.
