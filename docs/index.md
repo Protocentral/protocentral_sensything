@@ -23,13 +23,13 @@ The Sensything basic kit is put together to work **out of the box**, which means
 
 If you have purchased the *Sensything - board only* version then you will have to bring your own battery, and cables.
 This video throws light on how to set up your Sensything device. Get set Go!
-<iframe width="640" height="564" src="https://player.vimeo.com/video/306540871" frameborder="0" allowFullScreen mozallowfullscreen webkitAllowFullScreen></iframe>
+<iframe width="640" height="564" src="https://player.vimeo.com/video/306863926" frameborder="0" allowFullScreen mozallowfullscreen webkitAllowFullScreen></iframe>
 ### Install the Sensything app for Android
 Downloading the App and connecting couldn’t have been much easier.
-<iframe width="640" height="564" src="https://player.vimeo.com/video/306540849" frameborder="0" allowFullScreen mozallowfullscreen webkitAllowFullScreen></iframe>
+<iframe width="640" height="564" src="https://player.vimeo.com/video/306863827" frameborder="0" allowFullScreen mozallowfullscreen webkitAllowFullScreen></iframe>
 ### Using the App
 Easy connect with just a click. Pay attention to the RGB indication.
-<iframe width="640" height="564" src="https://player.vimeo.com/video/306540955" frameborder="0" allowFullScreen mozallowfullscreen webkitAllowFullScreen></iframe>
+<iframe width="640" height="564" src="https://player.vimeo.com/video/306863751" frameborder="0" allowFullScreen mozallowfullscreen webkitAllowFullScreen></iframe>
 # Connecting analog sensors to Sensything
 
 A sensor is a measure of the changes that occur in the physical environment, or it's your chance to interface with the physical world. It collects this data and provides an analog voltage as an output.The output range usually varies from 0 to 5 volts, for most of them.
