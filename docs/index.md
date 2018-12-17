@@ -149,11 +149,11 @@ float convertToMilliV(int32_t i32data)
 ```
 Getting the above code is as easy as installing the Arduino library https://github.com/Protocentral/Protocentral_ADS1220 and loading the simple ads1220 data acquisition example from  the Arduino IDE's menu: *File > Open > Protocentral_ADS1220*.
 
-<img src="images/analog sequential.jpg" width="700" height="500" />
+<img src="images/ads1220_read.png" width="700" height="500" />
 
 Upload the code to the Sensything and you can get the 4-channel analog readings in the Serial Monitor.
-<img src="images/analog readings" width="700" height="500" />
 
+<img src="images/sensything_reading.png" width="700" height="500" />
 # License Information
 
 This product is open source! Both, our hardware and software are open source and licensed under the following licenses:
