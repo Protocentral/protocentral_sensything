@@ -30,6 +30,7 @@ Downloading the App and connecting couldn’t have been much easier.
 ### Using the App
 Easy connect with just a click. Pay attention to the RGB indication.
 <iframe width="640" height="564" src="https://player.vimeo.com/video/306863751" frameborder="0" allowFullScreen mozallowfullscreen webkitAllowFullScreen></iframe>
+
 # Connecting analog sensors to Sensything
 
 A sensor is a measure of the changes that occur in the physical environment, or it's your chance to interface with the physical world. It collects this data and provides an analog voltage as an output.The output range usually varies from 0 to 5 volts, for most of them.
@@ -88,8 +89,6 @@ Here we can calculate the output resistance from converting the adc data in sens
 
 <img src="images/etape.png" width="700" height="500" />
 
-Video: Water level sensor working
-
 Excerpts from the code:
 
 ```c
@@ -102,6 +101,43 @@ float Vout = (float)((bit32*VFSR*1000)/FSR);     //In  mV
   Serial.println(reading);
   
 
+```
+# Connecting Qwiic sensors to Sensything
+One of the most standout features of the Sensything board is that it offers the Qwiic connectivity solution. This is in ode to Sparkfun, whose Qwiic category offers a wide range of sensor breakouts. Why Qwiic? Qwiic connectivity gives an easy and simplified approach called “ Ready to Plug”. You can get a lot more done by getting rid of the breadboard and jumper wires that complicate the sensor readings. 
+
+A basic example of how to connect to Qwiic sensor
+
+1) Barometric pressure
+
+**Aim**: To determine the Barometric pressure
+
+**Application**:
+BMP180 barometric pressure sensor can be used to predict the weather, detect altitude, and measure vertical velocity.
+**Procedure**:
+This sensor s is one of the low cost solution for sensing applications related to barometric pressure and temperature.The BMP180 can communicate directly with a microcontroller in the device through I2C or SPI as a variant. The applications for this sensor is navigation, GPS positioning as well as a tracker for hikers. We have enabled Qwiic connection using the channels.
+
+Excerpts from the code:
+```c
+baseline = getPressure();
+Serial.print("baseline pressure: ");
+Serial.print(baseline);
+```
+```c
+double a,P;
+
+P = getPressure();             // Get a new pressure reading:
+a = pressure.altitude(P,baseline); // Show the relative altitude difference between the new reading and the baseline reading
+```
+```c
+char status;
+double T,P;
+
+status = pressure.startTemperature();
+status = pressure.getTemperature(T);
+
+
+status = pressure.startPressure();
+status = pressure.getPressure(P,T);
 ```
 # Using Sensything with Arduino
 
