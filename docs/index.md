@@ -116,7 +116,7 @@ BMP180 barometric pressure sensor can be used to predict the weather, detect alt
 **Procedure**:
 This sensor s is one of the low cost solution for sensing applications related to barometric pressure and temperature.The BMP180 can communicate directly with a microcontroller in the device through I2C or SPI as a variant. The applications for this sensor is navigation, GPS positioning as well as a tracker for hikers. We have enabled Qwiic connection using the channels.
 
-<img src="images/BMP180.jpg" width="700" height="500" />
+<img src="images/BMP180.JPG" width="700" height="500" />
 
 Excerpts from the code:
 ```c
