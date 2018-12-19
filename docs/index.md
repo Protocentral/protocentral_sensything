@@ -52,6 +52,22 @@ The basic channels are:-
 A short video suggests how to connect a basic analog sensor like the Piezo vibration sensor to Sensything.
 <iframe width="640" height="564" src="https://player.vimeo.com/video/307044875" frameborder="0" allowFullScreen mozallowfullscreen webkitAllowFullScreen></iframe>
 
+# Understanding the Sensything Application
+
+![sensything_app_1](images//sensything_app_1.png)
+This image is a screenshot of the opening page of the Application. This page displays the following information
+1) Details of the detected Sensything device
+2) The"Connect" option for the device.
+
+![sensything_app_2](images//sensything_app_2.png)
+The main page of the Application can be segmented as follows:
+1) Grphical representation - This depicts the changes in the readings of the sensors. All major and minor fluctuations are picked up.
+2) Analog channels - The four channels gives the ADC values received from the plug ins on the board.
+3) Qwiic section - Incase any qwiic connection is made the values will be shown there.
+4) Data logging - Using the Application you can log your data, so that the data is saved directly to your mobile device.
+
+**Note**: On the right hand corner there is a battery indicator, this detects the level of charge in the Sensything device.
+
 # Using Sensything with Arduino
 
 Welcome to Sensything with Arduino! Before you start measuring the world around you, you will need to set up the Arduino IDE software to work with the ESP32 platform.
