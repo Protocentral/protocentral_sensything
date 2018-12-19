@@ -1,32 +1,40 @@
 # Setting up Arduino for use with Sensything
 
-This document explains how to connect your Sensything to the computer and upload your first sketch. The Sensything is programmed using the Arduino Software (IDE), the Integrated Development Environment runs both online and offline. Starting the basics of electronics, to more complex projects, the kit will help you control the physical world with sensor and actuators.
+This document explains how to connect your sensything to the computer and upload your first sketch. The Sensything is programmed using the Arduino Software (IDE), the Integrated Development Environment runs both online and offline. Starting the basics of electronics, to more complex projects, the kit will help you control the physical world with sensor and actuators.
 
-Setting up Arduino to ESP32
+## Setting up Arduino to ESP32
+
 Welcome to sensything with arduino! Before you start controlling the world around you, you'll need to set up the software to program your Sensything.
-
 
 ### Step 1: Download and Install the IDE
 The Arduino Software (IDE) allows you to write programs and upload them to your sensything. Now you require arduino Desktop IDE you can download the latest version for windows, linux and Mac OS using the below link . **https://www.arduino.cc/en/Main/Software#download**
-<img src="images/download.jpg" width="800" height="500" />
 
-Once downloaded, install the IDE and ensure that you enable most (if not all) of the options, INCLUDING the drivers.
+![download](images//download.jpg)
+
+
+**Note**: Once downloaded, install the IDE and ensure that you enable most (if not all) of the options, including the drivers.
+
 
 ### Step 2: Get the Sensything COM Port Number
 Next, youll need to connect the Sensything board to the computer. This is done via a USB connection. When the Sensything is connected, the operating system should recognize the board as a generic COM port. The easiest way to do this is to type device manager into Windows Search and select Device Manager when it shows.
 
-<img src="images/device manager.jpg" width="500" height="500" />
+![device manager](images//device managaer.jpg)
+
 
 In the Device Manager window, look for a device under �Ports (COM & LPT), and chances are the Arduino will be the only device on the list
 
 ### Step 3: Configure the IDE
 Now that we have determined the COM port that the Arduino is on, it's time to load the Arduino IDE and configure it to use the same device and port. Start by loading the IDE. Once it's loaded, navigate to Tools > Board > Esp32 dev module.
 
-<img src="images/IDE.png" width="800" height="500" />
+
+![IDE](images//IDE.png)
+
 
 Next, you must tell the IDE which COM port the Sensything is on. To do this, navigate to Tools > Port > COM51. Obviously, if your Sensything is on a different port, select that port instead.
 
-<img src="images/selecting port.png" width="800" height="500" />
+
+![selecting port](images//selecting port.png)
+
 
 ### Step 4: Writing my first code to Sensything
 A header file is generally used to define all the functions, variables and constants contained in any function library that you might want to use, define the pin number of ads1220 Chip select and DRDY.
@@ -49,7 +57,7 @@ void setup()
     pc_ads1220.set_conv_mode_single_shot(); //Set Single shot mode
  }
 ```
-In the loop function below we get the ADC data for Channel 0 The same code can be applied to channel 1, channel 2 and channel 3.
+In the loop function below we get the ADC data for Channel 0,the same logic can be applied to read channel 1, channel 2 and channel 3.
 
 ```c
 void loop()
@@ -67,23 +75,25 @@ float convertToMilliV(int32_t i32data)
     return (float)((i32data*VFSR*1000)/FULL_SCALE);
 }
 ```
-Getting the above code is as easy as installing the Arduino library https://github.com/Protocentral/Protocentral_ADS1220 and loading the simple ads1220 data acquisition example from  the Arduino IDE's menu: *File > Open > Protocentral_ADS1220*.
+Getting the above code is as easy as installing the Arduino library https://github.com/Protocentral/Protocentral_ADS1220 and loading the simple ads1220 data acquisition example from  the Arduino IDE's menu: File > Open > Protocentral_ADS1220.
+
 
 <img src="images/ads1220_read.png" width="800" height="500" />
 
+
 ### Step 5: Compiling and Uploading
 
-Compile the code and check for compilation without error and upload the code to sensything so you get the 4-channel analog readings in the Serial Monitor.
+Compile the code and check for compilation without error and upload the code to sensything so you get the 4-channel analog readings printed in the Serial Monitor.
+
 
 <img src="images/sensything_reading.png" width="800" height="500" />
 
-Its time to get started with some sensors to get the Real time output. We have showcased this in the following experiments with both Analog and Qwiic sensors. Good luck for your projects!
 
-## Connecting analog sensors to Sensything
+# Connecting analog sensors to Sensything
 A sensor is a measure of the changes that occur in the physical environment, or it's your chance to interface with the physical world. It collects this data and provides an analog voltage as an output. The output range usually varies from 0 to 5 volts, for most of them.
-Some basic examples of how to connect to Analog sensors
+Some basic examples of how to connect to Analog sensors.
 
-## Experiments
+### Experiment 1
  1) Alcohol detector
 
 **Aim**: To determine the level of Alcohol in any liquid
@@ -115,10 +125,11 @@ else
 Serial.print(" Alcohol Not Detected"); 
 Serial.println(mgL);
 
-   }  
+}  
  
 ```
 
+### Experiment 2
 2) Water level check
 
 **Aim**: To determine the level of any liquid
@@ -145,11 +156,13 @@ float Vout = (float)((bit32*VFSR*1000)/FSR);     //In  mV
   
 
 ```
+
 # Connecting Qwiic sensors to Sensything
 One of the most standout features of the Sensything board is that it offers the Qwiic connectivity solution. This is an ode to Sparkfun, whose Qwiic category offers a wide range of sensor breakouts. Why Qwiic? Qwiic connectivity gives an easy and simplified approach called “ Ready to Plug”. You can get a lot more done by getting rid of the breadboard and jumper wires that complicate the sensor readings. 
 
 A basic example of how to connect to Qwiic sensor
 
+### Experiment 3
 1) Barometric pressure
 
 **Aim**: To determine the Barometric pressure
