@@ -77,6 +77,7 @@ Compile the code and check for compilation without error and upload the code to 
 
 <img src="images/sensything_reading.png" width="800" height="500" />
 
+Its time to get started with some sensors to get the Reak time output. We have showcased this in the following experiments with both Analog and Qwiic sensors. Good luck for your projects!
 
 ## Connecting analog sensors to Sensything
 A sensor is a measure of the changes that occur in the physical environment, or it's your chance to interface with the physical world. It collects this data and provides an analog voltage as an output. The output range usually varies from 0 to 5 volts, for most of them.
