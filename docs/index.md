@@ -26,10 +26,8 @@ This video throws light on how to set up your Sensything device. Get set Go!
 
 <iframe width="640" height="564" src="https://player.vimeo.com/video/306863926" frameborder="0" allowFullScreen mozallowfullscreen webkitAllowFullScreen></iframe>
 
-
 ### Making the connections
 1) Downloading the App and connecting the device
-
 
 **Note**: The Sensything App is currently available for Android users on Google Play store. The ios version will be coming soon. Stay tuned for updates!
 
@@ -37,11 +35,7 @@ This video throws light on how to set up your Sensything device. Get set Go!
 
 2) Basic connections of Analog sensors
 
-The basic channels are:-
-
-• GND - Ground
-
-• 3.3v - Power
+They can be listed as follows:
 
 • A1 - Analog Channel 1
 
@@ -50,6 +44,10 @@ The basic channels are:-
 • A3 - Analog Channel 3
 
 • A4 - Analog Channel 4
+
+• GND - Ground
+
+• 3.3v - Power
 
 A short video suggests how to connect a basic analog sensor like the Piezo vibration sensor to Sensything.
 
