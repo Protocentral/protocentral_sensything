@@ -5,28 +5,28 @@ This document explains how to connect your Sensything to the computer and upload
 Setting up Arduino to ESP32
 Welcome to sensything with arduino! Before you start controlling the world around you, you'll need to set up the software to program your Sensything.
 
+
 ### Step 1: Download and Install the IDE
 The Arduino Software (IDE) allows you to write programs and upload them to your sensything. Now you require arduino Desktop IDE you can download the latest version for windows, linux and Mac OS using the below link . **https://www.arduino.cc/en/Main/Software#download**
-
-![download](images//download.jpg)
+<img src="images/download.jpg" width="800" height="500" />
 
 Once downloaded, install the IDE and ensure that you enable most (if not all) of the options, INCLUDING the drivers.
 
 ### Step 2: Get the Sensything COM Port Number
 Next, youll need to connect the Sensything board to the computer. This is done via a USB connection. When the Sensything is connected, the operating system should recognize the board as a generic COM port. The easiest way to do this is to type device manager into Windows Search and select Device Manager when it shows.
 
-![device manager](images//device managaer.jpg)
+<img src="images/device manager.jpg" width="800" height="500" />
 
 In the Device Manager window, look for a device under �Ports (COM & LPT), and chances are the Arduino will be the only device on the list
 
 ### Step 3: Configure the IDE
 Now that we have determined the COM port that the Arduino is on, it's time to load the Arduino IDE and configure it to use the same device and port. Start by loading the IDE. Once it's loaded, navigate to Tools > Board > Esp32 dev module.
 
-![IDE](images//IDE.png)
+<img src="images/sIDE.png" width="800" height="500" />
 
 Next, you must tell the IDE which COM port the Sensything is on. To do this, navigate to Tools > Port > COM51. Obviously, if your Sensything is on a different port, select that port instead.
 
-![selecting port](images//selecting port.png)
+<img src="images/selecting port.png" width="800" height="500" />
 
 ### Step 4: Writing my first code to Sensything
 A header file is generally used to define all the functions, variables and constants contained in any function library that you might want to use, define the pin number of ads1220 Chip select and DRDY.
