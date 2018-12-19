@@ -196,3 +196,5 @@ status = pressure.getTemperature(T);
 status = pressure.startPressure();
 status = pressure.getPressure(P,T);
 ```
+
+**Note** Web interface for Sensything .. Coming soon
