@@ -23,15 +23,13 @@ The Sensything basic kit is put together to work **out of the box**, which means
 
 If you have purchased the *Sensything - board only* version then you will have to bring your own battery, and cables.
 This video throws light on how to set up your Sensything device. Get set Go!
-
-<iframe src="https://player.vimeo.com/video/306863926" width="640" height="360"  frameborder="0" allowFullScreen mozallowfullscreen webkitAllowFullScreen></iframe>
-
+<iframe width="640" height="564" src="https://player.vimeo.com/video/306863926" frameborder="0" allowFullScreen mozallowfullscreen webkitAllowFullScreen></iframe>
 ### Making the connections
 1) Downloading the App and connecting the device
 **Note**: The Sensything App is currently available for Android users on Google Play store. The ios version will be coming soon. Stay tuned for updates!
-<iframe src="https://player.vimeo.com/video/307040678" width="640" height="360" frameborder="0" allowFullScreen mozallowfullscreen webkitAllowFullScreen></iframe>
-
+<iframe width="640" height="564" src="https://player.vimeo.com/video/307040678" frameborder="0" allowFullScreen mozallowfullscreen webkitAllowFullScreen></iframe>
 2) Basic connections of Analog sensors
+
 The basic Analog channels are:-
 • GND - Ground
 • 3.3v - Power
@@ -39,11 +37,63 @@ The basic Analog channels are:-
 • A2 - Analog Channel 2
 • A3 - Analog Channel 3
 • A4 - Analog Channel 4
+
 A short video suggests how to connect a basic analog sensor like the Piezo vibration sensor to Sensything.
+<iframe width="640" height="564" src="https://player.vimeo.com/video/307044875" frameborder="0" allowFullScreen mozallowfullscreen webkitAllowFullScreen></iframe>
 
-<iframe width="640" height="360" src="https://player.vimeo.com/video/307044875" frameborder="0" allowFullScreen mozallowfullscreen webkitAllowFullScreen></iframe>
+# Using Sensything with Arduino
 
-# Connecting analog sensors to Sensything
+Welcome to Sensything with Arduino! Before you start measuring the world around you, you will need to set up the Arduino IDE software to work with the ESP32 platform.
+
+Once you have Arduino setup for the ESP32 or if you have already worked with that, let's look at some example code to read the analog channels.
+
+A header file is generally used to define all the functions, variables and constants contained in any function library that you might want to use, define the pin number of ads1220 Chip select and DRDY.
+
+```c
+#include "Protocentral_ADS1220.h"
+#define ADS1220_CS_PIN    4
+#define ADS1220_DRDY_PIN  34
+```
+Initialize the onboard ADS1220 ADC with begin
+```c
+void setup()
+{
+    Serial.begin(9600);
+
+    pc_ads1220.begin(ADS1220_CS_PIN,ADS1220_DRDY_PIN);
+
+    pc_ads1220.set_data_rate(DR_330SPS);
+    pc_ads1220.set_pga_gain(PGA_GAIN_1);
+    pc_ads1220.set_conv_mode_single_shot(); //Set Single shot mode
+ }
+```
+In the loop function below we get the ADC data for Channel 0 The same code can be applied to channel 1, channel 2 and channel 3.
+
+```c
+void loop()
+{
+    adc_data=pc_ads1220.Read_SingleShot_SingleEnded_WaitForData(MUX_SE_CH0);
+    Serial.print("\n\nCh1 (mV): ");
+    Serial.print(convertToMilliV(adc_data));
+    delay(100);  
+}
+```  
+Converting the adc data into millivolt
+```c
+float convertToMilliV(int32_t i32data)
+{
+    return (float)((i32data*VFSR*1000)/FULL_SCALE);
+}
+```
+Getting the above code is as easy as installing the Arduino library https://github.com/Protocentral/Protocentral_ADS1220 and loading the simple ads1220 data acquisition example from  the Arduino IDE's menu: *File > Open > Protocentral_ADS1220*.
+
+<img src="images/ads1220_read.png" width="800" height="500" />
+
+Upload the code to the Sensything and you can get the 4-channel analog readings in the Serial Monitor.
+
+<img src="images/sensything_reading.png" width="800" height="500" />
+
+## Connecting analog sensors to Sensything
 A sensor is a measure of the changes that occur in the physical environment, or it's your chance to interface with the physical world. It collects this data and provides an analog voltage as an output. The output range usually varies from 0 to 5 volts, for most of them.
 Some basic examples of how to connect to Analog sensors
 
@@ -148,57 +198,6 @@ status = pressure.getTemperature(T);
 status = pressure.startPressure();
 status = pressure.getPressure(P,T);
 ```
-# Using Sensything with Arduino
-
-Welcome to Sensything with Arduino! Before you start measuring the world around you, you will need to set up the Arduino IDE software to work with the ESP32 platform.
-
-Once you have Arduino setup for the ESP32 or if you have already worked with that, let's look at some example code to read the analog channels.
-
-A header file is generally used to define all the functions, variables and constants contained in any function library that you might want to use, define the pin number of ads1220 Chip select and DRDY.
-
-```c
-#include "Protocentral_ADS1220.h"
-#define ADS1220_CS_PIN    4
-#define ADS1220_DRDY_PIN  34
-```
-Initialize the onboard ADS1220 ADC with begin
-```c
-void setup()
-{
-    Serial.begin(9600);
-
-    pc_ads1220.begin(ADS1220_CS_PIN,ADS1220_DRDY_PIN);
-
-    pc_ads1220.set_data_rate(DR_330SPS);
-    pc_ads1220.set_pga_gain(PGA_GAIN_1);
-    pc_ads1220.set_conv_mode_single_shot(); //Set Single shot mode
- }
-```
-In the loop function below we get the ADC data for Channel 0 The same code can be applied to channel 1, channel 2 and channel 3.
-
-```c
-void loop()
-{
-    adc_data=pc_ads1220.Read_SingleShot_SingleEnded_WaitForData(MUX_SE_CH0);
-    Serial.print("\n\nCh1 (mV): ");
-    Serial.print(convertToMilliV(adc_data));
-    delay(100);  
-}
-```  
-Converting the adc data into millivolt
-```c
-float convertToMilliV(int32_t i32data)
-{
-    return (float)((i32data*VFSR*1000)/FULL_SCALE);
-}
-```
-Getting the above code is as easy as installing the Arduino library https://github.com/Protocentral/Protocentral_ADS1220 and loading the simple ads1220 data acquisition example from  the Arduino IDE's menu: *File > Open > Protocentral_ADS1220*.
-
-<img src="images/ads1220_read.png" width="800" height="500" />
-
-Upload the code to the Sensything and you can get the 4-channel analog readings in the Serial Monitor.
-
-<img src="images/sensything_reading.png" width="800" height="500" />
 # License Information
 
 This product is open source! Both, our hardware and software are open source and licensed under the following licenses:
