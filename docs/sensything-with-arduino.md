@@ -20,7 +20,6 @@ Next, youll need to connect the Sensything board to the computer. This is done v
 
 ![device manager](images//device manager.jpeg)
 
-
 In the Device Manager window, look for a device under �Ports (COM & LPT), and chances are the Arduino will be the only device on the list
 
 ### Step 3: Configure the IDE
