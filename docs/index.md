@@ -31,12 +31,12 @@ This video throws light on how to set up your Sensything device. Get set Go!
 2) Basic connections of Analog sensors
 
 The basic Analog channels are:-
-• GND - Ground
-• 3.3v - Power
-• A1 - Analog Channel 1
-• A2 - Analog Channel 2
-• A3 - Analog Channel 3
-• A4 - Analog Channel 4
+* GND - Ground
+* 3.3v - Power
+* A1 - Analog Channel 1
+* A2 - Analog Channel 2
+* A3 - Analog Channel 3
+* A4 - Analog Channel 4
 
 A short video suggests how to connect a basic analog sensor like the Piezo vibration sensor to Sensything.
 <iframe width="640" height="564" src="https://player.vimeo.com/video/307044875" frameborder="0" allowFullScreen mozallowfullscreen webkitAllowFullScreen></iframe>
