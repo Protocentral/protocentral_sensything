@@ -18,7 +18,7 @@ The Arduino Software (IDE) allows you to write programs and upload them to your 
 ### Step 2: Get the Sensything COM Port Number
 Next, youll need to connect the Sensything board to the computer. This is done via a USB connection. When the Sensything is connected, the operating system should recognize the board as a generic COM port. The easiest way to do this is to type device manager into Windows Search and select Device Manager when it shows.
 
-![device manager](images//device managaer.jpg)
+![device manager](images//device manager.jpg)
 
 
 In the Device Manager window, look for a device under �Ports (COM & LPT), and chances are the Arduino will be the only device on the list
