@@ -26,7 +26,7 @@ This video throws light on how to set up your Sensything device. Get set Go!
 <iframe width="640" height="564" src="https://player.vimeo.com/video/306863926" frameborder="0" allowFullScreen mozallowfullscreen webkitAllowFullScreen></iframe>
 ### Making the connections
 1) Downloading the App and connecting the device
-Note: The Sensything App is currently available for Android users on Google Play store. The ios version will be coming soon. Stay tuned for updates!
+**Note**: The Sensything App is currently available for Android users on Google Play store. The ios version will be coming soon. Stay tuned for updates!
 <iframe width="640" height="564" src="https://player.vimeo.com/video/307040678" frameborder="0" allowFullScreen mozallowfullscreen webkitAllowFullScreen></iframe>
 2) Basic connections of Analog sensors
 The basic Analog channels are:-
