@@ -22,7 +22,7 @@ In the Device Manager window, look for a device under �Ports (COM & LPT), and 
 ### Step 3: Configure the IDE
 Now that we have determined the COM port that the Arduino is on, it's time to load the Arduino IDE and configure it to use the same device and port. Start by loading the IDE. Once it's loaded, navigate to Tools > Board > Esp32 dev module.
 
-<img src="images/sIDE.png" width="800" height="500" />
+<img src="images/IDE.png" width="800" height="500" />
 
 Next, you must tell the IDE which COM port the Sensything is on. To do this, navigate to Tools > Port > COM51. Obviously, if your Sensything is on a different port, select that port instead.
 
