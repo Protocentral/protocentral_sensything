@@ -61,6 +61,7 @@ This above image is a screenshot of the opening page of the Application. This pa
 * The"Connect" option for the device.
 
 ![sensything_app_2](images//sensything_app_2.png)
+
 The main page of the Application can be segmented as follows:
 * Grphical representation - This depicts the changes in the readings of the sensors. All major and minor fluctuations are picked up.
 * Analog channels - The four channels gives the ADC values received from the plug ins on the board.
