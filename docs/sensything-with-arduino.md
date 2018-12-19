@@ -9,7 +9,7 @@ Welcome to sensything with arduino! Before you start controlling the world aroun
 ### Step 1: Download and Install the IDE
 The Arduino Software (IDE) allows you to write programs and upload them to your sensything. Now you require arduino Desktop IDE you can download the latest version for windows, linux and Mac OS using the below link . **https://www.arduino.cc/en/Main/Software#download**
 
-![download](images//download.jpg)
+![download](images//download.jpeg)
 
 
 **Note**: Once downloaded, install the IDE and ensure that you enable most (if not all) of the options, including the drivers.
@@ -18,7 +18,7 @@ The Arduino Software (IDE) allows you to write programs and upload them to your 
 ### Step 2: Get the Sensything COM Port Number
 Next, youll need to connect the Sensything board to the computer. This is done via a USB connection. When the Sensything is connected, the operating system should recognize the board as a generic COM port. The easiest way to do this is to type device manager into Windows Search and select Device Manager when it shows.
 
-![device manager](images//device manager.jpg)
+![device manager](images//device manager.jpeg)
 
 
 In the Device Manager window, look for a device under �Ports (COM & LPT), and chances are the Arduino will be the only device on the list
@@ -27,7 +27,7 @@ In the Device Manager window, look for a device under �Ports (COM & LPT), and 
 Now that we have determined the COM port that the Arduino is on, it's time to load the Arduino IDE and configure it to use the same device and port. Start by loading the IDE. Once it's loaded, navigate to Tools > Board > Esp32 dev module.
 
 
-![IDE](images//IDE.jpg)
+![IDE](images//IDE.jpeg)
 
 
 Next, you must tell the IDE which COM port the Sensything is on. To do this, navigate to Tools > Port > COM51. Obviously, if your Sensything is on a different port, select that port instead.
