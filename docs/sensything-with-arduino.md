@@ -15,7 +15,7 @@ Once downloaded, install the IDE and ensure that you enable most (if not all) of
 ### Step 2: Get the Sensything COM Port Number
 Next, youll need to connect the Sensything board to the computer. This is done via a USB connection. When the Sensything is connected, the operating system should recognize the board as a generic COM port. The easiest way to do this is to type device manager into Windows Search and select Device Manager when it shows.
 
-<img src="images/device manager.jpg" width="800" height="500" />
+<img src="images/device manager.jpg" width="500" height="500" />
 
 In the Device Manager window, look for a device under �Ports (COM & LPT), and chances are the Arduino will be the only device on the list
 
