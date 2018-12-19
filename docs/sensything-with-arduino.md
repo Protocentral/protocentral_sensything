@@ -9,7 +9,7 @@ Welcome to sensything with arduino! Before you start controlling the world aroun
 ### Step 1: Download and Install the IDE
 The Arduino Software (IDE) allows you to write programs and upload them to your sensything. Now you require arduino Desktop IDE you can download the latest version for windows, linux and Mac OS using the below link . **https://www.arduino.cc/en/Main/Software#download**
 
-![download](images/download.jpg)
+![download](images//download.jpg)
 
 
 **Note**: Once downloaded, install the IDE and ensure that you enable most (if not all) of the options, including the drivers.
