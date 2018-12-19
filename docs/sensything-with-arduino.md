@@ -26,6 +26,7 @@ Now that we have determined the COM port that the Arduino is on, it's time to lo
 Next, you must tell the IDE which COM port the Sensything is on. To do this, navigate to Tools > Port > COM51. Obviously, if your Sensything is on a different port, select that port instead.
 
 ![selecting port](images//selecting port.png)
+
 ## Experiments
  1) Alcohol detector
 
