@@ -15,18 +15,18 @@ Once downloaded, install the IDE and ensure that you enable most (if not all) of
 ### Step 2: Get the Sensything COM Port Number
 Next, youll need to connect the Sensything board to the computer. This is done via a USB connection. When the Sensything is connected, the operating system should recognize the board as a generic COM port. The easiest way to do this is to type device manager into Windows Search and select Device Manager when it shows.
 
-![device manager](images//device managaer.jpg)
+<img src="images/device manager.jpg" width="800" height="500" />
 
 In the Device Manager window, look for a device under �Ports (COM & LPT), and chances are the Arduino will be the only device on the list
 
 ### Step 3: Configure the IDE
 Now that we have determined the COM port that the Arduino is on, it's time to load the Arduino IDE and configure it to use the same device and port. Start by loading the IDE. Once it's loaded, navigate to Tools > Board > Esp32 dev module.
 
-![IDE](images//IDE.png)
+<img src="images/IDE.png" width="800" height="500" />
 
 Next, you must tell the IDE which COM port the Sensything is on. To do this, navigate to Tools > Port > COM51. Obviously, if your Sensything is on a different port, select that port instead.
 
-![selecting port](images//selecting port.png)
+<img src="images/selecting port.png" width="800" height="500" />
 
 ## Connecting analog sensors to Sensything
 A sensor is a measure of the changes that occur in the physical environment, or it's your chance to interface with the physical world. It collects this data and provides an analog voltage as an output. The output range usually varies from 0 to 5 volts, for most of them.
