@@ -24,19 +24,31 @@ The Sensything basic kit is put together to work **out of the box**, which means
 If you have purchased the *Sensything - board only* version then you will have to bring your own battery, and cables.
 This video throws light on how to set up your Sensything device. Get set Go!
 <iframe width="640" height="564" src="https://player.vimeo.com/video/306863926" frameborder="0" allowFullScreen mozallowfullscreen webkitAllowFullScreen></iframe>
+
 ### Making the connections
 1) Downloading the App and connecting the device
+
+
 **Note**: The Sensything App is currently available for Android users on Google Play store. The ios version will be coming soon. Stay tuned for updates!
+
+
 <iframe width="640" height="564" src="https://player.vimeo.com/video/307040678" frameborder="0" allowFullScreen mozallowfullscreen webkitAllowFullScreen></iframe>
+
 2) Basic connections of Analog sensors
 
 The basic Analog channels are:-
-* GND - Ground
-* 3.3v - Power
-* A1 - Analog Channel 1
-* A2 - Analog Channel 2
-* A3 - Analog Channel 3
-* A4 - Analog Channel 4
+
+• GND - Ground
+
+• 3.3v - Power
+
+• A1 - Analog Channel 1
+
+• A2 - Analog Channel 2
+
+• A3 - Analog Channel 3
+
+• A4 - Analog Channel 4
 
 A short video suggests how to connect a basic analog sensor like the Piezo vibration sensor to Sensything.
 <iframe width="640" height="564" src="https://player.vimeo.com/video/307044875" frameborder="0" allowFullScreen mozallowfullscreen webkitAllowFullScreen></iframe>
