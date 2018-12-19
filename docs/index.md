@@ -78,6 +78,8 @@ The main page of the Application can be segmented as follows:
 
 **Note**: On the right hand corner there is a battery indicator, this detects the level of charge in the Sensything device.
 
+Follow the link above on how to set up the Arduino IDE for Sensything.
+
 
 # License Information
 
