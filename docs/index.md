@@ -37,17 +37,14 @@ This video throws light on how to set up your Sensything device. Get set Go!
 
 They can be listed as follows:
 
-• A1 - Analog Channel 1
-
-• A2 - Analog Channel 2
-
-• A3 - Analog Channel 3
-
-• A4 - Analog Channel 4
-
-• GND - Ground
-
-• 3.3v - Power
+|Sensything pin label| Analog Channel   |
+|----------------- |:--------------------:|
+| A1             | Channel 1                  |            
+| A2       | Channel 2                   | 
+| A3            | Channel 3                   |  
+| A4             | Channel 4                  |  
+| 3V3              | Supply - Board which supports 3.3V   |
+| GND                             | Gnd |
 
 A short video suggests how to connect a basic analog sensor like the Piezo vibration sensor to Sensything.
 
