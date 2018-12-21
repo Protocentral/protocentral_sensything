@@ -24,14 +24,14 @@ The Sensything basic kit is put together to work **out of the box**, which means
 If you have purchased the *Sensything - board only* version then you will have to bring your own battery, and cables.
 This video throws light on how to set up your Sensything device. Get set Go!
 
-<iframe width="640" height="564" src="https://player.vimeo.com/video/306863926" frameborder="0" allowFullScreen mozallowfullscreen webkitAllowFullScreen></iframe>
+vimeo:306863926
 
 ### Making the connections
 1) Downloading the App and connecting the device
 
 **Note**: The Sensything App is currently available for Android users on Google Play store. The ios version will be coming soon. Stay tuned for updates!
 
-<iframe width="640" height="564" src="https://player.vimeo.com/video/307040678" frameborder="0" allowFullScreen mozallowfullscreen webkitAllowFullScreen></iframe>
+vimeo:307040678
 
 2) Basic connections of Analog sensors
 
@@ -48,7 +48,7 @@ They can be listed as follows:
 
 A short video suggests how to connect a basic analog sensor like the Piezo vibration sensor to Sensything.
 
-<iframe width="640" height="564" src="https://player.vimeo.com/video/307550473" frameborder="0" allowFullScreen mozallowfullscreen webkitAllowFullScreen></iframe>
+vimeo:307550473
 
 # Understanding the Sensything Application
 
