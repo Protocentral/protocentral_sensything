@@ -47,9 +47,7 @@ They can be listed as follows:
 | GND                             | Gnd |
 
 A short video suggests how to connect a basic analog sensor like the Piezo vibration sensor to Sensything.
-
 <iframe width="640" height="564" src="https://player.vimeo.com/video/307550473" frameborder="0" allowFullScreen mozallowfullscreen webkitAllowFullScreen></iframe>
-
 # Understanding the Sensything Application
 
 ![sensything_app_1](images//sensything_app_1.png)
