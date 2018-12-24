@@ -5,7 +5,7 @@
 
 ![switch](images//switch.jpg)
 
-Firstly connect the battery to the Sensything board, Then switch on the board.
+Firstly, connect the battery to the Sensything board, then switch on the board.
 
 | Situation                        | Solution                                                                                                                             |
 |----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|
