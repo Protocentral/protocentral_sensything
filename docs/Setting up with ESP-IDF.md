@@ -11,7 +11,7 @@ To develop applications for ESP32 you need:
 
 ### Preparation for development
 
-![Cyclical] (images//Cyclical.jpg)
+![Cyclical](images//Cyclical.jpg)
 
 **Setting up the toolchain**
 
