@@ -46,6 +46,7 @@ Setup path to ESP-IDF – toolchain program access ESP-IDF using IDF_PATH.Rememb
 To check whether the IDF_PATH is set type the command shown below
 
 For further information you can check the link:
+
 https://www.google.com/url?q=https://docs.espressif.com/projects/esp-idf/en/latest/get-started/index.html&sa=D&source=hangouts&ust=1545734829798000&usg=AFQjCNG_f3lSYJ8HYmxZlDHpQpEN1lT-9g
 
        
