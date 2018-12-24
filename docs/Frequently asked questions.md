@@ -17,7 +17,7 @@ Firstly, connect the battery to the Sensything board, then switch on the board.
 | How do i get the channel values? | Check for the latest firmware on Github                                                                                              |
 |                                  | If you find any improper values, then give a fixed input to all channels                                                             |
 |                                  | Test if the 3.3v and the 5v source power is proper                                                                                   |
-| How does the BLE communication happen?      | Once connected through the BLE, the RGB LED will turn off.                                                                              |
+| How can i determine the BLE communication?      | Once connected through the BLE, the RGB LED will turn off.                                                                              |
 |                                  | When it is disconnected then the RGB LED turns on      
 
 # Troubleshooting 
