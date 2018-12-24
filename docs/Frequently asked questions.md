@@ -20,7 +20,7 @@ Firstly connect the battery to the Sensything board, Then switch on the board.
 | How does the BLE communication happen?      | Once connected through the BLE, the RGB LED will turn off.                                                                              |
 |                                  | When it is disconnected then the RGB LED turns on      
 
-##Troubleshooting 
+# Troubleshooting 
 
 | Issue                                      | Solution                                                        |
 |--------------------------------------------|-----------------------------------------------------------------|
