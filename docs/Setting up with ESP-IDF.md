@@ -37,8 +37,7 @@ To get all the sub-modules run another command
        git submodule update --init
  ```
 
-Setup path to ESP-IDF – toolchain program access ESP-IDF using IDF_PATH
-Remember to replace back-slashes with forward-slashes in the original Windows path.
+Setup path to ESP-IDF – toolchain program access ESP-IDF using IDF_PATH.Remember to replace back-slashes with forward-slashes in the original Windows path.
 ```c
        printenv IDF_PATH
 ```
