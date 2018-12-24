@@ -9,8 +9,8 @@ Firstly, connect the battery to the Sensything board, then switch on the board.
 
 | Situation                        | Solution                                                                                                                             |
 |----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|
-| How do i charge the battery?     | Ensure that the battery is plugged to the Board and then connect the USB cable.  You can use a 5v power adapter as the power source. |
-| How do i upload the code?        | Check if the switch is turned ON                                                                                                     |
+| How do i charge the battery?     | Ensure that the battery is plugged to the Board and then connect the USB cable.  You can use a 5v| power adapter as the power source. |
+| How do i upload the code?        | Check if the switch is turned ON                                                                   
 |                                  | Select the COM port and the board                                                                                                    |
 |                                  | Check for the latest version of Arduino IDE & ESP-idf                                                                                |
 |                                  | Configure the software                                                                                                               |
