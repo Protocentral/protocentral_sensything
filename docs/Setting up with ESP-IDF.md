@@ -1,7 +1,6 @@
 # GETTING STARTED
 
-This document is intended to help users set up the software environment of applications using Espressif ESP32. Through a simple step-by-step process to illustrate how to use ESP-IDF(Espressif IoT Development Framework), including the menu based configuration, compiling the ESP-IDF and firmware download to kalam-32 dev ESP32 microcontroller.
-
+This document is intended to help users set up the software environment of applications using Espressif ESP32. Through a simple step-by-step process to illustrate how to use ESP-IDF(Espressif IoT Development Framework).
 ### What You Need
 To develop applications for ESP32 you need:
 * PC loaded with either Windows, Linux or Mac operating system
