@@ -11,6 +11,8 @@ To develop applications for ESP32 you need:
 
 ### Preparation for development
 
+![Cyclical] (images//Cyclical.jpg)
+
 **Setting up the toolchain**
 
 Windows doesn’t have a built-in “make” environment, so as well as installing the toolchain you will need a GNU-compatible environment. We can use the MSYS2 environment to provide this environment.
