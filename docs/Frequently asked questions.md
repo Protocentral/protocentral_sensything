@@ -33,6 +33,6 @@ Firstly, connect the battery to the Sensything board, then switch on the board.
 | -> Cross talk                              | GND the unused analog channels                                  |                          |                                            |                                                                 |
 | What if BLE device not found?              | Check if your mobile device supports BLE                        |
 |                                            | Check whether the device is within the prescribed BLE range     |
-|                                            | Allow the application to turn BLE ON in your device             |                         |--------------------------------------------|-----------------------------------------------------------------|                                           
+|                                            | Allow the application to turn BLE ON in your device             |                         |                                            |                                                                 |                                           
 
 
