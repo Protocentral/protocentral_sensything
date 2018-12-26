@@ -1,10 +1,10 @@
-# GETTING STARTED
+# Setting up esp-idf for use with Sensything
 
 This document is intended to help users set up the software environment of applications using Espressif ESP32. Through a simple step-by-step process to illustrate how to use ESP-IDF(Espressif IoT Development Framework).
 ### What You Need
 To develop applications for ESP32 you need:
 * PC loaded with either Windows, Linux or Mac operating system
-*	Toolchain to build the Application for ESP32
+* Toolchain to build the Application for ESP32
 * ESP-IDF that essentially contains API for ESP32 and scripts to operate the Toolchain
 * A text editor to write programs (Projects) in C 
 
