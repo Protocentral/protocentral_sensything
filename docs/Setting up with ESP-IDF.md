@@ -42,10 +42,9 @@ Setup path to ESP-IDF – toolchain program access ESP-IDF using IDF_PATH.Rememb
 ```c
        printenv IDF_PATH
 ```
-To setup the toolchain and clone esp-idf from github follow the instructions given below.
-
-For further information you can check the link:
+To setup the software environment and get esp-idf follow the instructions given in the link below.
 
 https://docs.espressif.com/projects/esp-idf/en/latest/get-started/index.html#
 
+For further information/queries connect us with sales@protocentral.com.
        
