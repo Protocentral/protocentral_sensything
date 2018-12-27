@@ -2,7 +2,7 @@
 layout: page
 homepage: true
 ---
-#Welcome to sensything
+# Welcome to Sensything
 
 ![Sensything](images/sensything-top-iso.jpg)
 
@@ -10,7 +10,7 @@ Sensything is a Data- acquisition board with the added capabilities of ADC preci
 
 If you don't already have one, you can now buy Sensything from [Crowd Supply](https://www.crowdsupply.com/protocentral/sensything)
 
-# Getting started with the Sensything Basic kit
+## Getting started with the Sensything Basic Kit
 
 The Sensything basic kit is put together to work **out of the box**, which means that it is ready to use without any additional programming required.
 
@@ -23,7 +23,9 @@ The Sensything basic kit is put together to work **out of the box**, which means
 If you have purchased the *Sensything - board only* version then you will have to bring your own battery, and cables.
 This video throws light on how to set up your Sensything device. Get set Go!
 <iframe width="640" height="360" src="https://player.vimeo.com/video/306863926" frameborder="0" allowFullScreen mozallowfullscreen webkitAllowFullScreen></iframe>
+
 ### Making the connections
+
 1) Downloading the App and connecting the device
 
 **Note**: The Sensything App is currently available for Android users on Google Play store. The ios version will be coming soon. Stay tuned for updates!
@@ -44,7 +46,8 @@ They can be listed as follows:
 A short video suggests how to connect a basic analog sensor like the Piezo vibration sensor to Sensything.
 
 <iframe width="640" height="360" src="https://player.vimeo.com/video/307550473" frameborder="0" allowFullScreen mozallowfullscreen webkitAllowFullScreen></iframe>
-# Understanding the Sensything Application
+
+### Understanding the Sensything Application
 
 ![sensything_app_1](images//sensything_app_1.png)
 
@@ -65,17 +68,17 @@ The main page of the Application can be segmented as follows:
 Follow the link below on how to set up the Arduino IDE for Sensything:
 http://sensything.protocentral.com/sensything-with-arduino.html
 
-# License Information
+## License Information
 
 This product is open source! Both, our hardware and software are open source and licensed under the following licenses:
 
-## Hardware
+### Hardware
 
 All hardware is released under [Creative Commons Share-alike 4.0 International](http://creativecommons.org/licenses/by-sa/4.0/).
 
 ![CC-BY-SA-4.0](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)
 
-## Software
+### Software
 
 All software is released under the MIT License(http://opensource.org/licenses/MIT).
 

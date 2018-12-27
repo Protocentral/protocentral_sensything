@@ -11,28 +11,23 @@ The Arduino Software (IDE) allows you to write programs and upload them to your 
 
 ![download](images//download.jpeg)
 
-
 **Note**: Once downloaded, install the IDE and ensure that you enable most (if not all) of the options, including the drivers.
 
-
 ### Step 2: Get the Sensything COM Port Number
-Next, youll need to connect the Sensything board to the computer. This is done via a USB connection. When the Sensything is connected, the operating system should recognize the board as a generic COM port. The easiest way to do this is to type device manager into Windows Search and select Device Manager when it shows.
+Next, you'll need to connect the Sensything board to the computer. This is done via a USB connection. When the Sensything is connected, the operating system should recognize the board as a generic COM port. The easiest way to do this is to type device manager into Windows Search and select Device Manager when it shows.
 
 ![device manager](images//device manager.jpeg)
 
-In the Device Manager window, look for a device under �Ports (COM & LPT), and chances are the Arduino will be the only device on the list
+In the Device Manager window, look for a device under Ports (COM & LPT), and chances are the Arduino will be the only device on the list
 
 ### Step 3: Configure the IDE
 Now that we have determined the COM port that the Arduino is on, it's time to load the Arduino IDE and configure it to use the same device and port.You have to install the esp32 platform   in the arduino IDE to find esp32 board in board manager.For installing esp32 platform follow up th link: https://github.com/espressif/arduino-esp32/blob/master/docs/arduino-ide/boards_manager.md .You can start by loading the IDE. When it is loaded, navigate to Tools > Board > Esp32 dev module.
 
-
 ![IDE](images//IDE.jpeg)
-
 
 Next, you must tell the IDE which COM port the Sensything is on. To do this, navigate to Tools > Port > COM51. Obviously, if your Sensything is on a different port, select that port instead.
 
 ![selecting port](images//selecting port.jpeg)
-
 
 ### Step 4: Writing my first code to Sensything
 A header file is generally used to define all the functions, variables and constants contained in any function library that you might want to use, define the pin number of ads1220 Chip select and DRDY.
@@ -88,7 +83,7 @@ Compile the code and check for compilation without error and upload the code to 
 
 Its time to get started with some sensors to get the Real time output. We have showcased this in the following experiments with both Analog and Qwiic sensors.
 
-# Connecting analog sensors to Sensything
+## Connecting analog sensors to Sensything
 A sensor is a measure of the changes that occur in the physical environment, or it's your chance to interface with the physical world. It collects this data and provides an analog voltage as an output. The output range usually varies from 0 to 5 volts, for most of them.
 Some basic examples of how to connect to Analog sensors.
 
@@ -156,7 +151,7 @@ float Vout = (float)((bit32*VFSR*1000)/FSR);     //In  mV
 
 ```
 
-# Connecting Qwiic sensors to Sensything
+## Connecting Qwiic sensors to Sensything
 One of the most standout features of the Sensything board is that it offers the Qwiic connectivity solution. This is an ode to Sparkfun, whose Qwiic category offers a wide range of sensor breakouts. Why Qwiic? Qwiic connectivity gives an easy and simplified approach called “ Ready to Plug”. You can get a lot more done by getting rid of the breadboard and jumper wires that complicate the sensor readings.
 
 A basic example of how to connect to Qwiic sensor
