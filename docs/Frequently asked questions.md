@@ -22,7 +22,7 @@ Firstly, connect the battery to the Sensything board, then switch on the board.
 |                                            | Try with a different system                                     |
 |                                            |                                                                 |
 | If there is an uploading problem           | Check whether switch turned ON                                  |
-|                                            | Select the COM port and board in the board manager              |                         |                                            | Check for the latest version of arduino ide and esp-idf.    | 
+|                                            | Select the COM port and board in the board manager              |                         |                                            | Check for the latest version of arduino ide and esp-idf         | 
 |                                            |                                                                 |
 | If the RGB does not power up               | Download and upload the latest firmware from Github             |
 |                                            |                                                                 |
