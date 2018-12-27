@@ -2,8 +2,7 @@
 layout: page
 homepage: true
 ---
-
-# *This page is still work in progress. Please check back for updates*
+#Welcome to sensything
 
 ![Sensything](images/sensything-top-iso.jpg)
 
@@ -36,7 +35,7 @@ They can be listed as follows:
 |Sensything pin label| Analog Channel   |
 |----------------- |:--------------------:|
 | A1             | Channel 1                  |            
-| A2       | Channel 2                   | 
+| A2       | Channel 2                   |
 | A3            | Channel 3                   |  
 | A4             | Channel 4                  |  
 | 3V3              | Supply - Board which supports 3.3V   |
@@ -64,7 +63,7 @@ The main page of the Application can be segmented as follows:
 **Note**: On the right hand corner there is a battery indicator, this detects the level of charge in the Sensything device.
 
 Follow the link below on how to set up the Arduino IDE for Sensything:
-http://sensything.protocentral.com/sensything-with-arduino.html 
+http://sensything.protocentral.com/sensything-with-arduino.html
 
 # License Information
 

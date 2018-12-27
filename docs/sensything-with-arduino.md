@@ -1,8 +1,8 @@
-# Setting up Arduino for use with Sensything
+# Sensything with Arduino
 
 This document explains how to connect your sensything to the computer and upload your first sketch. The Sensything is programmed using the Arduino Software (IDE), the Integrated Development Environment runs both online and offline. Starting the basics of electronics, to more complex projects, the kit will help you control the physical world with sensor and actuators.
 
-## Setting up Arduino to ESP32
+## Setting up Arduino for ESP32
 
 Welcome to sensything with arduino! Before you start controlling the world around you, you'll need to set up the software to program your Sensything.
 
@@ -86,7 +86,7 @@ Compile the code and check for compilation without error and upload the code to 
 
 <img src="images/sensything_reading.png" width="800" height="500" />
 
-Its time to get started with some sensors to get the Real time output. We have showcased this in the following experiments with both Analog and Qwiic sensors. 
+Its time to get started with some sensors to get the Real time output. We have showcased this in the following experiments with both Analog and Qwiic sensors.
 
 # Connecting analog sensors to Sensything
 A sensor is a measure of the changes that occur in the physical environment, or it's your chance to interface with the physical world. It collects this data and provides an analog voltage as an output. The output range usually varies from 0 to 5 volts, for most of them.
@@ -115,17 +115,17 @@ float mgL = 0.67 * v;
 
 if(mgL > 0.8)
 {   
-Serial.print("mg/L : %f \n"); 
-Serial.print(" Alcohol Detected"); 
+Serial.print("mg/L : %f \n");
+Serial.print(" Alcohol Detected");
 Serial.println(mgL);
  }
 else
-{    Serial.print("mg/L : %f \n"); 
-Serial.print(" Alcohol Not Detected"); 
+{    Serial.print("mg/L : %f \n");
+Serial.print(" Alcohol Not Detected");
 Serial.println(mgL);
 
 }  
- 
+
 ```
 
 ### Experiment 2
@@ -150,14 +150,14 @@ float Vout = (float)((bit32*VFSR*1000)/FSR);     //In  mV
 // convert the value to resistance
  float reading = (1023 / Vout)  - 1;
   reading = 560 / reading;
-  Serial.print("Sensor resistance "); 
+  Serial.print("Sensor resistance ");
   Serial.println(reading);
-  
+
 
 ```
 
 # Connecting Qwiic sensors to Sensything
-One of the most standout features of the Sensything board is that it offers the Qwiic connectivity solution. This is an ode to Sparkfun, whose Qwiic category offers a wide range of sensor breakouts. Why Qwiic? Qwiic connectivity gives an easy and simplified approach called “ Ready to Plug”. You can get a lot more done by getting rid of the breadboard and jumper wires that complicate the sensor readings. 
+One of the most standout features of the Sensything board is that it offers the Qwiic connectivity solution. This is an ode to Sparkfun, whose Qwiic category offers a wide range of sensor breakouts. Why Qwiic? Qwiic connectivity gives an easy and simplified approach called “ Ready to Plug”. You can get a lot more done by getting rid of the breadboard and jumper wires that complicate the sensor readings.
 
 A basic example of how to connect to Qwiic sensor
 
