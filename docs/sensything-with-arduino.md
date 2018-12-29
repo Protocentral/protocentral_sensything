@@ -221,10 +221,10 @@ status = pressure.getPressure(P,T);
 
 ### Step 2: Accessing the IP address (Arduino serial monitor)
 
-![Arduino serial monitor](images//Arduino serial monitor.png)
+![Arduino serial monitor](images/Arduino serial monitor.png)
 
 ### Step 3: Step 4: Final output
 
-![web server output](images//web server output.png)
+![web server output](images/web server output.png)
 
 **Note**: Web interface for Sensything .. Coming soon
