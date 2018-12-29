@@ -21,7 +21,9 @@ Next, you'll need to connect the Sensything board to the computer. This is done 
 In the Device Manager window, look for a device under Ports (COM & LPT), and chances are the Arduino will be the only device on the list
 
 ### Step 3: Configure the IDE
-Now that we have determined the COM port that the Arduino is on, it's time to load the Arduino IDE and configure it to use the same device and port.You have to install the esp32 platform in the arduino IDE to find esp32 board in board manager.For installing esp32 platform follow up th link: https://github.com/espressif/arduino-esp32/blob/master/docs/arduino-ide/boards_manager.md .You can start by loading the IDE. When it is loaded, navigate to Tools > Board > Esp32 dev module.
+Now that we have determined the COM port that the Arduino is on, it's time to load the Arduino IDE and configure it to use the same device and port.You have to install the esp32 platform in the arduino IDE to find esp32 board in board manager.For installing esp32 platform follow up th link:
+https://github.com/espressif/arduino-esp32/blob/master/docs/arduino-ide/boards_manager.md .
+You can start by loading the IDE. When it is loaded, navigate to Tools > Board > Esp32 dev module.
 
 ![IDE](images//IDE.jpeg)
 
