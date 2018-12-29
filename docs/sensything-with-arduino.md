@@ -150,7 +150,6 @@ float Vout = (float)((bit32*VFSR*1000)/FSR);     //In  mV
 
 
 ```
-
 ### Connecting Qwiic sensors to Sensything
 One of the most standout features of the Sensything board is that it offers the Qwiic connectivity solution. This is an ode to Sparkfun, whose Qwiic category offers a wide range of sensor breakouts. Why Qwiic? Qwiic connectivity gives an easy and simplified approach called “ Ready to Plug”. You can get a lot more done by getting rid of the breadboard and jumper wires that complicate the sensor readings.
 
@@ -191,5 +190,41 @@ status = pressure.getTemperature(T);
 status = pressure.startPressure();
 status = pressure.getPressure(P,T);
 ```
+
+## Sensything ESP-idf with Bluetooth
+
+
+## Sensything with the Webserver
+
+### Step 1: Writing the code
+
+```c
+
+ String adcValue = MAIN_page; //Read HTML contents
+ server.send(200, "text/html", adcValue); //Send web page
+ 
+```
+ ```c
+
+  adc_data=pc_ads1220.Read_SingleShot_SingleEnded_WaitForData(MUX_SE_CH0);
+  String adcValue = String(convertToMilliV(adc_data));
+  server.send(200, "text/plane", adcValue); //Send ADC value only to client ajax request
+ 
+ ```
+ ```c
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+  document.getElementById("ADCValue").innerHTML =
+  this.responseText;
+  ```
+
+### Step 2: Accessing the IP address (Arduino serial monitor)
+
+![Arduino serial monitor](images//Arduino serial monitor.png)
+
+### Step 3: Step 4: Final output
+
+![web server output](images//web server output.png)
 
 **Note**: Web interface for Sensything .. Coming soon
