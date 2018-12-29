@@ -227,6 +227,6 @@ status = pressure.getPressure(P,T);
 
 ### Step 3: Step 4: Final output
 
-![web server output](images//web server output.png)
+![Web server output](images//Web server output.png)
 
 
