@@ -249,9 +249,7 @@ Open your browser, type the ESP IP address, and you’ll see the following page.
 
 Let’s test the web server. Connect the analog sensors with sensything and get the live readings of channels in the web server.
 
-
-![Web server output](images//Web server output.png)
-
+<img src="images/Web server output.png" width="800" height="500" />
 
 
 
