@@ -198,7 +198,11 @@ status = pressure.getPressure(P,T);
 
 ## Sensything with the Webserver
 
+The webserver came into being to eliminate the need to install any software or application to display sensor values. With a small addition to the programming section you would be able to read the sensor values on your system. To get started you can follow the basic steps mentioned below to understand how it would work. For example we have connected the Sensything to the Alcohol sensor
+
 ### Step 1: Writing the code
+
+The first step is to get started with writing out the code. You can find brief excerpts from the main code.
 
 ```c
 
@@ -221,11 +225,12 @@ status = pressure.getPressure(P,T);
   this.responseText;
   ```
 
-### Step 2: Accessing the IP address (Arduino serial monitor)
+### Step 2: Accessing the IP address
 
 ![Arduino serial monitor](images//Arduino serial monitor.png)
 
-### Step 3: Step 4: Final output
+### Step 3: Final output
+
 
 ![Web server output](images//Web server output.png)
 
