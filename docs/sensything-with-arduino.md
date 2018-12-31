@@ -241,11 +241,11 @@ Press the sensything ON/OFF button, and it will output the ESP IP address once t
 
 
 ![Arduino serial monitor](images//Arduino serial monitor.png)
-### Accessing the Web Server
+### Step 3: Accessing the Web Server
 
 Open your browser, type the ESP IP address, and you’ll see the following page. This page is sent by the sensything when you make a request on the ESP IP address.If take a look at the browser, you can see what’s going on on the background. The ESP receives an HTTP request from a new client and displays the analog values.
 
-### Step 3: Testing the Web Server
+### Step 4: Testing the Web Server
 
 Let’s test the web server. Connect the analog sensors with sensything and get the live readings of channels in the web server.
 
