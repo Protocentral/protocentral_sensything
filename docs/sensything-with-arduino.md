@@ -197,7 +197,7 @@ status = pressure.getPressure(P,T);
 
 The webserver came into being to eliminate the need to install any software or application to display sensor values. With a small addition to the programming section you would be able to read the sensor values on your system. To get started you can follow the basic steps mentioned below to understand how it would work.
 
-### How to Use Sensything as a Web Server
+### How to Use Sensything along with a Web Server
 
 By equipping sensything  you can turn it into web server, and by accessing that server with a browser running on any computer connected to the same network or the soft-AP available in sensything, you can
 * Read value of a sensor (using simple HTML).
