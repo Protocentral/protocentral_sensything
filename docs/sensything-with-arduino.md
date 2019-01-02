@@ -193,19 +193,19 @@ status = pressure.startPressure();
 status = pressure.getPressure(P,T);
 ```
 
-## Sensything with the Webserver
+## Sensything with Web server
 
-The webserver came into being to eliminate the need to install any software or application to display sensor values. With a small addition to the programming section you would be able to read the sensor values on your system. To get started you can follow the basic steps mentioned below to understand how it would work.
+The web server came into being to eliminate the need to install any software or application to display sensor values. With a small addition to the programming section, you would be able to read the sensor values on your system. To get started you can follow the basic steps mentioned below to understand how it would work.
+
 
 ### How to Use Sensything along with a Web Server
 
-By equipping sensything  you can turn it into web server, and by accessing that server with a browser running on any computer connected to the same network or the soft-AP available in sensything, you can
-* Read value of a sensor (using simple HTML).
+By equipping sensything  you can turn it into a web server, and by accessing that server with a browser running on any computer connected to the same network or the soft-AP available in sensything, you can
+* Read a value of a sensor (using simple HTML).
 
 ### Step 1: Writing Code to Web Server
 
-Now, you can upload/write the code, and it will work straight away.You can create a html page for displaying the sensor values, read the html contents and send the analog values to the web page.
-
+Now, you can upload/write the code, and it will work straight away. You can create an HTML page for displaying the sensor values, read the HTML contents and send the analog values to the web page.
 ```c
 
  String adcValue = MAIN_page; //Read HTML contents
@@ -213,7 +213,7 @@ Now, you can upload/write the code, and it will work straight away.You can creat
  
 ```
 
-The adc value is read from analog channels of sensything and the adc data is send to the browser while http data  request from server.
+The ADC value is read from analog channels of sensything and the ADC data is sent to the browser while HTTP data request from the server.
 
  ```c
 
@@ -223,8 +223,7 @@ The adc value is read from analog channels of sensything and the adc data is sen
  
  ```
  
- Creating an http request object in browser to request adc value from server and process the returned adc value to update the web page.
- 
+ Creating an HTTP request object in the browser to request ADC value from server and process the returned ADC value to update the web page.
  ```c
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
@@ -233,7 +232,7 @@ The adc value is read from analog channels of sensything and the adc data is sen
   this.responseText;
   ```
 
-Don’t forget to check if you have the ESP32 Dev Module(sensything) board and Sensything COM port selected, otherwise you’ll get an error when trying to upload. Open the Serial Monitor at a baud rate of 115200.
+Don’t forget to check if you have the ESP32 Dev Module(sensything) board and Sensything COM port selected, otherwise, you’ll get an error when trying to upload. Open the Serial Monitor at a baud rate of 115200.
 
 ### Step 2: Finding the ESP IP Address
 
@@ -243,13 +242,34 @@ Press the sensything ON/OFF button, and it will output the ESP IP address once t
 ![Arduino serial monitor](images//Arduino serial monitor.png)
 ### Step 3: Accessing the Web Server
 
-Open your browser, type the ESP IP address, and you’ll see the following page. This page is sent by the sensything when you make a request on the ESP IP address.If take a look at the browser, you can see what’s going on on the background. The ESP receives an HTTP request from a new client and displays the analog values.
+Open your browser, type the ESP IP address, and you’ll see the following page. This page is sent by the sensything when you make a request on the ESP IP address. If take a look at the browser, you can see what’s going on on the background. The ESP receives an HTTP request from a new client and displays the analog values.
 
 ### Step 4: Testing the Web Server
 
 Let’s test the web server. Connect the analog sensors with sensything and get the live readings of channels in the web server.
 
 <img src="images/Web server output.png" width="800" height="500" />
+
+## Sensything with BLE
+
+The Sensything board comes with the feature
+* Bluetooth 4.2 / Bluetooth Low Energy (BLE) compatible
+
+In order for the device to connect with the Sensything Application, the Arduino code must be set up.
+
+### How to set up the BLE function?
+
+The Sensything  Application has been designed to simplify the detection of sensor values. With the inbuilt ADC (ADS1220) the precise values can be detected and displayed. Follow these simple steps:
+
+### Step 1: Writing the code
+
+### Step 2: Connecting to the Application
+
+
+
+
+
+
 
 
 
