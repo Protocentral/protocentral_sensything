@@ -273,9 +273,12 @@ Connect the Sensything board to the System using a USB cable. Once the code is r
 ### Step 4: Using the Application
 Kindly refer to the Intro video on how to download the Application and how to connect. 
 
+http://sensything.protocentral.com/#making-the-connections
+
 ### Step 4: Reading the sensor values
 Kindly refer to the Application section on the main page
 
+http://sensything.protocentral.com/#understanding-the-sensything-application
 
 
 
