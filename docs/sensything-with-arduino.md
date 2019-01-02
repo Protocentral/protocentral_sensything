@@ -262,8 +262,20 @@ In order for the device to connect with the Sensything Application, the Arduino 
 The Sensything  Application has been designed to simplify the detection of sensor values. With the inbuilt ADC (ADS1220) the precise values can be detected and displayed. Follow these simple steps:
 
 ### Step 1: Writing the code
+Using the Arduino write the code for the sensor of your choice. Refer to the above mentioned examples to get tips on writing the code.
 
-### Step 2: Connecting to the Application
+### Step 2: Connecting the sensor
+The next step is to connect the sensors to the Sensything boards. Sensors that can be used are both Analog and Qwiic.
+
+### Step 3:Uploading the code
+Connect the Sensything board to the System using a USB cable. Once the code is ready, go on to upload it on to the board.
+
+### Step 4: Using the Application
+Kindly refer to the Intro video on how to download the Application and how to connect. 
+
+### Step 4: Reading the sensor values
+Kindly refer to the Application section on the main page
+
 
 
 
