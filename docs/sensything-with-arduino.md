@@ -263,10 +263,12 @@ The Sensything  Application has been designed to simplify the detection of senso
 
 ### Step 1: Writing the code
 Using the Arduino IDE, write the code for the sensor of your choice. Refer to the above mentioned examples to get tips on writing the code.
+
 http://sensything.protocentral.com/sensything-with-arduino.html#step-4-writing-my-first-code-to-sensything
 
 ### Step 2: Connecting the sensor
 The next step is to connect the sensors to the Sensything boards. Sensors that can be used are both Analog and Qwiic.
+
 http://sensything.protocentral.com/sensything-with-arduino.html#connecting-analog-sensors-to-sensything
 
 ### Step 3:Uploading the code
