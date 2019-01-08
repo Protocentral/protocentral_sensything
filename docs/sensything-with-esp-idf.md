@@ -46,4 +46,4 @@ To setup the software environment and get esp-idf follow the instructions given 
 
 https://docs.espressif.com/projects/esp-idf/en/latest/get-started/index.html#
 
-For further information/queries connect us with sales@protocentral.com.
+For further information/queries connect with us at sales@protocentral.com.
