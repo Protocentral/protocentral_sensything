@@ -200,7 +200,7 @@ The web server came into being to eliminate the need to install any software or 
 
 ### How to Use Sensything along with a Web Server
 
-By equipping sensything  you can turn it into a web server, and by accessing that server with a browser running on any computer connected to the same network or the soft-AP available in sensything, you can
+By equipping Sensything  you can turn it into a web server, and by accessing that server with a browser running on any computer connected to the same network or the soft-AP available in sensything, you can
 * Read a value of a sensor (using simple HTML).
 
 ### Step 1: Writing Code to Web Server
@@ -259,16 +259,18 @@ In order for the device to connect with the Sensything Application, the Arduino 
 
 ### How to set up the BLE function?
 
-The Sensything  Application has been designed to simplify the detection of sensor values. With the inbuilt ADC (ADS1220) the precise values can be detected and displayed. Follow these simple steps:
+The Sensything  Application has been designed to simplify the detection of sensor values. With the inbuilt ADC (ADS1220) the precise values can be detected and displayed. Few simple steps:
 
 ### Step 1: Writing the code
-Using the Arduino write the code for the sensor of your choice. Refer to the above mentioned examples to get tips on writing the code.
+Using the Arduino IDE, write the code for the sensor of your choice. Refer to the above mentioned examples to get tips on writing the code.
+http://sensything.protocentral.com/sensything-with-arduino.html#step-4-writing-my-first-code-to-sensything
 
 ### Step 2: Connecting the sensor
 The next step is to connect the sensors to the Sensything boards. Sensors that can be used are both Analog and Qwiic.
+http://sensything.protocentral.com/sensything-with-arduino.html#connecting-analog-sensors-to-sensything
 
 ### Step 3:Uploading the code
-Connect the Sensything board to the System using a USB cable. Once the code is ready, go on to upload it on to the board.
+Connect the Sensything board to your system using a USB cable. Once the code is ready, go on to upload it on to the board.
 
 ### Step 4: Using the Application
 Kindly refer to the Intro video on how to download the Application and how to connect. 
