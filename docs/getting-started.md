@@ -1,6 +1,6 @@
 ---
 menu: Getting Started
-weight: 0 # smaller weights rise to the top of the menu
+weight: 1 # smaller weights rise to the top of the menu
 ---
 # Getting started
 
