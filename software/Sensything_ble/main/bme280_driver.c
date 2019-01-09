@@ -53,7 +53,6 @@
 
 #include "bme280_driver.h"
 #include "driver/i2c.h"
-#include "sensything_bmp180.h"
 #include <esp_log.h>
 #include "sensything_qwiic.h"
 

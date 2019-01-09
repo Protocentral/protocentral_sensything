@@ -6,19 +6,14 @@ volatile unsigned int HR ,RR ;
 xQueueHandle rgbLedSem;
 QueueHandle_t xQueue_tcp;
 
-void kalam_start_max30003();
-void max30003_start_timer(void);
-void MAX30003_ReadID(void);
-uint8_t* max30003_read_send_data(void );
-
 #define HIGH 1
 #define LOW 0
 
-#define ADS1220_CS_PIN 19		
+#define ADS1220_CS_PIN 4		
 #define ADS1220_DRDY_PIN 34
 
 #define ADS1220_MOSI 23
-#define ADS1220_MISO 35
+#define ADS1220_MISO 19
 #define ADS1220_SCLK 18
 
 #define CONFIG_REG0_ADDRESS 0x00

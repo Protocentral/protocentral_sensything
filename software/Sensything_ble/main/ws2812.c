@@ -52,16 +52,18 @@ static xSemaphoreHandle ws2812_sem = NULL;
 static intr_handle_t rmt_intr_handle = NULL;
 static rmtPulsePair ws2812_bits[2];
 
+extern bool ble_connect_flag;
 
 void rainbow(void *pvParameters)
 {
-  const uint8_t anim_step = 10;
-  const uint8_t anim_max = 250;
-  const uint8_t pixel_count = 64; // Number of your "pixels"
+  const uint8_t anim_step = 1;
+  const uint8_t anim_max = 25;
+  const uint8_t pixel_count = 2; // Number of your "pixels"
   const uint8_t delay = 25; // duration between color changes
   rgbVal color = makeRGBVal(anim_max, 0, 0);
   uint8_t step = 0;
   rgbVal color2 = makeRGBVal(anim_max, 0, 0);
+  rgbVal color_off = makeRGBVal(0, 0, 0);
   uint8_t step2 = 0;
   rgbVal *pixels;
 
@@ -69,6 +71,8 @@ void rainbow(void *pvParameters)
   pixels = malloc(sizeof(rgbVal) * pixel_count);
 
   while (1) {
+    if(!ble_connect_flag){
+
     color = color2;
     step = step2;
 
@@ -117,6 +121,16 @@ void rainbow(void *pvParameters)
     ws2812_setColors(pixel_count, pixels);
 
     delay_ms(delay);
+  }else{
+
+
+    for (uint8_t i = 0; i < pixel_count; i++) {
+      pixels[i] = color_off;
+
+    }
+    ws2812_setColors(pixel_count, pixels);
+   delay_ms(delay);
+  }
   }
 }
 
@@ -250,7 +264,7 @@ void ws2812_setColors(unsigned int length, rgbVal *array)
   ws2812_copy();
 
   if (ws2812_pos < ws2812_len)
-    ws2812_copy();
+  ws2812_copy();
 
   ws2812_sem = xSemaphoreCreateBinary();
 

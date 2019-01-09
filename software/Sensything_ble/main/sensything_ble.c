@@ -12,7 +12,6 @@
 #include "bt.h"
 //#include "bta_api.h"
 #include "sdkconfig.h"
-#include "sensything_bmp180.h"
 #include "esp_gap_ble_api.h"
 #include "esp_gatts_api.h"
 #include "esp_bt_defs.h"
@@ -20,13 +19,10 @@
 #include "sensything_ble.h"
 #include "sensything_ads1220.h"
 #include "sensything_bme280.h"
-#include "sensything_ccs811.h"
+
 
 extern bool bme280_found;
-extern bool bmp180_found;
-extern bool ccs811_found;
-extern bool imu;
-							
+bool ble_connect_flag = false;
 uint8_t rr_service_uuid[16]= {0xd0,0x36,0xba,0x8c,0xda,0xd1,0x4c,0xae,0xb8,0x7d,0x48,0x44,0x05,0x11,0x5c,0xcd};		//custom 128bit service UUID for RR
 uint8_t rr_char_uuid[16]= {0xd0,0x36,0xba,0x8c,0xda,0xd1,0x4c,0xae,0xb8,0x7d,0x48,0x44,0x06,0x11,0x5c,0xcd};	
 
@@ -205,7 +201,22 @@ static void gatts_profile_bat_event_handler(esp_gatts_cb_event_t event, esp_gatt
         gl_profile_tab[PROFILE_A_APP_ID].service_id.id.uuid.len = ESP_UUID_LEN_16;
         gl_profile_tab[PROFILE_A_APP_ID].service_id.id.uuid.uuid.uuid16 = GATTS_SERVICE_UUID_BAT;
 
-        esp_ble_gap_set_device_name(TEST_DEVICE_NAME);
+
+            uint8_t baseMac[6];
+            char dev_name[17];
+            char t[] = {"Sensything"};
+            sprintf(dev_name, t, 10);
+        // Get MAC address for WiFi station
+        esp_read_mac(baseMac, ESP_MAC_WIFI_STA);
+        char baseMacChr[18] = {0};
+
+        baseMac[5] +=2;
+        sprintf(&dev_name[10], "-%02X%02X", baseMac[4], baseMac[5]);
+        //sprintf(&dev_name[11], "%02X:%02X:", baseMac[0], baseMac[1], baseMac[2], baseMac[3], baseMac[4], baseMac[5]);
+
+        esp_ble_gap_set_device_name(dev_name);
+
+
 #ifdef CONFIG_SET_RAW_ADV_DATA
         esp_ble_gap_config_adv_data_raw(raw_adv_data, sizeof(raw_adv_data));
         esp_ble_gap_config_scan_rsp_data_raw(raw_scan_rsp_data, sizeof(raw_scan_rsp_data));
@@ -335,11 +346,13 @@ static void gatts_profile_hrv_event_handler(esp_gatts_cb_event_t event, esp_gatt
     case ESP_GATTS_CONNECT_EVT:
         gl_profile_tab[PROFILE_C_APP_ID].conn_id = param->connect.conn_id;		
 		gatts_if_for_rr = gatts_if;			
-		conn_id_indicate_rr = param->connect.conn_id;	
+		conn_id_indicate_rr = param->connect.conn_id;
+        ble_connect_flag = true;
 		
         break;
     case ESP_GATTS_DISCONNECT_EVT:
 			gatts_if_for_rr = ESP_GATT_IF_NONE;
+            ble_connect_flag = false;
 		break;
 
     default:
@@ -469,7 +482,7 @@ void update_bat(uint8_t value)
 
 
 void send_qwiic_status_ble(uint8_t  * qwiic_sensor_data){
-    esp_ble_gatts_send_indicate(gatts_if_for_qwiic, conn_id_indicate_qwiic, attr_handle_qwiic, CCS811_DATABUFF_LEN, qwiic_sensor_data, false);
+   // esp_ble_gatts_send_indicate(gatts_if_for_qwiic, conn_id_indicate_qwiic, attr_handle_qwiic, CCS811_DATABUFF_LEN, qwiic_sensor_data, false);
 
 }
 
@@ -486,9 +499,7 @@ static void notify_task(void* arg) {
         //esp_ble_gatts_send_indicate(gatts_if_for_rr, conn_id_indicate_rr, attr_handle_rr, 16, value_ads1220, false);
         esp_ble_gatts_send_indicate(gatts_if_for_rr, conn_id_indicate_rr, attr_handle_rr, 16, get_ads1220data(), false);
         
-        if(bmp180_found){
-            esp_ble_gatts_send_indicate(gatts_if_for_qwiic, conn_id_indicate_qwiic, attr_handle_qwiic, BMP180_DATABUFF_LEN, get_bmp_data(), false);
-        }
+        
         vTaskDelay(1000/ portTICK_PERIOD_MS);
 
         if(bme280_found){
@@ -497,10 +508,7 @@ static void notify_task(void* arg) {
         }
         vTaskDelay(1000/ portTICK_PERIOD_MS);
         
-        if(ccs811_found){
-
-        //    esp_ble_gatts_send_indicate(gatts_if_for_qwiic, conn_id_indicate_qwiic, attr_handle_qwiic, CCS811_DATABUFF_LEN, get_ccs811_data(), false);
-        }
+       
 	}
 }
 

@@ -1,6 +1,8 @@
 #ifndef sensything_bme_h
 #define sensything_bme_h
 
+#include "driver/i2c.h"
+
 #define BME280_ADDRESS 0x77
 #define BME280_DATABUFF_LEN 10
 

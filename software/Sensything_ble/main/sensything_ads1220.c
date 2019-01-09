@@ -168,10 +168,9 @@ void sensything_ads1220read_channel1(void){
   while(gpio_get_level(ADS1220_DRDY_PIN)){
     //stay here untill drdy line goes low
   }
-
+  
   channel1 = sensything_ads1220readdata();
-
-//  printf("channel1 : %f \n",channel1);
+  printf("channel1 : %f \n",channel1);
   
   int32_t ble_vout = (int32_t) (channel1 * 100);
   ads1220_data_array[0] = (uint8_t) ble_vout;
@@ -190,7 +189,7 @@ void sensything_ads1220read_channel2(void){
   }
 
   channel2 = sensything_ads1220readdata();
-//  printf("channel2 : %f \n",channel2);
+  printf("channel2 : %f \n",channel2);
 
   int32_t ble_vout = (int32_t) (channel2 * 100);
   ads1220_data_array[4] = (uint8_t) ble_vout;
@@ -209,7 +208,7 @@ void sensything_ads1220read_channel3(void){
   }
 
   channel3 = sensything_ads1220readdata();
- // printf("channel3 : %f \n",channel3);
+  printf("channel3 : %f \n",channel3);
 
   int32_t ble_vout = (int32_t) (channel3 * 100);
   ads1220_data_array[8] = (uint8_t) ble_vout;
@@ -228,7 +227,7 @@ void sensything_ads1220read_channel4(void){
   }
 
   channel4 = sensything_ads1220readdata();
- // printf("channel4 : %f \n",channel4);
+  printf("channel4 : %f \n",channel4);
   
   int32_t ble_vout = (int32_t) (channel4 * 100);
   ads1220_data_array[12] = (uint8_t) ble_vout;

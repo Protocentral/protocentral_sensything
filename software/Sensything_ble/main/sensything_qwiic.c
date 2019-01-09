@@ -3,26 +3,14 @@
 #include <esp_log.h>
 #include <freertos/FreeRTOS.h>
 #include <freertos/task.h>
-#include "sensything_bmp180.h"
 #include "sensything_bme280.h"
 #include "sensything_qwiic.h"
-#include "sensything_ccs811.h"
 #include "bme280_driver.h"
 
-#define BMP180_ID_REG 0XD0
-#define BMP180_ID 0x55
-#define BNO_ADDRESS 0x4A
-#define GRIDEYE_ADDRESS 0x69
 static char TAG[] = "qwiic";
 
-bool bmp180_found = false;
-bool bme280_found = false;
-bool ccs811_found = false;
-bool acclr = false;
-bool ir_grid = false;
-bool imu = false;
 
-#define BMP180_ENABLED 0
+bool bme280_found = false;
 
 bool read_sensor_ack(uint8_t reg, uint8_t sensor_address, i2c_port_t qwiic_id) {
 
@@ -81,29 +69,6 @@ void scan_peripherals(void* arg)
 
 	while (true) {
 		
-#if BMP180_ENABLED		//scans for bmp180
-		if(!bmp180_found){
-			
-			uint8_t id = read_peripheral_id(BMP180_ID_REG, BMP180_ADDRESS, I2C_NUM_0);
-			if(id == BMP180_ID){ 
-				ESP_LOGI(TAG, " found BMP180 on qwiic1");
-				bmp180_found = true;
-				start_bmp180(I2C_NUM_0);
-			}
-			else{
-				id = read_peripheral_id(BMP180_ID_REG, BMP180_ADDRESS, I2C_NUM_1);
-
-				if(id == BMP180_ID){ 
-					ESP_LOGI(TAG, " found BMP180 on qwiic2");
-					bmp180_found = true;
-					start_bmp180(I2C_NUM_1);
-				}
-			}
-			vTaskDelay(1000 / portTICK_RATE_MS);
-		}
-#else
-
-	//	both bme180 and bmp280 have same address. 
 		
 		if(!bme280_found){
 			ret = read_sensor_ack(0, BME280_ADDRESS, I2C_NUM_0);
@@ -127,55 +92,7 @@ void scan_peripherals(void* arg)
 			}
 			vTaskDelay(100 / portTICK_RATE_MS);
 		}
-#endif
-		if(!ccs811_found){
-			ret = read_sensor_ack(0, CCS811_ADDRESS, I2C_NUM_0);
-			vTaskDelay(100 / portTICK_RATE_MS);
-			if(ret){
-				ESP_LOGI(TAG, " starting CCS811 : qwiic 1");
-				ccs811_found = true;
-				start_ccs811(I2C_NUM_0);
-			}
-
-
-			ret = read_sensor_ack(0, CCS811_ADDRESS, I2C_NUM_1);
-			if(ret){
-				if(ccs811_found){
-					ESP_LOGI(TAG, " already one bme is present on qwiic1 port, please remove the sensor from qwiic2");
-				}else{
-					ccs811_found = true;
-					ESP_LOGI(TAG, " starting ccs822 : qwiic 2");
-					start_ccs811(I2C_NUM_1);
-				}
-			}
-			vTaskDelay(100 / portTICK_RATE_MS);
-		}
-
-		if(!acclr){
-			read_sensor_ack(0, 0x1D, I2C_NUM_0);
-			vTaskDelay(100 / portTICK_RATE_MS);
-
-			read_sensor_ack(0, 0x1D, I2C_NUM_1);
-			vTaskDelay(100 / portTICK_RATE_MS);
-		}
 		
-		
-		if(!acclr){
-			read_sensor_ack(0, BNO_ADDRESS, I2C_NUM_0);
-			vTaskDelay(100 / portTICK_RATE_MS);
-
-			read_sensor_ack(0, BNO_ADDRESS, I2C_NUM_1);
-			vTaskDelay(100 / portTICK_RATE_MS);
-		}
-		if(!ir_grid){
-			read_sensor_ack(0, GRIDEYE_ADDRESS, I2C_NUM_0);
-			vTaskDelay(100 / portTICK_RATE_MS);
-
-			read_sensor_ack(0, GRIDEYE_ADDRESS, I2C_NUM_1);
-			vTaskDelay(100 / portTICK_RATE_MS);
-		}
-
-		vTaskDelay(4000 / portTICK_RATE_MS);
 	}
 }
 
@@ -183,8 +100,8 @@ void qwiic1_i2c_init(void){
 
 	i2c_config_t conf;
 	conf.mode = I2C_MODE_MASTER;
-	conf.sda_io_num = 26;
-	conf.scl_io_num = 25;
+	conf.sda_io_num = 21;
+	conf.scl_io_num = 22;
 	conf.sda_pullup_en = GPIO_PULLUP_ENABLE;
 	conf.scl_pullup_en = GPIO_PULLUP_ENABLE;
 	conf.master.clk_speed = 100000;
@@ -196,8 +113,8 @@ void qwiic2_i2c_init(void){
 
 	i2c_config_t conf;
 	conf.mode = I2C_MODE_MASTER;
-	conf.sda_io_num = 27;
-	conf.scl_io_num = 21;
+	conf.sda_io_num = 26;
+	conf.scl_io_num = 25;
 	conf.sda_pullup_en = GPIO_PULLUP_ENABLE;
 	conf.scl_pullup_en = GPIO_PULLUP_ENABLE;
 	conf.master.clk_speed = 100000;

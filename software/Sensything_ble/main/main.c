@@ -26,12 +26,12 @@
 #include "ws2812.h"
 #include "sensything_adc.h"
 #include "sensything_qwiic.h"
-#include "sensything_bmp180.h"
 
 #define TAG "Sensything:"
 #define SENSYTHING_MDNS_ENABLED    FALSE
 #define SENSYTHING_MDNS_NAME       "heartypatch"
 #define BUF_SIZE  1000
+
 
 extern xSemaphoreHandle print_mux;
 char uart_data[50];
@@ -47,41 +47,41 @@ unsigned int global_heartRate ;
 
 static esp_err_t event_handler(void *ctx, system_event_t *event)
 {
-    switch(event->event_id) {
-    case SYSTEM_EVENT_STA_START:
-        esp_wifi_connect();
-        break;
-    case SYSTEM_EVENT_STA_GOT_IP:
-        xEventGroupSetBits(wifi_event_group, CONNECTED_BIT_SENSYTHING);
-        break;
-    case SYSTEM_EVENT_STA_DISCONNECTED:
-        esp_wifi_connect();
-        xEventGroupClearBits(wifi_event_group, CONNECTED_BIT_SENSYTHING);
-        break;
-    default:
-        break;
-    }
-    return ESP_OK;
+  switch(event->event_id) {
+  case SYSTEM_EVENT_STA_START:
+  esp_wifi_connect();
+  break;
+  case SYSTEM_EVENT_STA_GOT_IP:
+  xEventGroupSetBits(wifi_event_group, CONNECTED_BIT_SENSYTHING);
+  break;
+  case SYSTEM_EVENT_STA_DISCONNECTED:
+  esp_wifi_connect();
+  xEventGroupClearBits(wifi_event_group, CONNECTED_BIT_SENSYTHING);
+  break;
+  default:
+  break;
+  }
+  return ESP_OK;
 }
 
 void sensything_wifi_init(void)
 {
-    tcpip_adapter_init();
-    wifi_event_group = xEventGroupCreate();
-    ESP_ERROR_CHECK( esp_event_loop_init(event_handler, NULL) );
-    wifi_init_config_t cfg = WIFI_INIT_CONFIG_DEFAULT();
-    ESP_ERROR_CHECK( esp_wifi_init(&cfg) );
-    ESP_ERROR_CHECK( esp_wifi_set_storage(WIFI_STORAGE_RAM) );
-    wifi_config_t wifi_config = {
-          .sta = {
-              .ssid = CONFIG_WIFI_SSID,
-              .password = CONFIG_WIFI_PASSWORD,
-          },
-    };
-    ESP_LOGI(TAG, "Setting WiFi configuration SSID %s...", wifi_config.sta.ssid);
-    ESP_ERROR_CHECK( esp_wifi_set_mode(WIFI_MODE_STA) );
-    ESP_ERROR_CHECK( esp_wifi_set_config(WIFI_IF_STA, &wifi_config) );
-    ESP_ERROR_CHECK( esp_wifi_start() );
+  tcpip_adapter_init();
+  wifi_event_group = xEventGroupCreate();
+  ESP_ERROR_CHECK( esp_event_loop_init(event_handler, NULL) );
+  wifi_init_config_t cfg = WIFI_INIT_CONFIG_DEFAULT();
+  ESP_ERROR_CHECK( esp_wifi_init(&cfg) );
+  ESP_ERROR_CHECK( esp_wifi_set_storage(WIFI_STORAGE_RAM) );
+  wifi_config_t wifi_config = {
+  .sta = {
+  .ssid = CONFIG_WIFI_SSID,
+  .password = CONFIG_WIFI_PASSWORD,
+  },
+  };
+  ESP_LOGI(TAG, "Setting WiFi configuration SSID %s...", wifi_config.sta.ssid);
+  ESP_ERROR_CHECK( esp_wifi_set_mode(WIFI_MODE_STA) );
+  ESP_ERROR_CHECK( esp_wifi_set_config(WIFI_IF_STA, &wifi_config) );
+  ESP_ERROR_CHECK( esp_wifi_start() );
 }
 
 void app_main(void)
@@ -115,6 +115,5 @@ void app_main(void)
   xEventGroupWaitBits(wifi_event_group, CONNECTED_BIT_SENSYTHING,false, true, portMAX_DELAY);
   /*as of now, functionalities based on wifi is not added*/
 #endif
-
 
 }
