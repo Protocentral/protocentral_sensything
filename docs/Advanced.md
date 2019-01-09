@@ -1,6 +1,6 @@
 ---
 menu: Advanced Sensything
-weight: 2 # smaller weights rise to the top of the menu
+weight: 3 # smaller weights rise to the top of the menu
 ---
 
 # Advanced

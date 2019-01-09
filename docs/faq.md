@@ -1,6 +1,6 @@
 ---
 menu: FAQ
-weight: 3 # smaller weights rise to the top of the menu
+weight: 4 # smaller weights rise to the top of the menu
 ---
 
 # Frequently asked questions
