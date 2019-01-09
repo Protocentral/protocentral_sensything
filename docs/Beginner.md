@@ -1,10 +1,10 @@
-# Beginner 
+# Beginner
 
 ## Sensything with Arduino
 
 This document gives key pointers into how a beginner can get started with the Sensything. It can guide you to enable the connections with your board to the computer and upload your first sketch. The Sensything is programmed using the Arduino Software (IDE), the Integrated Development Environment runs both online and offline. Starting the basics of electronics to more complex projects, the kit will help you control the physical world with sensor and actuators.
 
-## Setting up Arduino for ESP32
+### Setting up Arduino for ESP32
 
 Before you start controlling the world around you, you'll need to set up the software to program your Sensything.
 
@@ -159,7 +159,7 @@ float Vout = (float)((bit32*VFSR*1000)/FSR);     //In  mV
 
 
 ```
-Download the full code: 
+Download the full code:
 **https://github.com/Protocentral/protocentral_sensything/tree/master/software/Sensything_Arduino/experiments/Analog_Sensors/examples/sensyThing_etape**
 
 ### Connecting Qwiic sensors to Sensything
@@ -222,7 +222,7 @@ Now you can upload/write the code, and it will work straight away. You can creat
 
  String adcValue = MAIN_page; //Read HTML contents
  server.send(200, "text/html", adcValue); //Send web page
- 
+
 ```
 
 The ADC value is read from analog channels of sensything and the ADC data is sent to the browser while HTTP data request from the server.
@@ -232,9 +232,9 @@ The ADC value is read from analog channels of sensything and the ADC data is sen
   adc_data=pc_ads1220.Read_SingleShot_SingleEnded_WaitForData(MUX_SE_CH0);
   String adcValue = String(convertToMilliV(adc_data));
   server.send(200, "text/plane", adcValue); //Send ADC value only to client ajax request
- 
+
  ```
- 
+
  Creating a HTTP request object in the browser to request ADC value from server and process the returned ADC value to update the web page.
  ```c
   var xhttp = new XMLHttpRequest();
@@ -266,7 +266,7 @@ Let’s test the web server. Connect the analog sensors with sensything and get 
 
 ## Sensything with BLE
 
-The Sensything board comes with the feature - 
+The Sensything board comes with the feature -
 
 **Bluetooth 4.2 / Bluetooth Low Energy (BLE) compatible
 
@@ -290,7 +290,7 @@ The next step is to connect the sensors to the Sensything boards. Sensors that c
 Connect the Sensything board to your system using a USB cable. Once the code is ready, go on to upload it on to the board.
 
 ### Step 4: Using the Sensything Application
-Kindly refer to the Introduction video on how to download the Application and how to connect. 
+Kindly refer to the Introduction video on how to download the Application and how to connect.
 
 **http://sensything.protocentral.com/#making-the-connections**
 
@@ -298,17 +298,3 @@ Kindly refer to the Introduction video on how to download the Application and ho
 Kindly refer to the Application section on the main page
 
 **http://sensything.protocentral.com/#understanding-the-sensything-application**
-
-
-
-
-
-
-
-
-
-
-
-
-
-
