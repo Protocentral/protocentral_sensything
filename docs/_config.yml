@@ -9,3 +9,4 @@ mdl_colors: indigo-pink # a supported Material Design Lite color scheme
 logo: images/sensything_logo.png
 copyright: CC_BY_SA # will override the copyright notice (default is site title)
 search: true # enabled by default, set to false to disable site search
+menu_style: dropdown # will only show child menu items for the main item selected
