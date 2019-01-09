@@ -1,4 +1,6 @@
+---
 parent: beginner.md
+---
 
 ## Sensything with Arduino
 
