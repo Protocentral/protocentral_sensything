@@ -1,4 +1,4 @@
-# sensything 
+# Sensything 
 Sensything development repo
 
 **ads1220**
