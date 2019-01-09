@@ -1,7 +1,3 @@
----
-layout: page
-homepage: true
----
 # Welcome to Sensything
 
 ![Sensything](images/sensything-top-iso.jpg)
