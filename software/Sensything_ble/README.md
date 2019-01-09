@@ -1,11 +1,11 @@
-# sensything 
+# Sensything 
 Sensything development repo
 
 **ads1220**
 
 |ADS1220 Pin |Sensything Pin Connection|
 |-----------------|-----------------|
-| MISO            |  35              | 
+| MISO            |  19              | 
 | MOSI            |  23              |
 | SCLK            |  18              |
 | DRDY            |  34              |
@@ -15,13 +15,13 @@ Sensything development repo
 
 |QWIIC Pin |QWIIC 1 Pin Connection|QWIIC 2 Pin Connection|
 |-----------------|-----------------|--------------------|
-| SCL            |  25              | 21
-| SDA            |  26              |27
+| SCL            |  22              | 25
+| SDA            |  21              |26
 
 
 **battery monitor**
 
-ADC ---> 17   
+ADC ---> 2   
  
 ```diff
 + Please configure sensything through makemenuconfig
