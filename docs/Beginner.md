@@ -1,7 +1,9 @@
 ---
 menu: Getting Started
+tab: true # will open this page in a new tab
+weight: 2 # smaller weights rise to the top of the menu
+mdl_colors: deep_orange-blue # override global color scheme for this page
 ---
-
 # Beginner
 
 ## Sensything with Arduino
