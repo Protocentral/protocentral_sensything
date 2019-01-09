@@ -1,7 +1,7 @@
 # Advanced
 
 This document is intended to help users set up the software environment of applications using Espressif ESP32. Through a simple step-by-step process to illustrate how to use ESP-IDF(Espressif IoT Development Framework).
-## What You Need
+### What You Need
 To develop applications for ESP32 you need:
 * PC loaded with either Windows, Linux or Mac operating system
 * Toolchain to build the Application for ESP32
@@ -19,7 +19,7 @@ Toolchain Setup
 The quick setup is to download the Windows all-in-one toolchain & MSYS2 zip file from dl.espressif.com:
 https://dl.espressif.com/dl/esp32_win32_msys2_environment_and_toolchain-20180110.zip.
 
-Procedures:
+**Procedures**:
 1.	Open msys32 mingw32.exe terminal window.
 2.	Create new directory
 ```c
