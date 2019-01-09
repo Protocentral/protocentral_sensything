@@ -1,3 +1,8 @@
+---
+menu: FAQ
+weight: 3 # smaller weights rise to the top of the menu
+---
+
 # Frequently asked questions
 
 * How do I turn on the device?

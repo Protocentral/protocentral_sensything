@@ -1,3 +1,8 @@
+---
+menu: Advanced Sensything
+weight: 1 # smaller weights rise to the top of the menu
+---
+
 # Advanced
 
 This document is intended to help users set up the software environment of applications using Espressif ESP32. Through a simple step-by-step process to illustrate how to use ESP-IDF(Espressif IoT Development Framework).

@@ -1,6 +1,6 @@
 ---
 parent: getting-started.md
-menu: Getting Started with Arduino
+menu: Arduino
 ---
 # Getting Started with Sensything on Arduino
 
