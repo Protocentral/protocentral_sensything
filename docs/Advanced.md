@@ -24,24 +24,24 @@ https://dl.espressif.com/dl/esp32_win32_msys2_environment_and_toolchain-20180110
 1.	Open msys32 mingw32.exe terminal window.
 2.	Create new directory
 ```c
-       mkdir -p /home
+mkdir -p /home
 ```
 3.	The newly created directory can be moved by typing cd ~/esp
 ```c
-      cd /home
+cd /home
 ```
 ### Getting ESP-IDF
 
 Besides the toolchain (that contains programs to compile and build the application), you also need ESP32 specific API / libraries. They are provided by Espressif in ESP-IDF repository. To get it, open terminal, navigate to the directory you want to put ESP-IDF, and clone it using git clone command:
 To get all the sub-modules run another command
 ```c
-	 cd /home/esp-idf
-	 git submodule update --init
+cd /home/esp-idf
+git submodule update --init
  ```
 
 Setup path to ESP-IDF – toolchain program access ESP-IDF using IDF_PATH.Remember to replace back-slashes with forward-slashes in the original Windows path.
 ```c
-   printenv IDF_PATH
+printenv IDF_PATH
 ```
 To setup the software environment and get esp-idf follow the instructions given in the link below.
 

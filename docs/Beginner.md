@@ -49,13 +49,13 @@ Initialize the onboard ADS1220 ADC with begin
 ```c
 void setup()
 {
-    Serial.begin(9600);
+  Serial.begin(9600);
 
-    pc_ads1220.begin(ADS1220_CS_PIN,ADS1220_DRDY_PIN);
+  pc_ads1220.begin(ADS1220_CS_PIN,ADS1220_DRDY_PIN);
 
-    pc_ads1220.set_data_rate(DR_330SPS);
-    pc_ads1220.set_pga_gain(PGA_GAIN_1);
-    pc_ads1220.set_conv_mode_single_shot(); //Set Single shot mode
+  pc_ads1220.set_data_rate(DR_330SPS);
+  pc_ads1220.set_pga_gain(PGA_GAIN_1);
+  pc_ads1220.set_conv_mode_single_shot(); //Set Single shot mode
  }
 ```
 In the loop function below we get the ADC data for Channel 0, the same logic can be applied to read channel 1, channel 2 and channel 3.
@@ -63,10 +63,10 @@ In the loop function below we get the ADC data for Channel 0, the same logic can
 ```c
 void loop()
 {
-    adc_data=pc_ads1220.Read_SingleShot_SingleEnded_WaitForData(MUX_SE_CH0);
-    Serial.print("\n\nCh1 (mV): ");
-    Serial.print(convertToMilliV(adc_data));
-    delay(100);  
+  adc_data=pc_ads1220.Read_SingleShot_SingleEnded_WaitForData(MUX_SE_CH0);
+  Serial.print("\n\nCh1 (mV): ");
+  Serial.print(convertToMilliV(adc_data));
+  delay(100);  
 }
 ```  
 Converting the adc data into millivolt
@@ -118,18 +118,18 @@ float mgL = 0.67 * v;
 
 if(mgL > 0.8)
 {   
-Serial.print("mg/L : %f \n");
-Serial.print(" Alcohol Detected");
-Serial.println(mgL);
+	Serial.print("mg/L : %f \n");
+	Serial.print(" Alcohol Detected");
+	Serial.println(mgL);
  }
 else
-{    Serial.print("mg/L : %f \n");
-Serial.print(" Alcohol Not Detected");
-Serial.println(mgL);
-
+{    
+	Serial.print("mg/L : %f \n");
+	Serial.print(" Alcohol Not Detected");
+	Serial.println(mgL);
 }  
-
 ```
+
 Download the full code: **https://github.com/Protocentral/protocentral_sensything/tree/master/software/Sensything_Arduino/experiments/Analog_Sensors/examples/sensyThing_mq303A**
 
 ### Experiment 2
