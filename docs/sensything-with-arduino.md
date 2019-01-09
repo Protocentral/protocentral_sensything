@@ -271,15 +271,15 @@ The next step is to connect the sensors to the Sensything boards. Sensors that c
 
 http://sensything.protocentral.com/sensything-with-arduino.html#connecting-analog-sensors-to-sensything
 
-### Step 3:Uploading the code
+### Step 3: Uploading the code on to the board
 Connect the Sensything board to your system using a USB cable. Once the code is ready, go on to upload it on to the board.
 
-### Step 4: Using the Application
-Kindly refer to the Intro video on how to download the Application and how to connect. 
+### Step 4: Using the Sensything Application
+Kindly refer to the Introduction video on how to download the Application and how to connect. 
 
 http://sensything.protocentral.com/#making-the-connections
 
-### Step 4: Reading the sensor values
+### Step 5: Reading the sensor values
 Kindly refer to the Application section on the main page
 
 http://sensything.protocentral.com/#understanding-the-sensything-application
