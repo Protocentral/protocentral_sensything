@@ -1,4 +1,6 @@
-# Sensything with Arduino
+# Beginner 
+
+## Sensything with Arduino
 
 This document gives key pointers into how a begginer can get started with the Sensything. It can guide you to enable the connections with your board to the computer and upload your first sketch. The Sensything is programmed using the Arduino Software (IDE), the Integrated Development Environment runs both online and offline. Starting the basics of electronics to more complex projects, the kit will help you control the physical world with sensor and actuators.
 
