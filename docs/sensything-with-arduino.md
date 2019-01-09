@@ -2,7 +2,7 @@
 
 ## Sensything with Arduino
 
-This document gives key pointers into how a begginer can get started with the Sensything. It can guide you to enable the connections with your board to the computer and upload your first sketch. The Sensything is programmed using the Arduino Software (IDE), the Integrated Development Environment runs both online and offline. Starting the basics of electronics to more complex projects, the kit will help you control the physical world with sensor and actuators.
+This document gives key pointers into how a beginner can get started with the Sensything. It can guide you to enable the connections with your board to the computer and upload your first sketch. The Sensything is programmed using the Arduino Software (IDE), the Integrated Development Environment runs both online and offline. Starting the basics of electronics to more complex projects, the kit will help you control the physical world with sensor and actuators.
 
 ## Setting up Arduino for ESP32
 
@@ -131,6 +131,8 @@ Serial.println(mgL);
 ```
 Download the full code: 
 
+**https://github.com/Protocentral/protocentral_sensything/tree/master/software/Sensything_Arduino/experiments/Analog_Sensors/examples/sensyThing_mq303A**
+
 ### Experiment 2
 2) Water level check
 
@@ -158,6 +160,9 @@ float Vout = (float)((bit32*VFSR*1000)/FSR);     //In  mV
 
 
 ```
+Download the full code: 
+**https://github.com/Protocentral/protocentral_sensything/tree/master/software/Sensything_Arduino/experiments/Analog_Sensors/examples/sensyThing_etape**
+
 ### Connecting Qwiic sensors to Sensything
 One of the most standout features of the Sensything board is that it offers the Qwiic connectivity solution. This is an ode to Sparkfun, whose Qwiic category offers a wide range of sensor breakouts. Why Qwiic? Qwiic connectivity gives an easy and simplified approach called “ Ready to Plug”. You can get a lot more done by getting rid of the breadboard and jumper wires that complicate the sensor readings.
 
@@ -199,6 +204,7 @@ status = pressure.getTemperature(T);
 status = pressure.startPressure();
 status = pressure.getPressure(P,T);
 ```
+Download the full code: **https://github.com/Protocentral/protocentral_sensything/tree/master/software/Sensything_Arduino/experiments/Qwiic/examples/sensything_bmp180**
 
 ## Sensything with Web server
 
@@ -241,9 +247,11 @@ The ADC value is read from analog channels of sensything and the ADC data is sen
 
 Dont forget to check if you have the ESP32 Dev Module(Sensything) board and Sensything COM port selected, otherwise you will get an error when trying to upload. Open the Serial Monitor at a baud rate of 115200.
 
+Download the full code: **https://github.com/Protocentral/protocentral_sensything/tree/master/software/Sensything_Arduino/sensything_web/examples/sensything_web**
+
 ### Step 2: Finding the ESP IP Address
 
-Turn ON/OFF button in sensything and it will output the ESP IP address once the code is uploaded on the Serial Monitor.
+Press the sensything ON/OFF button and it will output the ESP IP address once the code is uploaded on the Serial Monitor.
 
 ![Arduino serial monitor](images//Arduino serial monitor.png)
 
