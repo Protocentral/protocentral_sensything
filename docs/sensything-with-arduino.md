@@ -243,7 +243,7 @@ Dont forget to check if you have the ESP32 Dev Module(Sensything) board and Sens
 
 ### Step 2: Finding the ESP IP Address
 
-Press the sensything ON/OFF button and it will output the ESP IP address once the code is uploaded on the Serial Monitor.
+Turn ON/OFF button in sensything and it will output the ESP IP address once the code is uploaded on the Serial Monitor.
 
 ![Arduino serial monitor](images//Arduino serial monitor.png)
 
