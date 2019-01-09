@@ -1,53 +1,10 @@
-# name of the software
-name: ProtoCentral Sensything
+plugins:
+  - jekyll-remote-theme
 
-project:
-    version: 3.1.0
-    download_url: https://github.com/Protocentral/protocentral_sensything/releases
+remote_theme: chromatical/jekyll-materialdocs
 
-license:
-    software: MIT License
-    software_url: http://opensource.org/licenses/MIT
-
-    docs: CC BY 3.0
-    docs_url: http://creativecommons.org/licenses/by/3.0/
-
-links:
-    header:
-      - title: Buy Sensything
-        url: https://www.crowdsupply.com/protocentral/sensything
-      - title: GitHub
-        url: https://github.com/Protocentral/protocentral_sensything
-    footer:
-      - title: GitHub
-        url: https://github.com/Protocentral/protocentral_sensything
-      - title: Issues
-        url: https://github.com/Protocentral/protocentral_sensything/issues?state=open
-
-ui:
-    header:
-        color1: "#125d79"
-        color2: "#70706f"
-        trianglify: true
-
-social:
-    github:
-        user: protocentral
-        repo: protocentral_sensything
-    twitter:
-        enabled: true
-        via:
-        hash: #heartypatch
-        account: protocentral
-    facebook:
-        enabled: true
-        profileUrl: https://www.facebook.com/protocentral
-
-analytics:
-    google: UA-123456-1
-
-# Build settings
-markdown: kramdown
-exclude:
-    - Gemfile
-    - Gemfile.lock
+mdl_colors: indigo-pink # a supported Material Design Lite color scheme
+logo: images/sensything_logo.png
+copyright: Your Name # will override the copyright notice (default is site title)
+search: true # enabled by default, set to false to disable site search
+menu_style: dropdown # will only show child menu items for the main item selected
