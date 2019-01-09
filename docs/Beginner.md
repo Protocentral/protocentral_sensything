@@ -1,3 +1,7 @@
+---
+menu: Getting Started
+----
+
 # Beginner
 
 ## Sensything with Arduino
