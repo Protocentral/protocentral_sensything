@@ -1,6 +1,6 @@
 ---
 menu: Getting Started
-----
+---
 
 # Beginner
 

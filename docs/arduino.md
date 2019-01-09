@@ -1,9 +1,8 @@
 ---
 parent: beginner.md
 menu: Getting Started with Arduino
-----
-
 ---
+# Getting Started with Sensything on Arduino
 
 ## Sensything with Arduino
 
