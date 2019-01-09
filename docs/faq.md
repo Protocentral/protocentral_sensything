@@ -1,6 +1,4 @@
-# FAQ
-
-## Frequently asked questions
+# Frequently asked questions
 
 * How do I turn on the device?
 
