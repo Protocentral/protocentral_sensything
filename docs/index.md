@@ -3,7 +3,7 @@ menu: Welcome
 weight: 0 # smaller weights rise to the top of the menu
 ---
 
-# Welcome to Sensything
+Welcome to Sensything
 
 ![Sensything](images/sensything-top-iso.jpg)
 
@@ -11,8 +11,7 @@ Sensything is a Data- acquisition board with the added capabilities of ADC preci
 
 If you don't already have one, you can now buy Sensything from [Crowd Supply](https://www.crowdsupply.com/protocentral/sensything)
 
-
-### What’s in the box?
+## What’s in the box?
 * 1x Sensything main Board
 * 1x 1000 mAH, 3.7V Li-Po battery
 * 10x alligator cables
@@ -21,8 +20,6 @@ If you don't already have one, you can now buy Sensything from [Crowd Supply](ht
 If you have purchased the *Sensything - board only* version then you will have to bring your own battery, and cables.
 This video throws light on how to set up your Sensything device. Get set Go!
 <iframe width="640" height="360" src="https://player.vimeo.com/video/306863926" frameborder="0" allowFullScreen mozallowfullscreen webkitAllowFullScreen></iframe>
-
-<div align="center"><p><a href="http://sensything.protocentral.com/getting-started.html" target="_blank" rel="noopener" class="btn btn-primary">ITS TIME TO GET STARTED!</a></p></div>
 
 ## License Information
 

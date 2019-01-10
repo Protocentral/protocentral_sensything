@@ -1,9 +1,8 @@
 ---
 menu: Getting Started
 ---
-# Getting started
 
-### What’s in the box?
+## What’s in the box?
 * 1x Sensything main Board
 * 1x 1000 mAH, 3.7V Li-Po battery
 * 10x alligator cables
