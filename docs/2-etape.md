@@ -29,5 +29,5 @@ float Vout = (float)((bit32*VFSR*1000)/FSR);     //In  mV
   Serial.println(reading);
 ```
 
-Download the full code:
-**https://github.com/Protocentral/protocentral_sensything/tree/master/software/Sensything_Arduino/experiments/Analog_Sensors/examples/sensyThing_etape**
+[Download the full code here] 
+(https://github.com/Protocentral/protocentral_sensything/tree/master/software/Sensything_Arduino/experiments/Analog_Sensors/examples/sensyThing_etape)
