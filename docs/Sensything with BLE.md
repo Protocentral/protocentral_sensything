@@ -1,6 +1,6 @@
 The Sensything board comes with the feature -
 
-**Bluetooth 4.2 / Bluetooth Low Energy (BLE) compatible
+**Bluetooth 4.2 / Bluetooth Low Energy (BLE) compatible**
 
 In order for the device to connect with the Sensything Application, the Arduino code must be set up.
 
