@@ -38,4 +38,5 @@ status = pressure.getTemperature(T);
 status = pressure.startPressure();
 status = pressure.getPressure(P,T);
 ```
-Download the full code: **https://github.com/Protocentral/protocentral_sensything/tree/master/software/Sensything_Arduino/experiments/Qwiic/examples/sensything_bmp180**
+
+[Download the full code here](https://github.com/Protocentral/protocentral_sensything/tree/master/software/Sensything_Arduino/experiments/Qwiic/examples/sensything_bmp180)
