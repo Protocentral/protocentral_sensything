@@ -66,9 +66,8 @@ The main page of the Application can be segmented as follows:
 * Data logging - Using the Application you can log your data, so that the data is saved directly to your mobile device.
 
 **Note**: On the right hand corner there is a battery indicator, this detects the level of charge in the Sensything device.
-
-Follow the link below on how to set up the Arduino IDE for Sensything:
-http://sensything.protocentral.com/sensything-with-arduino.html
+                       
+<div align="center"><p><a href="images/Get started button.png" target="_blank" rel="noopener" class="btn btn-primary">ITS TIME TO GET STARTED!</a></p></div>
 
 ## License Information
 
