@@ -3,7 +3,7 @@ menu: Welcome
 weight: 0 # smaller weights rise to the top of the menu
 ---
 
-Welcome to Sensything
+# Welcome to Sensything
 
 ![Sensything](images/sensything-top-iso.jpg)
 
