@@ -67,7 +67,7 @@ The main page of the Application can be segmented as follows:
 
 **Note**: On the right hand corner there is a battery indicator, this detects the level of charge in the Sensything device.
                        
-<div align="center"><p><a href="images/Get started button.png" target="_blank" rel="noopener" class="btn btn-primary">ITS TIME TO GET STARTED!</a></p></div>
+<div align="center"><p><a href="http://sensything.protocentral.com/getting-started.html" target="_blank" rel="noopener" class="btn btn-primary">ITS TIME TO GET STARTED!</a></p></div>
 
 ## License Information
 
