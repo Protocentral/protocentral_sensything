@@ -4,8 +4,6 @@ weight: 1
 ---
 # Getting started
 
-## Sensything Basic Kit
-
 The Sensything basic kit is put together to work **out of the box**, which means that it is ready to use without any additional programming required.
 
 ### Making the connections
