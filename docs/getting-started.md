@@ -1,6 +1,5 @@
 ---
 menu: Getting Started
-weight: 1
 ---
 # Getting started
 
@@ -57,7 +56,3 @@ The main page of the Application can be segmented as follows:
 * Data logging - Using the Application you can log your data, so that the data is saved directly to your mobile device.
 
 **Note**: On the right hand corner there is a battery indicator, this detects the level of charge in the Sensything device.
-                       
-
-
-
