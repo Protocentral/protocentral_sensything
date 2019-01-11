@@ -11,7 +11,7 @@ Sensything is a Data- acquisition board with the added capabilities of ADC preci
 
 If you don't already have one, you can now buy Sensything from [Crowd Supply](https://www.crowdsupply.com/protocentral/sensything)
 
-![Features](images/Highlights.JPG)
+![Highlights](images/Highlights.jpg)
 
 ## Modes of Operation
 
