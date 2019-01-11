@@ -15,7 +15,7 @@ If you don't already have one, you can now buy Sensything from [Crowd Supply](ht
 
 ## Modes of Operation
 
-### * BLE mode  ! [BLE logo](images/BLE logo.JPG) 
+### * BLE mode  ![BLE logo](images/BLE logo.JPG) 
 
 Sensything is well equipped for BLE data acquisition. By this, we mean that the sensor is able to connect an Application and transfer the sensor readings. The mode of transmission would be BLE. It limits the complexity of data transfer and also improves the chances of retaining the data in a quick manner. The Sensything Application available on Google store for Android users for free. You can not only read values but also log your data using the Application. The data thus collected will be stored directly on to your phone.
 
