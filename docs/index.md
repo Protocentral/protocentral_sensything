@@ -15,17 +15,17 @@ If you don't already have one, you can now buy Sensything from [Crowd Supply](ht
 
 ## Modes of Operation
 
-### * Simple Acquisition Through BLE (Pre-programmed)
+### * BLE mode
 
 Sensything is well equipped for BLE data acquisition. By this, we mean that the sensor is able to connect an Application and transfer the sensor readings. The mode of transmission would be BLE. It limits the complexity of data transfer and also improves the chances of retaining the data in a quick manner. The Sensything Application available on Google store for Android users for free. You can not only read values but also log your data using the Application. The data thus collected will be stored directly on to your phone.
 
-### * Wi-Fi Access Point Mode
+### * Webserver Mode
 
-In case you wish to limit the number of downloads and software to display the sensor values then you could opt for the Web server. By making small changes in the code you could connect, Sensything can change into a connectable Wifi access point. By pointing your browser to a site you can display the values without any internet connection.
+In case you wish to limit the number of downloads and software to display the sensor values then you could opt for the Web server. By making small changes in the code you could cooect your device and display sensor vales on your system. By pointing your browser to a site you can display the values without any internet connection.
 
 ### * Developer Mode
 
-Sensything can be easily programmed. If you are a beginner then you could choose the Arduino IDE to program the board for any sensor. On the other hand, if you are the high-end developer then you could look at the ESP-IDF for programming the mode. Easy and flexible! That is what the Sensything board was designed to do, you can mold it into a device of your choice with very less effort.
+Sensything can be easily programmed. If you are a beginner then you could choose the Arduino IDE to program the board for any sensor. On the other hand, if you are the high-end developer then you could look at the ESP-IDF for programming the mode. Easy and flexible! That is what the Sensything board was designed to do, you can mold it into a device of your choice with very less programming knowlegde required.
 
 ### * Data logger mode
 
