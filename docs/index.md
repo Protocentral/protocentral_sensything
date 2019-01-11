@@ -25,7 +25,7 @@ In case you wish to limit the number of downloads and software to display the se
 
 ### * Developer Mode
 
-Sensything can be easily programmed. If you are a beginner then you could choose the Arduino IDE to program the board for any sensor. On the other hand, if you are the high-end developer then you could look at the ESP-IDF for programming the mode. Easy and flexible! That is what the Sensything board aims to do, you can mold it into a device of your choice with very less effort.
+Sensything can be easily programmed. If you are a beginner then you could choose the Arduino IDE to program the board for any sensor. On the other hand, if you are the high-end developer then you could look at the ESP-IDF for programming the mode. Easy and flexible! That is what the Sensything board was designed to do, you can mold it into a device of your choice with very less effort.
 
 ### * Data logger mode
 
