@@ -1,5 +1,5 @@
 ---
-menu: Licensing information
+menu: Licensing Information
 weight: 5 # smaller weights rise to the top of the menu
 ---
 
