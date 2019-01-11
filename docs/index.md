@@ -35,7 +35,7 @@ Sensything can function as a data logger with the inbuilt SD card option in the 
 
 ## License Information
 
-This product is open source! Both, our hardware and software are open source and licensed under the following licenses:
+This product is open source! Both our hardware and software are open source and licensed under the following licenses:
 
 ### Hardware
 
