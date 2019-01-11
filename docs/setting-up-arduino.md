@@ -7,26 +7,24 @@ menu: Setting up Arduino
 
 Before you start controlling the world around you, you'll need to set up the software to program your Sensything.
 
-## Step 1: Download and Install the IDE
+### Step 1: Download and Install the IDE
 The Arduino Software (IDE) allows you to write programs and upload them to your Sensything. Now you require arduino Desktop IDE.You can download the latest version for windows, linux and Mac OS using the below link .
 
-**https://www.arduino.cc/en/Main/Software#download**
-
-![download](images//download.jpeg)
+[Download the Arduino IDE](https://www.arduino.cc/en/Main/Software#download)
 
 **Note**: Once you have downloaded, install the IDE and ensure that you enable most (if not all) of the options, including the drivers.
 
-## Step 2: Get the Sensything COM Port Number
+### Step 2: Get the Sensything COM Port Number
 Next you will need to connect the Sensything board to a system. This is done via a USB connection. When the Sensything is connected, the operating system should recognize the board as a generic COM port. The easiest way to do this is to type **Device manager** into Windows Search and select Device Manager when it shows.
 
 ![device manager](images//device manager.jpeg)
 
 In the Device Manager window, look for a device under Ports (COM & LPT) and chances are the Arduino will be the only device on the list.
 
-## Step 3: Configure the IDE
+### Step 3: Configure the IDE
 Now that we have determined the COM port that the Arduino is on, its time to load the Arduino IDE and configure it to use the same device and port.You have to install the esp32 platform in the Arduino IDE to find esp32 board in board manager.For installing esp32 platform follow up th link:
 
-**https://github.com/espressif/arduino-esp32/blob/master/docs/arduino-ide/boards_manager.md**.
+[Installing ESP32](https://github.com/espressif/arduino-esp32/blob/master/docs/arduino-ide/boards_manager.md)
 
 You can start by loading the IDE. When it is loaded, navigate to **Tools > Board > Esp32 dev module**.
 
@@ -36,7 +34,7 @@ Next you must tell the IDE which COM port the Sensything is on. To do this, navi
 
 ![selecting port](images//selecting port.jpeg)
 
-## Step 4: Writing my first code to Sensything
+### Step 4: Writing my first code to Sensything
 A header file is generally used to define all the functions, variables and constants contained in any function library. Define the pin number of **ads1220 Chip select** and **DRDY**.
 
 ```c
