@@ -5,7 +5,7 @@ weight: 5 # smaller weights rise to the top of the menu
 
 ## Troubleshooting
 
-As you learn and explore this our device you may encounter some hiccups along the way. We hope to extend our full Technical support and guidance. We have listed out some of the common issues you may come across. Do send in your queries to **sales@protocentral.com**. All your queries will be addressed within 24 hours.
+As you learn and explore our device, you may encounter some hiccups along the way. We hope to extend our full Technical support and guidance. We have listed out some of the common issues you may come across. Do send in your queries to **sales@protocentral.com**. All your queries will be addressed within 24 hours.
 
 **Note**: This section will be updated constantly.
 
