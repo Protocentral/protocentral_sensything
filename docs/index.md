@@ -35,6 +35,8 @@ Sensything can be easily programmed. If you are a beginner then you could choose
 
 Sensything can function as a data logger with the inbuilt SD card option in the board. The inbuilt storage option improvess the chances for a wider scope and flexibility in storing sensor readings. Along with this the data transfer rate becomes faster long with low battery consumption. The data logging option is also avaialble in the Sensything Application.
 
+ <p align="center">   <img width="650" height="450" src="images/DSC_0137- Data log.jpg"> </p>
+   
 
 
 
