@@ -44,13 +44,13 @@ A short video suggests how to connect a basic analog sensor like the Piezo vibra
 
 ### Understanding the Sensything Application
 
-![sensything_app_1](images//sensything_app_1.png)
+<p align="center">   <img width="280" height="550" src="images/sensything_app_1.png"> </p>
 
 This above image is a screenshot of the opening page of the Application. This page displays the following information
 * Details of the detected Sensything device
 * The"Connect" option for the device.
 
-![sensything_app_2](images//sensything_app_2.png)
+<p align="center">   <img width="280" height="550" src="images/sensything_app_2.png"> </p>
 
 The main page of the Application can be segmented as follows:
 * **Graphical representation** - This depicts the changes in the readings of the sensors. All major and minor fluctuations are picked up.
