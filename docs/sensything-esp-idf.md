@@ -1,6 +1,7 @@
 ---
 menu: Using with ESP IDF
 parent: getting-started.md
+weight: 3
 ---
 
 # Using Sensything with ESP IDF
