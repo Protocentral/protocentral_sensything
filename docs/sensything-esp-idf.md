@@ -25,10 +25,7 @@ There are three simple steps in the process to development:
 
 ### Step 1: Setting up the toolchain
 
-Windows doesn’t have a built-in “make” environment, so as well as installing the toolchain you will need a GNU-compatible environment. We can use the MSYS2 environment to provide this environment.
-Toolchain Setup
-The quick setup is to download the Windows all-in-one toolchain & MSYS2 zip file from dl.espressif.com:
-https://dl.espressif.com/dl/esp32_win32_msys2_environment_and_toolchain-20180110.zip.
+Windows doesn’t have a built-in “make” environment, so as well as installing the toolchain you will need a GNU-compatible environment. We can use the MSYS2 environment to provide this environment.The quick setup is to download the Windows all-in-one toolchain & MSYS2 zip file from dl.espressif.com:[Toolchain Setup](https://dl.espressif.com/dl/esp32_win32_msys2_environment_and_toolchain-20180110.zip)
 
 **Procedures**:
 
