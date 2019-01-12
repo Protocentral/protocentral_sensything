@@ -1,6 +1,7 @@
 ---
 parent: getting-started.md
-menu: Setting up Arduino
+menu: Using with Arduino
+weight: 1
 ---
 
 # Setting up Arduino for ESP32
