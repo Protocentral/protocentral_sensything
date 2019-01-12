@@ -27,7 +27,7 @@ In the Device Manager window, look for a device under Ports (COM & LPT) and chan
 ### Step 3: Configure the IDE
 Now that we have determined the COM port that the Arduino is on, its time to load the Arduino IDE and configure it to use the same device and port.You have to install the esp32 platform in the Arduino IDE to find esp32 board in board manager.For installing esp32 platform follow up th link:
 
-[Installing ESP32](https://github.com/espressif/arduino-esp32/blob/master/docs/arduino-ide/boards_manager.md)
+[Installing ESP32 Platform in Boards Manager](https://github.com/espressif/arduino-esp32/blob/master/docs/arduino-ide/boards_manager.md)
 
 You can start by loading the IDE. When it is loaded, navigate to **Tools > Board > Esp32 dev module**.
 
