@@ -4,9 +4,11 @@ menu: Using with Arduino
 weight: 1
 ---
 
-# Setting up Arduino for ESP32
+# Using with Arduino
 
-Before you start controlling the world around you, you'll need to set up the software to program your Sensything.
+Now that you have the Sensything device in your hand , you need to program it first. At a beginner level, we would recommend you to begin with the Arduino IDE. Using this development platform, you can program Sensything and make it your very own Data Acquistion device. You can use any sensor and collect data, that can be displayed in the serial monitor. We have listed down a list of steps that can guide you in setting up the Arduino for your Sensything device. 
+
+## Setting up Arduino for ESP32
 
 ### Step 1: Download and Install the IDE
 The Arduino Software (IDE) allows you to write programs and upload them to your Sensything. Now you require arduino Desktop IDE.You can download the latest version for windows, linux and Mac OS using the below link .
@@ -87,4 +89,3 @@ Compile the code and check for compilation without error and upload the code to 
 
 <img src="images/sensything_reading.png" width="800" height="500" />
 
-Its time to get started with some sensors to get the Real time output. We have showcased this in the following experiments with both Analog and Qwiic sensors.
