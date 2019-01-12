@@ -14,7 +14,6 @@ If you have purchased the *Sensything - board only* version then you will have t
 This video throws light on how to set up your Sensything device. Get set Go!
 <iframe width="640" height="360" src="https://player.vimeo.com/video/306863926" frameborder="0" allowFullScreen mozallowfullscreen webkitAllowFullScreen></iframe>
 
-The Sensything basic kit is put together to work **out of the box**, which means that it is ready to use without any additional programming required.
 
 ### Making the connections
 
