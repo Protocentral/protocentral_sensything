@@ -1,6 +1,5 @@
 ---
 menu: Connecting-qwiic-sensors
-parent: connecting-sensors.md
 weight: 2
 ---
 
