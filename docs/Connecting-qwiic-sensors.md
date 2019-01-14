@@ -1,6 +1,6 @@
 ---
 menu: Connecting-qwiic-sensors
-weight: 2
+weight: 3
 ---
 
 # **Why Qwiic?**
