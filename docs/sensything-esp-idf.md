@@ -6,9 +6,12 @@ weight: 2
 
 # Using with ESP IDF
 
+![ESPidf](images/ESPidf.JPG)
+
 If you would like to take things up a notch, then we would suggest you to program Sensything using the ESP IDF. This section is intended to help users set up the software environment of applications using Espressif ESP32. Through a simple step-by-step process to illustrate how to use ESP-IDF(Espressif IoT Development Framework).
 
-## What You Need
+## What You Need?
+
 To develop applications for ESP32 you need:
 * PC loaded with either Windows, Linux or Mac operating system
 * Toolchain to build the Application for ESP32
