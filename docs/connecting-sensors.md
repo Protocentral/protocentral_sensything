@@ -20,8 +20,8 @@ An Analog sensor has the ability to measure the variable in a continuous manner 
 
 You can find Analog sensor experiments in
 
-[Experiment 1](https://sensything.protocentral.com/1-alcohol-sensor.html)
+- [Experiment 1](https://sensything.protocentral.com/1-alcohol-sensor.html)
 
-[Experiment 2](https://sensything.protocentral.com/2-etape.html)
+- [Experiment 2](https://sensything.protocentral.com/2-etape.html)
 
 
