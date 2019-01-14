@@ -1,6 +1,7 @@
 ---
-menu: Experiment 4 - Web Server
+menu: Getting started
 parent: experiments.md
+weight: 3
 ---
 # Sensything as a Web server
 
