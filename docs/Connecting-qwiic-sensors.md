@@ -18,4 +18,4 @@ The Qwiic connect option with Sensything makes sensor plug ins a whole lot easie
 
 You can find an example for a Qwiic sensor experiment in
 
-[Experiment 3](https://sensything.protocentral.com/3-pressure-sensor.html)
+- [Experiment 3](https://sensything.protocentral.com/3-pressure-sensor.html)
