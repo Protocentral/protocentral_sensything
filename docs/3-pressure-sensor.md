@@ -1,6 +1,7 @@
 ---
 menu: Experiment 3 - Pressure Sensor
-parent: experiments.md
+parent: connecting-sensors.md
+weight: 0
 ---
 
 # Experiment 3 - Barometric pressure sensor
