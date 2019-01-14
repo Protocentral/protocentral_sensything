@@ -57,5 +57,30 @@ To setup the software environment and get esp-idf follow the instructions given 
 
 [SETUP ESP IDF](https://www.google.com/url?q=https://docs.espressif.com/projects/esp-idf/en/latest/get-started/index.html)
 
+### Experiment 1
 
+##Experiment 1 - Gas Leakage detector
+
+Objective
+
+To determine the gas leakage detection (home and industry)
+
+##Application
+
+Since this sensor has a high sensitivity and fast response time,it can be used as a portable gas and smoke detector suitable for detecting H2, LPG, CH4, CO, Alcohol, Smoke or Propane.
+
+##Procedure
+
+MQ2 is a semiconductor sensor for Gas detection. It has very high sensitivity and fast response time, The voltage measured from ads1220 in sensything and converted to the sensor voltage and gas concentration is calculated. The output voltage from the Gas sensor increases when the concentration of gas increases and the value is sent through ble and displayed in sensything mobile application.
+
+##Excerpts from the code:
+
+```c
+float vout = (float)((ads1220_data_32*VFSR*1000)/FSR);
+sensor_volt=vout /1024*5.0;
+printf("Sensor_ volt: %f \n",sensor_volt);
+RS_gas = (5.0-sensor_volt)/sensor_volt;
+printf("Gas Concentration : %f \n",RS_gas );
+int32_t ble_vout = (int32_t) (channel1 * 100);
+```
 
