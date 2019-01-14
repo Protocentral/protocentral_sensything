@@ -71,7 +71,7 @@ Since this sensor has a high sensitivity and fast response time,it can be used a
 
 ## Procedure
 
-MQ2 is a semiconductor sensor for Gas detection. It has very high sensitivity and fast response time, The voltage measured from ads1220 in sensything and converted to the sensor voltage and gas concentration is calculated. The output voltage from the Gas sensor increases when the concentration of gas increases and the value is sent through ble and displayed in sensything mobile application.
+MQ2 is a semiconductor sensor for Gas detection. When we apply bias to the sensor it takes some “burn-in time” that is for to sensor getting warm, after that the electro chemical sensor detects specific Gas and varies the current flow through sensor. Hence we get analog output ranges depends on Gas concentration. It has very high sensitivity and fast response time, The voltage measured from ads1220 in sensything and converted to the sensor voltage and gas concentration is calculated. The concentration of gas is sent through ble and displayed in sensything mobile application.
 
 ## Excerpts from the code:
 
