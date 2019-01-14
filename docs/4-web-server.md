@@ -1,6 +1,6 @@
 ---
-menu: Getting started
-parent: experiments.md
+menu: Sensything as a Web server
+parent: Getting started.md
 weight: 3
 ---
 # Sensything as a Web server
