@@ -25,13 +25,13 @@ Sensything is well equipped for BLE data acquisition. By this, we mean that the 
 
 In case you wish to limit the number of downloads and software to display the sensor values then you could opt for the Web server. By making small changes in the code you could cooect your device and display sensor vales on your system. By pointing your browser to a site you can display the values without any internet connection. You can set up the Webserver with the Arduino and ESP-IDF as shown in the image below.
 
-[Webserver- mode](images/Webserver- mode.JPG)
+![Webserver- mode](images/Webserver- mode.JPG)
 
 ### * Developer Mode
 
 Sensything can be easily programmed. If you are a beginner then you could choose the Arduino IDE to program the board for any sensor. On the other hand, if you are the high-end developer then you could look at the ESP-IDF for programming the mode. Easy and flexible! That is what the Sensything board was designed to do, you can mold it into a device of your choice with very less programming knowlegde required.
 
-[Developer mode](images/Developer mode.JPG)
+![Developer mode](images/Developer mode.JPG)
 
 ### * Data logger mode
 
