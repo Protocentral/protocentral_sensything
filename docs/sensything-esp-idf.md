@@ -57,23 +57,23 @@ To setup the software environment and get esp-idf follow the instructions given 
 
 [SETUP ESP IDF](https://www.google.com/url?q=https://docs.espressif.com/projects/esp-idf/en/latest/get-started/index.html)
 
-### Experiment 1
+To showcase how to program the Sensything board with ESP idf we have an example illustrated below:
 
 ## Experiment 1 - Gas Leakage detector
 
-## Objective
+### Objective
 
 To determine the gas leakage detection (home and industry)
 
-## Application
+### Application
 
-Since this sensor has a high sensitivity and fast response time,it can be used as a portable gas and smoke detector suitable for detecting H2, LPG, CH4, CO, Alcohol, Smoke or Propane.
+Since this sensor has a high sensitivity and fast response time, it can be used as a portable gas and smoke detector suitable for detecting H2, LPG, CH4, CO, Alcohol, Smoke or Propane.
 
-## Procedure
+### Procedure
 
-MQ2 is a semiconductor sensor for Gas detection. When we apply bias to the sensor it takes some “burn-in time” that is for to sensor getting warm, after that the electro chemical sensor detects specific Gas and varies the current flow through sensor. Hence we get analog output ranges depends on Gas concentration. It has very high sensitivity and fast response time, The voltage measured from ads1220 in sensything and converted to the sensor voltage and gas concentration is calculated. The concentration of gas is sent through ble and displayed in sensything mobile application.
+MQ2 is a semiconductor sensor for Gas Detection. When we apply bias to the sensor it takes some “burn-in time” that is for to sensor getting warm, after that the electrochemical sensor detects specific gas and varies the current flow through the sensor. Hence we get analog output ranges depends on Gas concentration. It has very high sensitivity and fast response time, The voltage measured from ads1220 in Sensything and converted to the sensor voltage and gas concentration is calculated. The concentration of gas is sent through ble and displayed in the Sensything mobile application.
 
-## Excerpts from the code:
+### Excerpts from the code:
 
 ```c
 float vout = (float)((ads1220_data_32*VFSR*1000)/FSR); 
@@ -84,3 +84,4 @@ printf("Gas Concentration : %f \n",RS_gas );
 int32_t ble_vout = (int32_t) (channel1 * 100);           // Sending the analog channel value through ble
 ```
 
+Download the Smoke sensor code
