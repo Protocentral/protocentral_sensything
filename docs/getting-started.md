@@ -4,6 +4,8 @@ weight: 1 # smaller weights rise to the top of the menu
 ---
 # Sensything - Data Acquistion tool
 
+![Getting started](images/Getting started.png]
+
 Sensything being an open source device, is not like any other DAQ tool. It takes the element of data acquistion to newer heights with inbuilt capabilities in the board. With advanced wireless communication like BLE and Wifi, collecting sensor has never been easier and simplified. With such highlights,it is only right for the user to maximise their gain with this device. We have put in some pointers to help the user to get the most from Sensything.
 
 We urge the user to stay open to new ideas and to start exploring..
