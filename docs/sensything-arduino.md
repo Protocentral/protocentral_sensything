@@ -6,6 +6,8 @@ weight: 1
 
 # Using with Arduino
 
+ <p align="center"> <img width="550" height="300" src="images/Arduino.JPG"> </p> 
+
 Now that you have the Sensything device in your hand , you need to program it first. At a beginner level, we would recommend you to begin with the Arduino IDE. Using this development platform, you can program Sensything and make it your very own Data Acquistion device. You can use any sensor and collect data, that can be displayed in the serial monitor. We have listed down a list of steps that can guide you in setting up the Arduino for your Sensything device. 
 
 ## Setting up Arduino for ESP32
