@@ -1,6 +1,7 @@
 ---
 menu: Experiment 1 - Alcohol Sensor
-parent: experiments.md
+parent: connecting-sensors.md
+weight: 0
 ---
 # Experiment 1 - Alcohol detector
 
