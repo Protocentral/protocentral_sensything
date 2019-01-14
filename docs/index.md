@@ -31,6 +31,8 @@ In case you wish to limit the number of downloads and software to display the se
 
 Sensything can be easily programmed. If you are a beginner then you could choose the Arduino IDE to program the board for any sensor. On the other hand, if you are the high-end developer then you could look at the ESP-IDF for programming the mode. Easy and flexible! That is what the Sensything board was designed to do, you can mold it into a device of your choice with very less programming knowlegde required.
 
+[Developer mode](images/Developer mode.JPG)
+
 ### * Data logger mode
 
 Sensything can function as a data logger with the inbuilt SD card option in the board. The inbuilt storage option improvess the chances for a wider scope and flexibility in storing sensor readings. Along with this the data transfer rate becomes faster long with low battery consumption. The data logging option is also avaialble in the Sensything Application.
