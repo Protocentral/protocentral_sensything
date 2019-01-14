@@ -50,6 +50,7 @@ If you don't already have one, you can now buy Sensything from [Crowd Supply](ht
 
 **Dimensions**: 47x57 mm (length, width), 5 mm height (board only), 12 mm height (with included battery stacked)
 
+## Modes of operation
 
 ### * BLE mode 
 
