@@ -37,7 +37,7 @@ They can be listed as follows:
 | A3            | Channel 3                   |  
 | A4             | Channel 4                  |  
 | 3V3              | Supply - Board which supports 3.3V   |
-| GND                             | Gnd |
+| GND                             | Ground |
 
 A short video suggests how to connect a basic analog sensor like the Piezo vibration sensor to Sensything.
 
