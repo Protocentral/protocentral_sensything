@@ -1,6 +1,6 @@
 ---
 menu: Experiment 3 - Pressure Sensor
-parent: connecting-qwiic-sensors.md
+parent: Connecting-qwiic-sensors.md
 weight: 0
 ---
 
