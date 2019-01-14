@@ -2,10 +2,11 @@
 menu: Experiment 4 - Web Server
 parent: experiments.md
 ---
+# Sensything as a Web server
 
 The web server came into being to eliminate the need to install any software or application to display sensor values. With a small addition to the programming section, you would be able to read the sensor values on your system. To get started you can follow the basic steps mentioned below to understand how it would work.
 
-### How to Use Sensything along with a Web Server
+### How to Use Sensything as a Web Server
 
 By equipping Sensything you can turn it into a web server. By accessing that server with a browser running on any computer connected to the same network or the soft-AP available in sensything you can
 
@@ -30,7 +31,6 @@ The ADC value is read from analog channels of sensything and the ADC data is sen
   server.send(200, "text/plane", adcValue); //Send ADC value only to client ajax request
 
  ```
-
  Creating a HTTP request object in the browser to request ADC value from server and process the returned ADC value to update the web page.
 
  ```c
@@ -41,8 +41,6 @@ The ADC value is read from analog channels of sensything and the ADC data is sen
   this.responseText;
 ```
 Dont forget to check if you have the ESP32 Dev Module(Sensything) board and Sensything COM port selected, otherwise you will get an error when trying to upload. Open the Serial Monitor at a baud rate of 115200.
-
-Download the full code: **https://github.com/Protocentral/protocentral_sensything/tree/master/software/Sensything_Arduino/sensything_web/examples/sensything_web**
 
 ### Step 2: Finding the ESP IP Address
 
@@ -59,3 +57,5 @@ Open your browser, type the ESP IP address, and you’ll see the following page.
 Let’s test the web server. Connect the analog sensors with sensything and get the live readings of channels in the web server.
 
 <img src="images/Web server output.png" width="800" height="500" />
+
+[Download the Web server code](https://github.com/Protocentral/protocentral_sensything/tree/master/software/Sensything_Arduino/sensything_web/examples/sensything_web)
