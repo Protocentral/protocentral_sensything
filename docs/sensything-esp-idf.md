@@ -1,7 +1,7 @@
 ---
 menu: Using with ESP IDF
 parent: getting-started.md
-weight: 3
+weight:2
 ---
 
 # Using with ESP IDF
