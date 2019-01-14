@@ -17,36 +17,32 @@ If you don't already have one, you can now buy Sensything from [Crowd Supply](ht
 
 **ADC**: Texas Instruments ADS1220 24-bit Sigma-Delta
 
-|**Analog characteristics**:                                                                 |
-|-----------------------------------------------------------------------------------------|
-|* 4 channels single-ended, 2-channel fully differential                                   |
-|* Full-scale input range: ± 2.048 V to ± 0.016 V (adjustable gain).                       |
-|* Sampling rate: 20 samples/second (SPS) to 2000 SPS.                                     |
-|* Current sources: On-board excitation current sources adjustable from 10 uA to  1500 uA. |
-|* Built-in 2.048 V voltage reference with 5 ppm/°C drift.                                 |
-|* Built-in temperature sensor with 0.5°C accuracy.                                        |
+ **Analog characteristics**:                                                                 
+* 4 channels single-ended, 2-channel fully differential                                   
+* Full-scale input range: ± 2.048 V to ± 0.016 V (adjustable gain).                      
+* Sampling rate: 20 samples/second (SPS) to 2000 SPS.                                    
+* Current sources: On-board excitation current sources adjustable from 10 uA to  1500 uA.
+* Built-in 2.048 V voltage reference with 5 ppm/°C drift.                                
+* Built-in temperature sensor with 0.5°C accuracy.                                       
 
-|**Wireless interface**:                                |
-|-------------------------------------------------------|
-|* 2.4 GHz radio with on-board PCB antenna               |
-|* Wi-Fi station and Access Point (AP) mode              |
-|* Bluetooth 4.2 / Bluetooth Low Energy (BLE) compatible |
+**Wireless interface**:                                
+* 2.4 GHz radio with on-board PCB antenna               
+* Wi-Fi station and Access Point (AP) mode              
+* Bluetooth 4.2 / Bluetooth Low Energy (BLE) compatible 
 
-|**Ports and I/O**:                                            |
-|--------------------------------------------------------------|
-|* Board-edge alligator clip compatible analog input connectors |
-|* 2x Sparkfun Qwiic-compatible I2C ports                       |
-|* USB-CDC (on-board FT230X)                                    |
-|* 4x general-purpose I/O pins                                  |
-|* 1 WS2812 RGB user-controllable LED for indication            |
-|* MicroSD card slot for on-board data logging                  |
+**Ports and I/O**:                                            
+* Board-edge alligator clip compatible analog input connectors 
+* 2x Sparkfun Qwiic-compatible I2C ports                       
+* USB-CDC (on-board FT230X)                                    
+* 4x general-purpose I/O pins                                  
+* 1 WS2812 RGB user-controllable LED for indication            
+* MicroSD card slot for on-board data logging                  
 
-|**Power supply**:                                                          |
-|------------------------------------------------------------------------|
-|* Li-ion battery (3.7 V, 1000 mAH) as power source                       |
-|* On-board USB battery charger                                           |
-|* On-board 5 V DC/DC boost converter with low-noise LDO for analog power |
-|* 3.3 V digital supply voltage                                           |
+**Power supply**:                                                          
+* Li-ion battery (3.7 V, 1000 mAH) as power source                       
+* On-board USB battery charger                                           
+* On-board 5 V DC/DC boost converter with low-noise LDO for analog power 
+* 3.3 V digital supply voltage                                           
 
 **Dimensions**: 47x57 mm (length, width), 5 mm height (board only), 12 mm height (with included battery stacked)
 
