@@ -14,6 +14,7 @@ If you don't already have one, you can now buy Sensything from [Crowd Supply](ht
 ## HIGHLIGHTS
 
 **Microcontroller**: ESP-PICO-D4 SIP with 4 MB Flash 
+
 **ADC**: Texas Instruments ADS1220 24-bit Sigma-Delta
 
 **Analog characteristics**:
