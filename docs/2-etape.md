@@ -1,6 +1,7 @@
 ---
 menu: Experiment 2 - Water level sensor
-parent: experiments.md
+parent: connecting-sensors.md
+weight: 1
 ---
 
 # Experiment 2 - Water level check
