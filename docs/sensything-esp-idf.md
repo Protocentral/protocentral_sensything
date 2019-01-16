@@ -89,4 +89,4 @@ printf("Gas Concentration : %f \n",RS_gas );
 int32_t ble_vout = (int32_t) (sensor_volt * 100);           // Sending the sensor value through ble
 ```
 
-Download the Smoke sensor code
+[Download the Smoke sensor code](https://www.google.com/url?q=https://github.com/Protocentral/protocentral_sensything/tree/master/software/Sensything_esp-idf/Sensything_experiments/Analog_Sensors/MQ2_GasSensor&sa=D&source=hangouts&ust=1547734061557000&usg=AFQjCNFY6pU_dnog8ALqcdMeEP1rqzBgyg)
