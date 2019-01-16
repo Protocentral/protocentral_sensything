@@ -80,11 +80,11 @@ MQ2 is a semiconductor sensor for Gas Detection. When we apply bias to the senso
 
 ```c
 float vout = (float)((ads1220_data_32*VFSR*1000)/FSR); 
-sensor_volt=vout /1024*5.0;                              // Measuring mq2 gas sensor voltage
-printf("Sensor_ volt: %f \n",sensor_volt);
+sensor_volt= vout /1024*5.0;                              // Measuring mq2 gas sensor voltage
+printf("Sensor voltage: %f \n",sensor_volt);
 RS_gas = (5.0-sensor_volt)/sensor_volt;                  // Calculating gas concentration
 printf("Gas Concentration : %f \n",RS_gas );
-int32_t ble_vout = (int32_t) (channel1 * 100);           // Sending the analog channel value through ble
+int32_t ble_vout = (int32_t) (sensor_volt * 100);           // Sending the sensor value through ble
 ```
 
 Download the Smoke sensor code
