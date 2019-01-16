@@ -20,7 +20,7 @@ uint8_t bme280_data[10] = {BME280_ADDRESS,QWIIC_OK,0 };
 #define TAG_BME280 "BME280"
 
 
-s8 BME280_I2C_bus_write(u8 dev_addr, u8 reg_addr, u8 *reg_data, u8 cnt)
+int8_t BME280_I2C_bus_write(uint8_t dev_addr, uint8_t reg_addr, uint8_t *reg_data, uint8_t cnt)
 {
 	s32 iError = BME280_INIT_VALUE;
 
@@ -42,10 +42,10 @@ s8 BME280_I2C_bus_write(u8 dev_addr, u8 reg_addr, u8 *reg_data, u8 cnt)
 	}
 	i2c_cmd_link_delete(cmd);
 
-	return (s8)iError;
+	return (int8_t)iError;
 }
 
-s8 BME280_I2C_bus_read(u8 dev_addr, u8 reg_addr, u8 *reg_data, u8 cnt)
+int8_t BME280_I2C_bus_read(uint8_t dev_addr, uint8_t reg_addr, uint8_t *reg_data, uint8_t cnt)
 {
 	s32 iError = BME280_INIT_VALUE;
 	esp_err_t espRc;
@@ -74,7 +74,7 @@ s8 BME280_I2C_bus_read(u8 dev_addr, u8 reg_addr, u8 *reg_data, u8 cnt)
 
 	i2c_cmd_link_delete(cmd);
 
-	return (s8)iError;
+	return (int8_t)iError;
 }
 
 void BME280_delay_msek(u32 msek)
