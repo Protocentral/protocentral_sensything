@@ -7,7 +7,7 @@ weight: 4 # smaller weights rise to the top of the menu
 
 * How do I turn on the device?
 
-![switch](images//switch.jpg)
+![switch button](images//switch button.jpg)
 
 Firstly, connect the battery to the Sensything board, then switch on the board.
 
