@@ -1,0 +1,65 @@
+menu "Sensything Configuration"
+
+config WIFI_SSID
+    string "WiFi SSID"
+    default "myssid"
+    help
+        SSID (network name) for the heartypatch to connect to.
+
+config WIFI_PASSWORD
+    string "WiFi Password"
+    default "myPassword"
+    help
+        WiFi password (WPA or WPA2).
+
+        Can be left blank if the network has no security set.
+config WIFIMODE_ENABLE
+	bool "Enable wifi mode"
+	help
+		Enable/Disable wifi mode to send data through TCP
+
+config BLE_MODE_ENABLE
+	bool "Enable BLE mode"
+	help
+		Enable/Disable BLE mode
+
+config RGB_LED_ENABLE
+    bool "Enable rgb driver"
+    help
+        Enable/Disable rgb led       
+
+
+menu "select adc channels"
+
+config ADC_CHANNEL_ONE
+
+    bool "channel one"
+    help
+        Enable/Disable channel one
+config ADC_CHANNEL_TWO
+
+    bool "channel two"
+    help
+        Enable/Disable channel two
+config ADC_CHANNEL_THREE
+
+    bool "channel three"
+    help
+        Enable/Disable channel three
+config ADC_CHANNEL_FOUR
+
+    bool "channel four"
+    help
+        Enable/Disable channel four
+
+endmenu 
+choice
+    prompt "select esp-idf version"
+    config ESP_IDF_V3_0
+          bool "idf v3.0"
+    config ESP_IDF_V2_1
+           bool "idf V2.1"
+ endchoice
+
+
+endmenu
