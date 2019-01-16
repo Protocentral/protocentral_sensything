@@ -84,7 +84,7 @@ sensor_volt=vout /1024*5.0;                              // Measuring mq2 gas se
 printf("Sensor_ volt: %f \n",sensor_volt);
 RS_gas = (5.0-sensor_volt)/sensor_volt;                  // Calculating gas concentration
 printf("Gas Concentration : %f \n",RS_gas );
-int32_t ble_vout = (int32_t) (sensor_volt * 100);           // Sending the analog channel value through ble
+int32_t ble_vout = (int32_t) (channel1 * 100);           // Sending the analog channel value through ble
 ```
 
 Download the Smoke sensor code
