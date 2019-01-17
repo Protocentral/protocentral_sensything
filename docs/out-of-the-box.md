@@ -3,12 +3,12 @@ menu: Out of the box Sensything
 parent: getting-started.md
 weight: 0
 ---
-# Sensything- “Out of the Box”
+### Sensything- “Out of the Box”
 One unique feature that stands out with the Sensything is its “out of the box” approach. You may wonder what is so unique about it. Where else can you find a board that you can immediately use once you unbox it. The board is **“READY TO USE”**. For all you eager enthusiasts, who cannot wait to explore new hardware then do go for it. We would be happy to hear from you!
 
   <div align="center"> **NO ADDITIONAL PROGRAMMING REQUIRED** </div>
 
-## What’s in the box?
+#### What’s in the box?
 * 1x Sensything main Board
 * 1x 1000 mAH, 3.7V Li-Po battery
 * 10x alligator cables
@@ -18,7 +18,7 @@ If you have purchased the *Sensything - board only* version then you will have t
 This video throws light on how to set up your Sensything device. Get set Go!
 <iframe width="640" height="360" src="https://player.vimeo.com/video/306863926" frameborder="0" allowFullScreen mozallowfullscreen webkitAllowFullScreen></iframe>
 
-### Making the connections
+#### Making the connections
 
 1) Downloading the App and connecting the device
 
@@ -43,7 +43,7 @@ A short video suggests how to connect a basic analog sensor like the Piezo vibra
 
 <iframe width="640" height="360" src="https://player.vimeo.com/video/307550473" frameborder="0" allowFullScreen mozallowfullscreen webkitAllowFullScreen></iframe>
 
-### Understanding the Sensything Application
+#### Understanding the Sensything Application
 
 <p align="center">   <img width="280" height="550" src="images/sensything_app_1.png"> </p>
 
