@@ -7,7 +7,7 @@ weight: 0 # smaller weights rise to the top of the menu
 
 ![Sensything main image](images/DSC_0043 Edited.jpg)
 
-Sensything is a Data- acquisition board with the added capabilities of ADC precision (ADS1220). The board contains an ESP-32 microcontroller with Qwiic connectivity that is most suitable for IOT applications. Using one single platform to monitor sensor readings along with the support of an BLE Application and Web server just makes it all the more advanced and simplifies solutions.
+Sensything is a Data- acquisition board with the added capabilities of ADC precision (ADS1220). The board contains an ESP-32 microcontroller with Qwiic connectivity that is most suitable for IOT applications. Using one single platform to monitor sensor readings along with the support of a BLE Application and Web server just makes it all the more advanced and simplifies solutions.
 
 If you don't already have one, you can now buy Sensything from [Crowd Supply](https://www.crowdsupply.com/protocentral/sensything)
 
@@ -56,19 +56,20 @@ Sensything is well equipped for BLE data acquisition. By this, we mean that the 
  
 ##### * Webserver Mode
 
-In case you wish to limit the number of downloads and software to display the sensor values then you could opt for the Web server. By making small changes in the code you could cooect your device and display sensor vales on your system. By pointing your browser to a site you can display the values without any internet connection. You can set up the Webserver with the Arduino and ESP-IDF as shown in the image below.
+In case you wish to limit the number of downloads and software to display the sensor values then you could opt for the Web server. By making small changes in the code you could connect your device and display sensor values on your system. By pointing your browser to a site you can display the values without any internet connection. You can set up the Web server with the Arduino and ESP-IDF as shown in the image below.
 
 ![Webserver- mode](images/Webserver- mode.JPG)
 
 ##### * Developer Mode
 
-Sensything can be easily programmed. If you are a beginner then you could choose the Arduino IDE to program the board for any sensor. On the other hand, if you are the high-end developer then you could look at the ESP-IDF for programming the mode. Easy and flexible! That is what the Sensything board was designed to do, you can mold it into a device of your choice with very less programming knowlegde required.
+Sensything can be easily programmed. If you are a beginner then you could choose the Arduino IDE to program the board for any sensor. On the other hand, if you are the high-end developer then you could look at the ESP-IDF for programming the mode. Easy and flexible! That is what the Sensything board was designed to do, you can mold it into a device of your choice with very less programming knowledge required.
+
 
 ![Developer mode](images/Developer mode.JPG)
 
 ##### * Data logger mode
 
-Sensything can function as a data logger with the inbuilt SD card option in the board. The inbuilt storage option improvess the chances for a wider scope and flexibility in storing sensor readings. Along with this the data transfer rate becomes faster long with low battery consumption. The data logging option is also avaialble in the Sensything Application.
+Sensything can function as a data logger with the inbuilt SD card option in the board. The inbuilt storage option improves the chances for a wider scope and flexibility in storing sensor readings. Along with this, the data transfer rate becomes faster long with low battery consumption. The data logging option is also available in the Sensything Application.
 
  <p align="center">   <img width="650" height="450" src="images/DSC_0137- Data log.jpg"> </p>
    
