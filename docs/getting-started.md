@@ -2,7 +2,7 @@
 menu: Getting Started
 weight: 1 # smaller weights rise to the top of the menu
 ---
-# Sensything - Data Acquistion tool
+### Sensything - Data Acquistion tool
 
 ![Getting started](images/Getting started.png)
 
@@ -10,7 +10,7 @@ Sensything being an open source device, is not like any other DAQ tool. It takes
 
 We urge the user to stay open to new ideas and to start exploring..
 
-## How to get the best out of your Sensything?
+#### How to get the best out of your Sensything?
 
 * **ADC Precison values**
 
