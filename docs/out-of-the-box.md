@@ -4,7 +4,7 @@ parent: getting-started.md
 weight: 0
 ---
 ### Sensything- “Out of the Box”
-One unique feature that stands out with the Sensything is its “out of the box” approach. You may wonder what is so unique about it. Where else can you find a board that you can immediately use once you unbox it. The board is **“READY TO USE”**. For all you eager enthusiasts, who cannot wait to explore new hardware then do go for it. We would be happy to hear from you!
+One unique feature that stands out with the Sensything is its “out of the box” approach. You may wonder what is so unique about it. Where else can you find a board that you can immediately use once you unbox it. The board is **“READY TO USE”**. For all, you eager enthusiasts, who cannot wait to explore new hardware then do go for it. We would be happy to hear from you!
 
   <div align="center"> **NO ADDITIONAL PROGRAMMING REQUIRED** </div>
 
@@ -55,8 +55,8 @@ This above image is a screenshot of the opening page of the Application. This pa
 
 The main page of the Application can be segmented as follows:
 * **Graphical representation** - This depicts the changes in the readings of the sensors. All major and minor fluctuations are picked up.
-* **Analog channels** - The four channels gives the ADC values received from the plug ins on the board.
-* **Qwiic section** - Incase any qwiic connection is made the values will be shown there.
-* **Data logging** - Using the Application you can log your data, so that the data is saved directly to your mobile device.
+* **Analog channels** - The four channels gives the ADC values received from the plugins on the board.
+* **Qwiic section** - In case any qwiic connection is made the values will be shown there.
+* **Data logging** - Using the Application you can log your data so that the data is saved directly to your mobile device.
 
-**Note**: On the right hand corner there is a battery indicator, this detects the level of charge in the Sensything device.
+**Note**: On the right-hand corner there is a battery indicator, this detects the level of charge in the Sensything device.
