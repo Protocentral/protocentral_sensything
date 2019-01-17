@@ -12,11 +12,11 @@ Sensything offers you the platform to explore Sensor based Applications in the f
 - **Laboratory or Research**
 - **Industrial**
 
-In case of Sensything, Analog and Qwiic sensors can be connected.
+In the case of Sensything, Analog and Qwiic sensors can be connected.
 
 **Analog**
 
-An Analog sensor has the ability to measure the variable in a continuous manner and by detecting the proportional value. In other words Analog is directly related to precision. To enhance this capability the Sensything has an inbuilt 24-bit ADC called ADS1220 for quick and precision based sensor readings. In case your projects are reliant on accurate and precision values for your varied proects then look no further.
+An Analog sensor has the ability to measure the variable in a continuous manner and by detecting the proportional value. In other words, Analog is directly related to precision. To enhance this capability the Sensything has an inbuilt 24-bit ADC called ADS1220 for quick and precision based sensor readings. In case your projects are reliant on accurate and precision values for your varied projects then look no further.
 
 You can find Analog sensor experiments in
 
