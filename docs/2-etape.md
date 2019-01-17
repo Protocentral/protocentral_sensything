@@ -7,7 +7,7 @@ weight: 1
 ### Experiment 2 - Water level check
 
 #### * Objective
-To determine the level of any liquid
+To determine the level of any liquid.
 
 #### * Application
 It can determine the continuous liquid level monitoring of water, non-corrosive water or dry fluids.
