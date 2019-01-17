@@ -6,13 +6,13 @@ weight: 0
 ### Experiment 1 - Alcohol detector
 
 #### * Objective
-To determine the level of Alcohol in any liquid
+To determine the level of Alcohol in any liquid.
 
 #### * Application
-Since this sensor has a good level of sensitivity it can be used as a portable alcohol detector.
+This sensor has a good level of sensitivity it can be used as a portable alcohol detector.
 
 #### * Procedure
-MQ303A is a semiconductor sensor for Alcohol detection. It has very good sensitivity and fast response to alcohol, suitable for portable alcohol detector just plugging with sensything. Below you find the conversion of adc data to the content of alcohol to be detected with milligram per litre. When the content of alcohol is more than 0.8 it detects the presence of alcohol.
+MQ303A is a semiconductor sensor for Alcohol detection. It has very good sensitivity and fast response to alcohol, suitable for portable alcohol detector just plugging with sensything. Below you find the conversion of ADC data to the content of alcohol to be detected with milligram per litre. When the content of alcohol is more than 0.8 it detects the presence of alcohol.
 
 ![Alcohol Sensor](images/alcohol-sensor.jpg)
 
