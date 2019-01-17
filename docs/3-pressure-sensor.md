@@ -7,6 +7,7 @@ weight: 0
 ### Experiment 3 - Barometric pressure sensor
 
 #### * Objective
+
 To determine the Barometric pressure.
 
 #### * Application
