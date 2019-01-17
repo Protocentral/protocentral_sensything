@@ -3,7 +3,7 @@ menu: Experiment 1 - Alcohol Sensor
 parent: connecting-sensors.md
 weight: 0
 ---
-# Experiment 1 - Alcohol detector
+## Experiment 1 - Alcohol detector
 
 ### * Objective
 To determine the level of Alcohol in any liquid
