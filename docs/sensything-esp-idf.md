@@ -20,7 +20,7 @@ To develop applications for ESP32 you need:
 
 #### Preparation for development
 
-There are three simple steps in the process to development:
+There are three simple steps in the process of development:
 
 * **Setup of Toolchain**
 * **Getting of ESP-IDF from GitHub**
@@ -28,7 +28,7 @@ There are three simple steps in the process to development:
 
 ##### Step 1: Setting up the toolchain
 
-Windows doesn’t have a built-in “make” environment, so as well as installing the toolchain you will need a GNU-compatible environment. We can use the MSYS2 environment to provide this environment.The quick setup is to download the Windows all-in-one toolchain & MSYS2 zip file from dl.espressif.com:[Toolchain Setup](https://dl.espressif.com/dl/esp32_win32_msys2_environment_and_toolchain-20180110.zip)
+Windows don’t have a built-in “make” environment, so as well as installing the toolchain you will need a GNU-compatible environment. We can use the MSYS2 environment to provide this environment. The quick setup is to download the Windows all-in-one toolchain & MSYS2 zip file from dl.espressif.com:[Toolchain Setup](https://dl.espressif.com/dl/esp32_win32_msys2_environment_and_toolchain-20180110.zip)
 
 **Procedures**:
 
@@ -56,7 +56,7 @@ printenv IDF_PATH
 ```
 ##### Step 3: Setting up
 
-To setup the software environment and get esp-idf follow the instructions given in the link below.
+To set up the software environment and get esp-idf follow the instructions given in the link below.
 
 [SETUP ESP IDF](https://www.google.com/url?q=https://docs.espressif.com/projects/esp-idf/en/latest/get-started/index.html)
 
@@ -74,7 +74,7 @@ Since this sensor has a high sensitivity and fast response time, it can be used 
 
 ##### * Procedure
 
-MQ2 is a semiconductor sensor for Gas Detection. When we apply bias to the sensor it takes some “burn-in time” that is for to sensor getting warm, after that the electrochemical sensor detects specific gas and varies the current flow through the sensor. Hence we get analog output ranges depends on Gas concentration. It has very high sensitivity and fast response time, The voltage measured from ads1220 in Sensything and converted to the sensor voltage and gas concentration is calculated. The concentration of gas is sent through ble and displayed in the Sensything mobile application.
+MQ2 is a semiconductor sensor for Gas Detection. When we apply a bias to the sensor it takes some “burn-in time” that is for to sensor getting warm, after that the electrochemical sensor detects specific gas and varies the current flow through the sensor. Hence we get analog output ranges depends on Gas concentration. It has very high sensitivity and fast response time, The voltage measured from ads1220 in Sensything and converted to the sensor voltage and gas concentration is calculated. The concentration of gas is sent through BLE and displayed in the Sensything mobile application.
 
 ![Smoke sensor](images/Smoke sensor.jpg)
 
