@@ -4,21 +4,21 @@ parent: Connecting-qwiic-sensors.md
 weight: 0
 ---
 
-# Experiment 3 - Barometric pressure sensor
+### Experiment 3 - Barometric pressure sensor
 
-### * Objective
+#### * Objective
 To determine the Barometric pressure.
 
-### * Application
+#### * Application
 
 BMP180 barometric pressure sensor can be used to predict the weather, detect altitude, and measure vertical velocity.
 
-### * Procedure
+#### * Procedure
 This sensor is one of the low-cost solutions for sensing applications related to barometric pressure and temperature. The BMP180 can communicate directly with a microcontroller in the device through I2C or SPI as a variant. The applications for this sensor is navigation, GPS positioning as well as a tracker for hikers. We have enabled Qwiic connection using the channels.
 
 ![BMP180 Sensor](images/bmp180-sensor.jpg)
 
-### * Excerpts from the code:
+#### * Excerpts from the code:
 ```c
 baseline = getPressure();
 Serial.print("baseline pressure: ");
