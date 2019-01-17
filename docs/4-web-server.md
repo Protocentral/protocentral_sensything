@@ -32,7 +32,7 @@ The ADC value is read from analog channels of sensything and the ADC data is sen
   server.send(200, "text/plane", adcValue); //Send ADC value only to client ajax request
 
  ```
- Creating a HTTP request object in the browser to request ADC value from server and process the returned ADC value to update the web page.
+ Creating an HTTP request object in the browser to request ADC value from server and process the returned ADC value to update the web page.
 
  ```c
   var xhttp = new XMLHttpRequest();
@@ -41,7 +41,7 @@ The ADC value is read from analog channels of sensything and the ADC data is sen
   document.getElementById("ADCValue").innerHTML =
   this.responseText;
 ```
-Dont forget to check if you have the ESP32 Dev Module(Sensything) board and Sensything COM port selected, otherwise you will get an error when trying to upload. Open the Serial Monitor at a baud rate of 115200.
+Don't forget to check if you have the ESP32 Dev Module(Sensything) board and Sensything COM port selected, otherwise you will get an error when trying to upload. Open the Serial Monitor at a baud rate of 115200.
 
 ##### Step 2: Finding the ESP IP Address
 
