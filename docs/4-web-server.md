@@ -13,7 +13,7 @@ By equipping Sensything you can turn it into a web server. By accessing that ser
 
 **Read a value of a sensor (using simple HTML)**
 
-##### Step 1: Writing Code to Web Server
+**Step 1: Writing Code to Web Server**
 
 Now you can upload/write the code, and it will work straight away. You can create an HTML page for displaying the sensor values, read the HTML contents and send the analog values to the web page.
 ```c
@@ -43,17 +43,17 @@ The ADC value is read from analog channels of sensything and the ADC data is sen
 ```
 Don't forget to check if you have the ESP32 Dev Module(Sensything) board and Sensything COM port selected, otherwise you will get an error when trying to upload. Open the Serial Monitor at a baud rate of 115200.
 
-##### Step 2: Finding the ESP IP Address
+**Step 2: Finding the ESP IP Address**
 
 Press the sensything ON/OFF button and it will output the ESP IP address once the code is uploaded on the Serial Monitor.
 
 ![Arduino serial monitor](images//Arduino serial monitor.png)
 
-##### Step 3: Accessing the Web Server
+**Step 3: Accessing the Web Server**
 
 Open your browser, type the ESP IP address, and you’ll see the following page. This page is sent by the sensything when you make a request on the ESP IP address. If you take a look at the browser, you can see what is going on in the background. The ESP receives an HTTP request from a new client and displays the analog values.
 
-##### Step 4: Testing the Web Server
+**Step 4: Testing the Web Server**
 
 Let’s test the web server. Connect the analog sensors with sensything and get the live readings of channels in the web server.
 
