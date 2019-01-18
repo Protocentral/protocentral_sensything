@@ -12,7 +12,7 @@ Now that you have the Sensything device in your hand, you need to program it fir
 
 #### Setting up Arduino for ESP32
 
-##### Step 1: Download and Install the IDE
+##### **Step 1: Download and Install the IDE**
 The Arduino Software (IDE) allows you to write programs and upload them to your Sensything. Now you require Arduino Desktop IDE. You can download the latest version for Windows, Linux and Mac OS using the below link.
 [Download the Arduino IDE](https://www.arduino.cc/en/Main/Software#download)
 
