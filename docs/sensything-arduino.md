@@ -19,14 +19,14 @@ The Arduino Software (IDE) allows you to write programs and upload them to your 
 
 **Note**: Once you have downloaded, install the IDE and ensure that you enable most (if not all) of the options, including the drivers.
 
-##### Step 2: Get the Sensything COM Port Number
+**Step 2: Get the Sensything COM Port Number**
 Next, you will need to connect the Sensything board to a system. This is done via a USB connection. When the Sensything is connected, the operating system should recognize the board as a generic COM port. The easiest way to do this is to type **Device manager** into Windows Search and select Device Manager when it shows.
 
 ![device manager](images//device manager.jpeg)
 
 In the Device Manager window, look for a device under Ports (COM & LPT) and chances are the Arduino will be the only device on the list.
 
-##### Step 3: Configure the IDE
+**Step 3: Configure the IDE**
 Now that we have determined the COM port that the Arduino is on, its time to load the Arduino IDE and configure it to use the same device and port. You have to install the esp32 platform in the Arduino IDE to find an esp32 board in board manager. For installing esp32 platform follow up the link:
 
 [Installing ESP32 Platform in Boards Manager](https://github.com/espressif/arduino-esp32/blob/master/docs/arduino-ide/boards_manager.md)
@@ -39,7 +39,7 @@ Next, you must tell the IDE which COM port the Sensything is on. To do this, nav
 
 ![selecting port](images//selecting port.jpeg)
 
-##### Step 4: Writing my first code to Sensything
+**Step 4: Writing my first code to Sensything**
 A header file is generally used to define all the functions, variables and constants contained in any function library. Define the pin number of **ads1220 Chip select** and **DRDY**.
 
 ```c
@@ -84,7 +84,7 @@ Getting the above code is as easy as installing the Arduino library **https://gi
 <img src="images/ads1220_read.png" width="800" height="500" />
 
 
-##### Step 5: Compiling and Uploading
+**Step 5: Compiling and Uploading**
 
 Compile the code and check for compilation without error and upload the code to Sensything so as to print the 4-channel analog readings in the Serial Monitor.
 
