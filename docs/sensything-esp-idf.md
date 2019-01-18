@@ -26,7 +26,7 @@ There are three simple steps in the process of development:
 * **Getting of ESP-IDF from GitHub**
 * **Installation and configuration**
 
-##### Step 1: Setting up the toolchain
+**Step 1: Setting up the toolchain**
 
 Windows don’t have a built-in “make” environment, so as well as installing the toolchain you will need a GNU-compatible environment. We can use the MSYS2 environment to provide this environment. The quick setup is to download the Windows all-in-one toolchain & MSYS2 zip file from dl.espressif.com:[Toolchain Setup](https://dl.espressif.com/dl/esp32_win32_msys2_environment_and_toolchain-20180110.zip)
 
@@ -41,7 +41,7 @@ mkdir -p /home
 ```c
 cd /home
 ```
-##### Step 2: Getting ESP-IDF
+**Step 2: Getting ESP-IDF**
 
 Besides the toolchain (that contains programs to compile and build the application), you also need ESP32 specific API / libraries. They are provided by Espressif in ESP-IDF repository. To get it, open terminal, navigate to the directory you want to put ESP-IDF, and clone it using git clone command:
 To get all the sub-modules run another command
@@ -54,7 +54,7 @@ Setup path to ESP-IDF – toolchain program access ESP-IDF using IDF_PATH.Rememb
 ```c
 printenv IDF_PATH
 ```
-##### Step 3: Setting up
+**Step 3: Setting up**
 
 To set up the software environment and get esp-idf follow the instructions given in the link below.
 
@@ -62,9 +62,9 @@ To set up the software environment and get esp-idf follow the instructions given
 
 To showcase how to program the Sensything board with ESP idf we have an example illustrated below:
 
-#### Experiment 1 - Gas Leakage detector
+**Experiment 1 - Gas Leakage detector**
 
-##### * Objective
+#### * Objective
 
 To determine the gas leakage detection (home and industry)
 
