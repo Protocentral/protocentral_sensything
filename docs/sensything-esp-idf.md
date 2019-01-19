@@ -41,6 +41,7 @@ mkdir -p /home
 ```c
 cd /home
 ```
+
 **Step 2: Getting ESP-IDF**
 
 Besides the toolchain (that contains programs to compile and build the application), you also need ESP32 specific API / libraries. They are provided by Espressif in ESP-IDF repository. To get it, open terminal, navigate to the directory you want to put ESP-IDF, and clone it using git clone command:
