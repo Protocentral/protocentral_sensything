@@ -35,11 +35,11 @@ Now that we have determined the COM port that the Arduino is on, its time to loa
 
 You can start by loading the IDE. When it is loaded, navigate to **Tools > Board > Esp32 dev module**.
 
-![IDE](images//IDE.jpeg)
+![Board_manager](images//Board_manager.png)
 
 Next, you must tell the IDE which COM port the Sensything is on. To do this, navigate to **Tools > Port > COM51**. Obviously, if your Sensything is on a different port, select that port instead.
 
-![selecting port](images//selecting port.jpeg)
+![port_selecting](images//port_selecting.png)
 
 **Step 4: Writing my first code to Sensything**
 
@@ -84,7 +84,7 @@ float convertToMilliV(int32_t i32data)
 Getting the above code is as easy as installing the Arduino library **https://github.com/Protocentral/Protocentral_ADS1220** and loading the simple ads1220 data acquisition example from the Arduino IDE's menu:**File > Open > Protocentral_ADS1220**.
 
 
-<img src="images/ads1220_read.png" width="800" height="500" />
+<img src="images/opening_ads1220.png" width="800" height="500" />
 
 
 **Step 5: Compiling and Uploading**
