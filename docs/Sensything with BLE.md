@@ -11,6 +11,25 @@ The Sensything  Application has been designed to simplify the detection of senso
 ### Step 1: Writing the code
 Using the Arduino IDE, write the code for the sensor of your choice. Refer to the above mentioned examples to get tips on writing the code.
 
+```c
+    adc_data=pc_ads1220.Read_SingleShot_SingleEnded_WaitForData(MUX_SE_CH0); // Getting analog channel 1 value
+    float vout = convertToMilliV(adc_data);
+    
+    int32_t ble = (int32_t) (vout * 100);
+    ads1220_data[0]= (uint8_t) ble;
+    ads1220_data[1]= (uint8_t) (ble >> 8);
+    ads1220_data[2]= (uint8_t) (ble >> 16);
+    ads1220_data[3]= (uint8_t) (ble >> 24);
+    
+    delay(1000);
+
+    // notify changed value
+    if (deviceConnected ) {
+    pCharacteristic->setValue(ads1220_data, 16);
+    pCharacteristic->notify(); 
+    }
+```
+
 **http://sensything.protocentral.com/sensything-with-arduino.html#step-4-writing-my-first-code-to-sensything**
 
 ### Step 2: Connecting the sensor
