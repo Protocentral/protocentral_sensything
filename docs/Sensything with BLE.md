@@ -62,19 +62,7 @@ Now that Arduino IDE is all set up, download the sensything ble code provided in
 ### Step 2: Connecting the sensor
 The next step is to connect the sensors to the Sensything board. Sensors that can be used along with sensything are both Analog and Qwiic. Hence you can choose sensor of your choice based on your application and can get the sensor values through BLE.You can refer the experiments provided as examples.
 
-http://sensything.protocentral.com/sensything-with-arduino.html#connecting-analog-sensors-to-sensything
+### Step 3: Uploading the code  
+Connect the Sensything board to your system using a USB cable. Once the code is selected in Arduino IDE you should select Tools / Board. Choose "ESP32 Dev Module" for sensything board. Also go ahead and choose the correct COM port after connecting the board to your computer then upload the code to your sensything board.
 
-**http://sensything.protocentral.com/sensything-with-arduino.html#connecting-analog-sensors-to-sensything**
 
-### Step 3: Uploading the code on to the board
-Connect the Sensything board to your system using a USB cable. Once the code is ready, go on to upload it on to the board.
-
-### Step 4: Using the Sensything Application
-Kindly refer to the Introduction video on how to download the Application and how to connect.
-
-**http://sensything.protocentral.com/#making-the-connections**
-
-### Step 5: Reading the sensor values
-Kindly refer to the Application section on the main page
-
-**http://sensything.protocentral.com/#understanding-the-sensything-application**
