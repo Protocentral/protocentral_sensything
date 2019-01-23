@@ -4,9 +4,15 @@ The Sensything board comes with the feature -
 
 In order for the device to connect with the Sensything Application, the Arduino code must be set up.
 
-### How to set up the BLE function?
+### How to set up sensything as BLE server?
 
-The Sensything  Application has been designed to simplify the detection of sensor values. With the inbuilt ADC (ADS1220) the precise values can be detected and displayed. Few simple steps:
+The Bluetooth Low Energy(BLE)  primary application is short distance transmission of small amounts of data (low bandwidth). The Sensything and it’s mobile application has been designed to simplify the sensor values in your smart devices. With the inbuilt ADC (ADS1220) the precise values can be displayed and monitored. The Sensything comes out with Bluetooth Low Energy (BLE). This is a quick introduction to use sensything as BLE. First, we’ll explore how BLE works with sensything and setting up sensything as BLE Server. Few simple steps:
+->Create a BLE Server. In this case, sensything acts as a BLE server.
+->Create a BLE Service.Create a BLE Characteristic on the Service.
+->Create a BLE Descriptor on the Characteristic.
+->Start the Service.
+->Start advertising, so it can be found by other devices.
+
 
 ### Step 1: Writing the code
 Using the Arduino IDE, write the code for the sensor of your choice and monitor the live values in the sensything mobile application. Refer to the above mentioned code for sensything with ble to get tips on writing/uploading the code.
