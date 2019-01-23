@@ -92,4 +92,4 @@ The sensor values are displayed in sensything mobile application and later the d
 Kindly refer to the Application section on the main page
 http://sensything.protocentral.com/#understanding-the-sensything-application
 
-[Download the full BLE code]
+[Download the full BLE code] 
