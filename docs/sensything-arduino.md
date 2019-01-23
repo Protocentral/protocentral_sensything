@@ -92,5 +92,5 @@ Getting the above code is as easy as installing the Arduino library **https://gi
 Compile the code and check for compilation without error and upload the code to Sensything so as to print the 4-channel analog readings in the Serial Monitor.
 
 
-<img src="images/1220_output.png" width="450" height="300"/>
+<img src="images/output_1220new.png" width="450" height="300"/>
 
