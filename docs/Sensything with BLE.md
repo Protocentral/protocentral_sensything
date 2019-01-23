@@ -9,31 +9,60 @@ In order for the device to connect with the Sensything Application, the Arduino 
 The Sensything  Application has been designed to simplify the detection of sensor values. With the inbuilt ADC (ADS1220) the precise values can be detected and displayed. Few simple steps:
 
 ### Step 1: Writing the code
-Using the Arduino IDE, write the code for the sensor of your choice. Refer to the above mentioned examples to get tips on writing the code.
+Using the Arduino IDE, write the code for the sensor of your choice and monitor the live values in the sensything mobile application. Refer to the above mentioned code for sensything with ble to get tips on writing/uploading the code.
+
+You need to define a UUID for the Service and Characteristic.
+```c
+#define SERVICE_UUID        "cd5c1105-4448-7db8-ae4c-d1da8cba36d0"
+#define CHARACTERISTIC_UUID "cd5c1106-4448-7db8-ae4c-d1da8cba36d0"
+```
+Then, you create a BLE device called “Sensything”. You can change this name to whatever you like.Create the BLE Device
+```c
+BLEDevice::init("Sensything");
+```
+In the following line, you set the Sensything as a server.
+```c
+BLEServer *pServer = BLEDevice::createServer();
+```
+After that, you create a service for the BLE server with the UUID defined earlier.
+
+ ```c
+ BLEService *pService = pServer->createService(SERVICE_UUID);
+ ```
+ 
+Then, you set the characteristic for that service. As you can see, you also use the UUID defined earlier, and you need to pass as arguments the characteristic’s properties. In this case, it’s: READ and WRITE.
+
+Now you can get the adc data from sensything 4 different channels and send the data value through ble packet format and display the live values in the sensything mobile application.
 
 ```c
-    adc_data=pc_ads1220.Read_SingleShot_SingleEnded_WaitForData(MUX_SE_CH0); // Getting analog channel 1 value
-    float vout = convertToMilliV(adc_data);
-    
-    int32_t ble = (int32_t) (vout * 100);
-    ads1220_data[0]= (uint8_t) ble;
-    ads1220_data[1]= (uint8_t) (ble >> 8);
-    ads1220_data[2]= (uint8_t) (ble >> 16);
-    ads1220_data[3]= (uint8_t) (ble >> 24);
-    
-    delay(1000);
-
-    // notify changed value
-    if (deviceConnected ) {
-    pCharacteristic->setValue(ads1220_data, 16);
-    pCharacteristic->notify(); 
-    }
+adc_data=pc_ads1220.Read_SingleShot_SingleEnded_WaitForData(MUX_SE_CH0); // Getting analog channel 1 value
+float vout = convertToMilliV(adc_data);
 ```
 
-**http://sensything.protocentral.com/sensything-with-arduino.html#step-4-writing-my-first-code-to-sensything**
+```c
+int32_t ble = (int32_t) (vout * 100);
+ads1220_data[0]= (uint8_t) ble;
+ads1220_data[1]= (uint8_t) (ble >> 8);
+ads1220_data[2]= (uint8_t) (ble >> 16);
+ads1220_data[3]= (uint8_t) (ble >> 24);
+```
+    
+After creating the characteristic, you can set the ads1220 value with the setValue() method.   
+
+```c
+// notify changed value
+if (deviceConnected ) {
+pCharacteristic->setValue(ads1220_data, 16);
+pCharacteristic->notify(); 
+}
+```
+    
+Now that Arduino IDE is all set up, download the sensything ble code provided in the github and open the sketch provided for this tutorial (link below).This example works with the sensything application on your phone. Make sure to install the app to follow along with this example.
 
 ### Step 2: Connecting the sensor
-The next step is to connect the sensors to the Sensything boards. Sensors that can be used are both Analog and Qwiic.
+The next step is to connect the sensors to the Sensything board. Sensors that can be used along with sensything are both Analog and Qwiic. Hence you can choose sensor of your choice based on your application and can get the sensor values through BLE.You can refer the experiments provided as examples.
+
+http://sensything.protocentral.com/sensything-with-arduino.html#connecting-analog-sensors-to-sensything
 
 **http://sensything.protocentral.com/sensything-with-arduino.html#connecting-analog-sensors-to-sensything**
 
