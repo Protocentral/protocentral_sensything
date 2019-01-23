@@ -13,11 +13,11 @@ The Sensything board comes with the feature -
 
 In order for the device to connect with the Sensything Application, the Arduino code must be set up.
 
-### How to set up the BLE function?
+#### How to set up the BLE function?
 
 The Sensything  Application has been designed to simplify the detection of sensor values. With the inbuilt ADC (ADS1220) the precise values can be detected and displayed. Few simple steps:
 
-### Step 1: Writing the code
+**Step 1: Writing the code**
 Using the Arduino IDE, write the code for the sensor of your choice and monitor the live values in the sensything mobile application. Refer to the above mentioned code for sensything with ble to get tips on writing/uploading the code.
 
 You need to define a UUID for the Service and Characteristic.
@@ -66,17 +66,17 @@ pCharacteristic->notify();
     
 Now that Arduino IDE is all set up, download the sensything ble code provided in the github and open the sketch provided for this tutorial (link below).This example works with the sensything application on your phone. Make sure to install the app to follow along with this example.
 
-### Step 2: Connecting the sensor
+**Step 2: Connecting the sensor**
 The next step is to connect the sensors to the Sensything board. Sensors that can be used along with sensything are both Analog and Qwiic. Hence you can choose sensor of your choice based on your application and can get the sensor values through BLE.You can refer the experiments provided as examples.
 
  <p align="center">   <img width="650" height="400" src="images/Connecting the sensors.JPG"> </p>
  
-### Step 3: Uploading the code  
+**Step 3: Uploading the code** 
 Connect the Sensything board to your system using a USB cable. Once the code is selected in Arduino IDE you should select Tools / Board. Choose "ESP32 Dev Module" for sensything board. Also go ahead and choose the correct COM port after connecting the board to your computer then upload the code to your sensything board.
 
  <p align="center">   <img width="650" height="400" src="images/Uploading_ the_code.jpg"> </p>
  
-### Step 4: Using the Sensything Application
+**Step 4: Using the Sensything Application**
 You can download the sensything android application from android playstore, and once you open the application and connect to the BLE device(Sensything) you can see the live analog channel/sensor values in the sensything mobile application.
 
  <p align="center">   <img width="400" height="250" src="images/Sensything_App.JPG"> </p>
@@ -84,7 +84,7 @@ You can download the sensything android application from android playstore, and 
 Kindly refer to the Introduction video on how to download the Application and how to connect.
 http://sensything.protocentral.com/#making-the-connections
 
-### Step 5: Reading the sensor values
+**Step 5: Reading the sensor values**
 The sensor values are displayed in sensything mobile application and later the data can be logged on to the device.
 
 <p align="center">   <img width="300" height="650" src="images/Reading_the_sensor_values.jpg"> </p>
