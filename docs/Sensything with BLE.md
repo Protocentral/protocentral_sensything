@@ -1,23 +1,17 @@
+
+### Sensything with BLE
+
+ <p align="center"> <img width="650" height="400" src="images/Sensything _with_BLE.jpg"> </p>
+
 The Sensything board comes with the feature -
 
 **Bluetooth 4.2 / Bluetooth Low Energy (BLE) compatible**
 
 In order for the device to connect with the Sensything Application, the Arduino code must be set up.
 
-### How to set up sensything as BLE server?
+### How to set up the BLE function?
 
-The Bluetooth Low Energy(BLE)  primary application is short distance transmission of small amounts of data (low bandwidth). The Sensything and it’s mobile application has been designed to simplify the sensor values in your smart devices. With the inbuilt ADC (ADS1220) the precise values can be displayed and monitored. The Sensything comes out with Bluetooth Low Energy (BLE). This is a quick introduction to use sensything as BLE. First, we’ll explore how BLE works with sensything and setting up sensything as BLE Server. Few simple steps:
-
-->Create a BLE Server. In this case, sensything acts as a BLE server.
-
-->Create a BLE Service.Create a BLE Characteristic on the Service.
-
-->Create a BLE Descriptor on the Characteristic.
-
-->Start the Service.
-
-->Start advertising, so it can be found by other devices.
-
+The Sensything  Application has been designed to simplify the detection of sensor values. With the inbuilt ADC (ADS1220) the precise values can be detected and displayed. Few simple steps:
 
 ### Step 1: Writing the code
 Using the Arduino IDE, write the code for the sensor of your choice and monitor the live values in the sensything mobile application. Refer to the above mentioned code for sensything with ble to get tips on writing/uploading the code.
@@ -31,7 +25,7 @@ Then, you create a BLE device called “Sensything”. You can change this name 
 ```c
 BLEDevice::init("Sensything");
 ```
-In the following line, you set the Sensything as a server.
+In the following line, you need to set the Sensything as a server.
 ```c
 BLEServer *pServer = BLEDevice::createServer();
 ```
@@ -79,7 +73,7 @@ Connect the Sensything board to your system using a USB cable. Once the code is 
  <p align="center">   <img width="650" height="400" src="images/Uploading_ the_code.jpg"> </p>
  
 ### Step 4: Using the Sensything Application
-You can download the sensything android application from android playstore, and once you open the application and connect to the BLE device(Sensyhting) you can see the live analog channel/sensor values in the sensything mobile application.
+You can download the sensything android application from android playstore, and once you open the application and connect to the BLE device(Sensything) you can see the live analog channel/sensor values in the sensything mobile application.
 
  <p align="center">   <img width="400" height="250" src="images/Sensything_App.JPG"> </p>
 
@@ -87,7 +81,9 @@ Kindly refer to the Introduction video on how to download the Application and ho
 http://sensything.protocentral.com/#making-the-connections
 
 ### Step 5: Reading the sensor values
-The sensor values are displayed in sensything mobile application which can also be monitored live based on different experiments.
+The sensor values are displayed in sensything mobile application and later the data can be logged on to the device.
+
+<p align="center">   <img width="300" height="650" src="images/Reading_the_sensor_values.jpg"> </p>
 
 Kindly refer to the Application section on the main page
 http://sensything.protocentral.com/#understanding-the-sensything-application
