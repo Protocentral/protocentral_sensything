@@ -42,3 +42,16 @@ status = pressure.getPressure(P,T);
 ```
 
 [Download the full code here](https://github.com/Protocentral/protocentral_sensything/tree/master/software/Sensything_Arduino/experiments/Qwiic/examples/sensything_bmp180)
+
+#### * Pin mapping and connection instructions:
+
+|Sensything pin label| BMP180 Sensor   |
+|----------------- |:--------------------:|
+| sda             | sda                |  
+| scl             | scl                |  
+| 3V3              | Vcc   |
+| GND                             | GND |
+
+|Connection Instructions | 
+|----------------- |
+| Connect the Qwiic BMP180 directly into the sensything Qwiic-1 or Qwiic-2 port |
