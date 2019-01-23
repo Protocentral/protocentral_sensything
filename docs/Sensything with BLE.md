@@ -37,9 +37,7 @@ Now you can get the adc data from sensything 4 different channels and send the d
 ```c
 adc_data=pc_ads1220.Read_SingleShot_SingleEnded_WaitForData(MUX_SE_CH0); // Getting analog channel 1 value
 float vout = convertToMilliV(adc_data);
-```
 
-```c
 int32_t ble = (int32_t) (vout * 100);
 ads1220_data[0]= (uint8_t) ble;
 ads1220_data[1]= (uint8_t) (ble >> 8);
