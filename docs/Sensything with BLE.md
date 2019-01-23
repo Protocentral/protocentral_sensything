@@ -65,4 +65,8 @@ The next step is to connect the sensors to the Sensything board. Sensors that ca
 ### Step 3: Uploading the code  
 Connect the Sensything board to your system using a USB cable. Once the code is selected in Arduino IDE you should select Tools / Board. Choose "ESP32 Dev Module" for sensything board. Also go ahead and choose the correct COM port after connecting the board to your computer then upload the code to your sensything board.
 
+### Step 4: Using the Sensything Application
+You can download the sensything android application from android playstore, and once you open the application and connect to the BLE device(Sensyhting) you can see the live analog channel/sensor values in the sensything mobile application.
 
+Kindly refer to the Introduction video on how to download the Application and how to connect.
+http://sensything.protocentral.com/#making-the-connections
