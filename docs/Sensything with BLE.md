@@ -87,7 +87,7 @@ Kindly refer to the Introduction video on how to download the Application and ho
 http://sensything.protocentral.com/#making-the-connections
 
 ### Step 5: Reading the sensor values
-The sensor values are displayed in sensything mobile application which can also be monitored live based on different application.
+The sensor values are displayed in sensything mobile application which can also be monitored live based on different experiments.
 
 Kindly refer to the Application section on the main page
 http://sensything.protocentral.com/#understanding-the-sensything-application
