@@ -8,7 +8,7 @@ weight: 2
 
 ![ESPidf](images/ESPidf.JPG)
 
-If you would like to take things up a notch, then we would suggest you to program Sensything using the ESP IDF. This section is intended to help users set up the software environment of applications using Espressif ESP32. Through a simple step-by-step process to illustrate how to use ESP-IDF(Espressif IoT Development Framework).
+If you would like to take things up a notch, then we would suggest you program Sensything using the ESP IDF. This section is intended to help users set up the software environment of applications using Espressif ESP32. Through a simple step-by-step process to illustrate how to use ESP-IDF(Espressif IoT Development Framework).
 
 #### What You Need?
 
@@ -28,7 +28,7 @@ There are three simple steps in the process of development:
 
 **Step 1: Setting up the toolchain**
 
-Windows don’t have a built-in “make” environment, so as well as installing the toolchain you will need a GNU-compatible environment. We can use the MSYS2 environment to provide this environment. The quick setup is to download the Windows all-in-one toolchain & MSYS2 zip file from dl.espressif.com:[Toolchain Setup- Windows](https://dl.espressif.com/dl/esp32_win32_msys2_environment_and_toolchain-20180110.zip)
+Windows don’t have a built-in “make” environment, so as well as installing the toolchain you will need a GNU-compatible environment. We can use the MSYS2 environment to provide this environment. The quick setup is to download the Windows all-in-one toolchain & MSYS2 zip file from dl.espressif.com: [Toolchain Setup- Windows](https://dl.espressif.com/dl/esp32_win32_msys2_environment_and_toolchain-20180110.zip)
 
 The quick setup is to download the linux all-in-one toolchain from Espressif website:[Toolchain Setup 64-bit Linux](https://dl.espressif.com/dl/xtensa-esp32-elf-linux64-1.22.0-80-g6c4433a-5.2.0.tar.gz) and [Toolchain Setup 32-bit Linux](https://dl.espressif.com/dl/xtensa-esp32-elf-linux32-1.22.0-80-g6c4433a-5.2.0.tar.gz) 
 
@@ -37,12 +37,12 @@ The quick setup is to download the ESP32 toolchain for macOS all-in-one toolchai
 
 **Step 2: Getting ESP-IDF**
 
-Besides the toolchain (that contains programs to compile and build the application), you also need ESP32 specific API / libraries. They are provided by Espressif in [ESP-IDF repository](https://www.google.com/url?q=https://docs.espressif.com/projects/esp-idf/en/latest/get-started/index.html). To get it, open terminal, navigate to the directory you want to put ESP-IDF, and clone it from espressif repository in github.
+Besides the toolchain (that contains programs to compile and build the application), you also need ESP32 specific API / libraries. They are provided by Espressif in [ESP-IDF repository](https://www.google.com/url?q=https://docs.espressif.com/projects/esp-idf/en/latest/get-started/index.html). To get it, open terminal, navigate to the directory you want to put ESP-IDF and clone it from espressif repository in github.
 
 
 **Step 3: Setting up**
 
-To set up the software environment and get esp-idf follow the instructions given in the link below for [Windows](https://docs.espressif.com/projects/esp-idf/en/latest/get-started/windows-setup.html),[Linux](https://docs.espressif.com/projects/esp-idf/en/latest/get-started/linux-setup.html),[Mac OS](https://docs.espressif.com/projects/esp-idf/en/latest/get-started/macos-setup.html)
+To set up the software environment and get esp-idf to follow the instructions given in the link below for [Windows](https://docs.espressif.com/projects/esp-idf/en/latest/get-started/windows-setup.html), [Linux](https://docs.espressif.com/projects/esp-idf/en/latest/get-started/linux-setup.html), [Mac OS](https://docs.espressif.com/projects/esp-idf/en/latest/get-started/macos-setup.html)
 
 To showcase how to program the Sensything board with ESP idf we have an example illustrated below:
 
@@ -62,19 +62,6 @@ MQ2 is a semiconductor sensor for Gas Detection. When we apply a bias to the sen
 
 ![Smoke sensor](images/Smoke sensor.jpg)
 
-##### * Excerpts from the code:
-
-```c
-float vout = (float)((ads1220_data_32*VFSR*1000)/FSR); 
-sensor_volt= vout /1024*5.0;                              // Measuring mq2 gas sensor voltage
-printf("Sensor voltage: %f \n",sensor_volt);
-RS_gas = (5.0-sensor_volt)/sensor_volt;                  // Calculating gas concentration
-printf("Gas Concentration : %f \n",RS_gas );
-int32_t ble_vout = (int32_t) (sensor_volt * 100);           // Sending the sensor value through ble
-```
-
-[Download the Smoke sensor code](https://www.google.com/url?q=https://github.com/Protocentral/protocentral_sensything/tree/master/software/Sensything_esp-idf/Sensything_experiments/Analog_Sensors/MQ2_GasSensor&sa=D&source=hangouts&ust=1547734061557000&usg=AFQjCNFY6pU_dnog8ALqcdMeEP1rqzBgyg)
-
 #### * Pin mapping and connection instructions:
 
 |Sensything pin label| MQ2 Gas Sensor   |
@@ -90,7 +77,23 @@ int32_t ble_vout = (int32_t) (sensor_volt * 100);           // Sending the senso
 |----------------- |
 | Place the etape MQ2 gas sensor to any of the analog pins A1, A2, A3 and A4.             |   
 | Here we are using A1.             | 
-| Using a breadboard connect a pin A,pin H,pin A1 to Vcc in sensything | 
+| Using a breadboard connect a pin A, pin H, pin A1 to Vcc in sensything | 
 | Connect pin B of MQ2 with Analog1 in Sensything.            | 
-| Using a breadboard connect a resistor between pin B1 in sensor and GND in breadboard.        | 
+| Using a breadboard connect a resistor between pin B1 in sensor and GND in the breadboard.        | 
 | Connect GND across the resistor from pin B1 with the GND pin in Sensything.            | 
+
+
+##### * Excerpts from the code:
+
+```c
+float vout = (float)((ads1220_data_32*VFSR*1000)/FSR); 
+sensor_volt= vout /1024*5.0;                              // Measuring mq2 gas sensor voltage
+printf("Sensor voltage: %f \n",sensor_volt);
+RS_gas = (5.0-sensor_volt)/sensor_volt;                  // Calculating gas concentration
+printf("Gas Concentration : %f \n",RS_gas );
+int32_t ble_vout = (int32_t) (sensor_volt * 100);           // Sending the sensor value through ble
+```
+
+[Download the Smoke sensor code](https://www.google.com/url?q=https://github.com/Protocentral/protocentral_sensything/tree/master/software/Sensything_esp-idf/Sensything_experiments/Analog_Sensors/MQ2_GasSensor&sa=D&source=hangouts&ust=1547734061557000&usg=AFQjCNFY6pU_dnog8ALqcdMeEP1rqzBgyg)
+
+
