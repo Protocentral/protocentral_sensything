@@ -32,6 +32,8 @@ float Vout = (float)((bit32*VFSR*1000)/FSR);     //In  mV
 
 [Download the etape Liquid level code](https://github.com/Protocentral/protocentral_sensything/tree/master/software/Sensything_Arduino/experiments/Analog_Sensors/examples/sensyThing_etape)
 
+#### * Pin mapping and connection instructions:
+
 |Sensything pin label| etape liquid Sensor   |
 |----------------- |:--------------------:|
 | A1             | Pin 3                |              
