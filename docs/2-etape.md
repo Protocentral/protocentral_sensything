@@ -31,3 +31,19 @@ float Vout = (float)((bit32*VFSR*1000)/FSR);     //In  mV
 ```
 
 [Download the etape Liquid level code](https://github.com/Protocentral/protocentral_sensything/tree/master/software/Sensything_Arduino/experiments/Analog_Sensors/examples/sensyThing_etape)
+
+|Sensything pin label| etape liquid Sensor   |
+|----------------- |:--------------------:|
+| A1             | Pin 3                |              
+| 3V3              | Pin 2   |
+| GND               | Pin 3-Across resistor |
+
+|Connection Instructions | 
+|----------------- |
+| Place the etape liquid level sensor to any of the analog pins A1, A2, A3 and A4.             |   
+| Here we are using A1.             | 
+| Connect pin2 of etape with Vcc in Sensything.            | 
+| Connect pin3 of sensor with Analog1 in Sensything.             |
+| Using a breadboard connect a resistor between pin3 in sensor and GND in breadboard.        | 
+| Connect GND across the resistor with the GND pin in Sensything.            | 
+
