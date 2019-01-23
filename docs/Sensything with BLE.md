@@ -1,4 +1,8 @@
-
+---
+menu: Sensything with BLE
+parent: getting-started.md
+weight: 4
+---
 ### Sensything with BLE
 
  <p align="center"> <img width="650" height="400" src="images/Sensything _with_BLE.jpg"> </p>
