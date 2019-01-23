@@ -38,3 +38,11 @@ else
 ```
 
 [Download the Alcohol Sensor code](https://github.com/Protocentral/protocentral_sensything/tree/master/software/Sensything_Arduino/experiments/Analog_Sensors/examples/sensyThing_mq303A)
+
+#### * Pin mapping between Sensything and Alcohol Sensor:
+
+Place the alcohol sensor to any of the analog pins A0, A1, A2, and A3.
+Here we are using A0.
+Connect Vcc of the MQ303A with the Vcc of the Sensything.
+Connect GND of the sensor with the GND of the Sensything.
+Connect output of sensor with A0 of the Sensything.
