@@ -45,13 +45,49 @@ status = pressure.getPressure(P,T);
 
 #### * Pin mapping and connection instructions:
 
-|Sensything pin label| BMP180 Sensor   |
-|----------------- |:--------------------:|
-| sda             | sda                |  
-| scl             | scl                |  
-| 3V3              | Vcc   |
-| GND                             | GND |
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg .tg-baqh{text-align:center;vertical-align:top}
+.tg .tg-s268{text-align:left}
+.tg .tg-nk0m{font-size:16px;font-family:Tahoma, Geneva, sans-serif !important;;text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+  <tr>
+    <th class="tg-s268"><span style="font-weight:600">Sensything pin label</span></th>
+    <th class="tg-nk0m"><span style="font-weight:bold">BMP180 Sensor</span></th>
+  </tr>
+  <tr>
+    <td class="tg-baqh">sda</td>
+    <td class="tg-baqh">sda</td>
+  </tr>
+  <tr>
+    <td class="tg-baqh">scl</td>
+    <td class="tg-baqh">scl</td>
+  </tr>
+  <tr>
+    <td class="tg-baqh">3V3</td>
+    <td class="tg-baqh">Vcc</td>
+  </tr>
+  <tr>
+    <td class="tg-baqh">GND</td>
+    <td class="tg-baqh">GND</td>
+  </tr>
+</table>
 
-|Connection Instructions | 
-|----------------- |
-| Connect the Qwiic BMP180 directly into the sensything Qwiic-1 or Qwiic-2 port |
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg .tg-s6z2{text-align:center}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+  <tr>
+    <th class="tg-s6z2"><span style="font-weight:bold">Connection Instructions</span></th>
+  </tr>
+  <tr>
+    <td class="tg-0lax">- Connect the Qwiic BMP180 directly into the sensything Qwiic-1 or Qwiic-2 port</td>
+  </tr>
+</table>
