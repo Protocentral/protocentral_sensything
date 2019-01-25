@@ -13,16 +13,18 @@ As you learn and explore our device, you may encounter some hiccups along the wa
 .tg  {border-collapse:collapse;border-spacing:0;}
 .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
 .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg .tg-m7z8{font-size:16px;font-family:Tahoma, Geneva, sans-serif !important;;text-align:center;vertical-align:top}
+.tg .tg-lvth{font-size:16px;text-align:center;vertical-align:top}
 .tg .tg-0lax{text-align:left;vertical-align:top}
 </style>
 <table class="tg">
   <tr>
-    <th class="tg-0lax">Issue</th>
-    <th class="tg-0lax">Solution</th>
+    <th class="tg-m7z8"><span style="font-weight:bold">Issue</span></th>
+    <th class="tg-lvth"><span style="font-weight:bold">Solution</span></th>
   </tr>
   <tr>
     <td class="tg-0lax">* If the port is not found?</td>
-    <td class="tg-0lax">-You can unplug the USB cable and plug it again.</td>
+    <td class="tg-0lax">- You can unplug the USB cable and plug it again.</td>
   </tr>
   <tr>
     <td class="tg-0lax"></td>
@@ -30,19 +32,19 @@ As you learn and explore our device, you may encounter some hiccups along the wa
   </tr>
   <tr>
     <td class="tg-0lax"></td>
-    <td class="tg-0lax">Try with a different system.</td>
+    <td class="tg-0lax">- Try changing the USB cable</td>
   </tr>
   <tr>
     <td class="tg-0lax">* If there is an uploading problem?</td>
     <td class="tg-0lax">- Check whether the switch is turned ON.</td>
   </tr>
   <tr>
-    <td class="tg-0lax">* Select the COM port and board in the board manager.</td>
     <td class="tg-0lax"></td>
+    <td class="tg-0lax">- Select the COM port and board in the board manager.</td>
   </tr>
   <tr>
-    <td class="tg-0lax">* Check for the latest version of arduino ide and esp-idf.</td>
     <td class="tg-0lax"></td>
+    <td class="tg-0lax">- Check for the latest version of arduino ide and esp-idf.</td>
   </tr>
   <tr>
     <td class="tg-0lax">* If the RGB does not power up?</td>
@@ -81,4 +83,3 @@ As you learn and explore our device, you may encounter some hiccups along the wa
     <td class="tg-0lax">- Allow the application to turn BLE ON in your device.</td>
   </tr>
 </table>
-
