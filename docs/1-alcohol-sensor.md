@@ -67,7 +67,7 @@ else
     <td class="tg-baqh">GND</td>
     <td class="tg-baqh">GND</td>
   </tr>
-</table> }
+</table> 
 
 &ensp;
 
