@@ -64,23 +64,75 @@ MQ2 is a semiconductor sensor for Gas Detection. When we apply a bias to the sen
 
 #### * Pin mapping and connection instructions:
 
-|Sensything pin label| MQ2 Gas Sensor   |
-|----------------- |:--------------------:|
-| 3V3             | A                 |              
-| 3V3              | H   |
-| 3V3               | A1 |
-| A1             | B                 |              
-| GND              | H   |
-| GND               | B1 - Across resistor 10K |
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg .tg-s6z2{text-align:center}
+.tg .tg-baqh{text-align:center;vertical-align:top}
+.tg .tg-s268{text-align:left}
+</style>
+<table class="tg">
+  <tr>
+    <th class="tg-s268"><span style="font-weight:600">Sensything pin label</span></th>
+    <th class="tg-s6z2"><span style="font-weight:600">MQ2 Gas Sensor</span></th>
+  </tr>
+  <tr>
+    <td class="tg-s6z2">3V3</td>
+    <td class="tg-s6z2">A</td>
+  </tr>
+  <tr>
+    <td class="tg-baqh">3V3</td>
+    <td class="tg-baqh">H</td>
+  </tr>
+  <tr>
+    <td class="tg-baqh">3V3</td>
+    <td class="tg-baqh">A1</td>
+  </tr>
+  <tr>
+    <td class="tg-baqh">A1</td>
+    <td class="tg-baqh">B</td>
+  </tr>
+  <tr>
+    <td class="tg-baqh">GND</td>
+    <td class="tg-baqh">H</td>
+  </tr>
+  <tr>
+    <td class="tg-baqh">GND</td>
+    <td class="tg-baqh">B1 - Across resistor 10K</td>
+  </tr>
+</table>
 
-|Connection Instructions | 
-|----------------- |
-| Place the etape MQ2 gas sensor to any of the analog pins A1, A2, A3 and A4.             |   
-| Here we are using A1.             | 
-| Using a breadboard connect a pin A, pin H, pin A1 to Vcc in sensything | 
-| Connect pin B of MQ2 with Analog1 in Sensything.            | 
-| Using a breadboard connect a resistor between pin B1 in sensor and GND in the breadboard.        | 
-| Connect GND across the resistor from pin B1 with the GND pin in Sensything.            | 
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg .tg-u8t5{font-family:Tahoma, Geneva, sans-serif !important;;text-align:center}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+  <tr>
+    <th class="tg-u8t5"><span style="font-weight:bold">Connection Instructions</span></th>
+  </tr>
+  <tr>
+    <td class="tg-0lax">- Place the etape MQ2 gas sensor to any of the analog pins A1, A2, A3 and A4.</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">- Here we are using A1.</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">- Using a breadboard connect a pin A, pin H, pin A1 to Vcc in Sensything.</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">- Connect pin B of MQ2 with Analog1 in Sensything.</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">- Using a breadboard connect a resistor between pin B1 in sensor and GND in the breadboard.</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">- Connect GND across the resistor from pin B1 with the GND pin in Sensything.</td>
+  </tr>
+</table>
 
 
 ##### * Excerpts from the code:
