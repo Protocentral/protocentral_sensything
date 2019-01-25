@@ -34,18 +34,60 @@ float Vout = (float)((bit32*VFSR*1000)/FSR);     //In  mV
 
 #### * Pin mapping and connection instructions:
 
-|Sensything pin label| etape liquid Sensor   |
-|----------------- |:--------------------:|
-| A1             | Pin 3                |              
-| 3V3              | Pin 2   |
-| GND               | Pin 3-Across resistor |
-
-|Connection Instructions | 
-|----------------- |
-| Place the etape liquid level sensor to any of the analog pins A1, A2, A3 and A4.             |   
-| Here we are using A1.             | 
-| Connect pin2 of etape with Vcc in Sensything.            | 
-| Connect pin3 of sensor with Analog1 in Sensything.             |
-| Using a breadboard connect a resistor between pin3 in sensor and GND in breadboard.        | 
-| Connect GND across the resistor with the GND pin in Sensything.            | 
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg .tg-baqh{text-align:center;vertical-align:top}
+.tg .tg-s268{text-align:left}
+.tg .tg-nk0m{font-size:16px;font-family:Tahoma, Geneva, sans-serif !important;;text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+  <tr>
+    <th class="tg-s268"><span style="font-weight:bold">Sensything pin label</span></th>
+    <th class="tg-nk0m"><span style="font-weight:bold">etape liquid Sensor</span></th>
+  </tr>
+  <tr>
+    <td class="tg-baqh">A1</td>
+    <td class="tg-baqh">Pin 3</td>
+  </tr>
+  <tr>
+    <td class="tg-baqh">3V3</td>
+    <td class="tg-baqh">Pin 2</td>
+  </tr>
+  <tr>
+    <td class="tg-baqh">GND</td>
+    <td class="tg-baqh">Pin 3-Across resistor</td>
+  </tr>
+</table>
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg .tg-s6z2{text-align:center}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+  <tr>
+    <th class="tg-s6z2"><span style="font-weight:bold">Connection Instructions</span></th>
+  </tr>
+  <tr>
+    <td class="tg-0lax">- Place the etape liquid level sensor to any of the analog pins A1, A2, A3 and A4.</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">- Here we are using A1.</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">- Connect pin2 of etape with Vcc in Sensything.</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">- Connect pin3 of sensor with Analog1 in Sensything.</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">- Using a breadboard connect a resistor between pin3 in sensor and GND in breadboard.</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">- Connect GND across the resistor with the GND pin in Sensything.</td>
+  </tr>
+</table>  | 
 
