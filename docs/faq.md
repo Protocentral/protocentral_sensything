@@ -116,3 +116,4 @@ Firstly, connect the battery to the Sensything board, then switch on the board.
     <td class="tg-0pky">There is an On-board USB battery charger.Ensure that the battery is plugged to the board and then connect the USB cable.  You can use a 5v power adapter as the power source.</td>
   </tr>
 </table>
+
