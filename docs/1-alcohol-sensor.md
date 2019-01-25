@@ -69,14 +69,6 @@ else
   </tr>
 </table>
 
-table {
- border-collapse: collapse;
- border: 1px solid gray;
- width: 50%;
- float: left;
- border-collapse: separate;
- border-spacing: 10px;
-}
 
 
 <style type="text/css">
