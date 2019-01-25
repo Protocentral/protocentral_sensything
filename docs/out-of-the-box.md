@@ -30,14 +30,45 @@ This video throws light on how to set up your Sensything device. Get set Go!
 
 They can be listed as follows:
 
-|Sensything pin label| Analog Channel   |
-|----------------- |:--------------------:|
-| A1             | Channel 1                  |            
-| A2       | Channel 2                   |
-| A3            | Channel 3                   |  
-| A4             | Channel 4                  |  
-| 3V3              | Supply - Board which supports 3.3V   |
-| GND                             | Ground |
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg .tg-s6z2{text-align:center}
+.tg .tg-baqh{text-align:center;vertical-align:top}
+.tg .tg-s268{text-align:left}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+  <tr>
+    <th class="tg-s268"><span style="font-weight:600">Sensything pin label</span></th>
+    <th class="tg-s6z2"><span style="font-weight:600">Analog Channel</span></th>
+  </tr>
+  <tr>
+    <td class="tg-s6z2">A1</td>
+    <td class="tg-s6z2">Channel 1</td>
+  </tr>
+  <tr>
+    <td class="tg-baqh">A2</td>
+    <td class="tg-baqh">Channel 2</td>
+  </tr>
+  <tr>
+    <td class="tg-baqh">A3</td>
+    <td class="tg-baqh">Channel 3</td>
+  </tr>
+  <tr>
+    <td class="tg-baqh">A4</td>
+    <td class="tg-baqh">Channel 4</td>
+  </tr>
+  <tr>
+    <td class="tg-baqh">3V3</td>
+    <td class="tg-0lax">Supply - Board which supports 3.3V</td>
+  </tr>
+  <tr>
+    <td class="tg-baqh">GND</td>
+    <td class="tg-baqh">Ground</td>
+  </tr>
+</table>
 
 A short video suggests how to connect a basic analog sensor like the Piezo vibration sensor to Sensything.
 
