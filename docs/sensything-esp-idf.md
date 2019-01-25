@@ -68,42 +68,40 @@ MQ2 is a semiconductor sensor for Gas Detection. When we apply a bias to the sen
 .tg  {border-collapse:collapse;border-spacing:0;}
 .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
 .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
-.tg .tg-s6z2{text-align:center}
-.tg .tg-baqh{text-align:center;vertical-align:top}
-.tg .tg-s268{text-align:left}
+.tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:top}
+.tg .tg-uys7{border-color:inherit;text-align:center}
+.tg .tg-xldj{border-color:inherit;text-align:left}
 </style>
 <table class="tg">
   <tr>
-    <th class="tg-s268"><span style="font-weight:600">Sensything pin label</span></th>
-    <th class="tg-s6z2"><span style="font-weight:600">MQ2 Gas Sensor</span></th>
+    <th class="tg-xldj"><span style="font-weight:600">Sensything pin label</span></th>
+    <th class="tg-uys7"><span style="font-weight:600">MQ2 Gas Sensor</span></th>
   </tr>
   <tr>
-    <td class="tg-s6z2">3V3</td>
-    <td class="tg-s6z2">A</td>
+    <td class="tg-uys7">3V3</td>
+    <td class="tg-uys7">A</td>
   </tr>
   <tr>
-    <td class="tg-baqh">3V3</td>
-    <td class="tg-baqh">H</td>
+    <td class="tg-c3ow">3V3</td>
+    <td class="tg-c3ow">H</td>
   </tr>
   <tr>
-    <td class="tg-baqh">3V3</td>
-    <td class="tg-baqh">A1</td>
+    <td class="tg-c3ow">3V3</td>
+    <td class="tg-c3ow">A1</td>
   </tr>
   <tr>
-    <td class="tg-baqh">A1</td>
-    <td class="tg-baqh">B</td>
+    <td class="tg-c3ow">A1</td>
+    <td class="tg-c3ow">B</td>
   </tr>
   <tr>
-    <td class="tg-baqh">GND</td>
-    <td class="tg-baqh">H</td>
+    <td class="tg-c3ow">GND</td>
+    <td class="tg-c3ow">H</td>
   </tr>
   <tr>
-    <td class="tg-baqh">GND</td>
-    <td class="tg-baqh">B1 - Across resistor 10K</td>
+    <td class="tg-c3ow">GND</td>
+    <td class="tg-c3ow">B1 - Across resistor 10K</td>
   </tr>
 </table>
-
-
 
 
 <style type="text/css">
