@@ -38,10 +38,4 @@ Firstly, connect the battery to the Sensything board, then switch on the board.
 | What is the power source?                          | There is a Li-ion battery (3.7 V, 1000 mAH) as power source.This would be applicable to those who ordered the basic kits.                                                    |
 | How do I charge the battery?                       | There is an On-board USB battery charger.Ensure that the battery is plugged to the board and then connect the USB cable.  You can use a 5v power adapter as the power source. |
 
-+----------------------------------+---------+------------------------+----------------+
-|               Col1               |  Col2   |          Col3          | Numeric Column |
-+----------------------------------+---------+------------------------+----------------+
-| Value 1                          | Value 2 | 123                    |           10.0 |
-| Separate                         | cols    | with a tab or 4 spaces |       -2,027.1 |
-| This is a row with only one cell |         |                        |                |
-+----------------------------------+---------+------------------------+----------------+
+
