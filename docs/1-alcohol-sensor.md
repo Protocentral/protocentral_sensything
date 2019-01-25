@@ -42,16 +42,57 @@ else
 #### * Pin mapping and connection instructions:
 
 
-|Sensything pin label| Alcohol Sensor   |
-|----------------- |:--------------------:|
-| A1             | Analog out                |              
-| 3V3              | Vcc   |
-| GND                             | GND |
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg .tg-baqh{text-align:center;vertical-align:top}
+.tg .tg-s268{text-align:left}
+.tg .tg-nk0m{font-size:16px;font-family:Tahoma, Geneva, sans-serif !important;;text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+  <tr>
+    <th class="tg-s268"><span style="font-weight:600">Sensything pin label</span></th>
+    <th class="tg-nk0m"><span style="font-weight:600">Alcohol Sensor</span></th>
+  </tr>
+  <tr>
+    <td class="tg-baqh">A1</td>
+    <td class="tg-baqh">Analog out</td>
+  </tr>
+  <tr>
+    <td class="tg-baqh">3V3</td>
+    <td class="tg-baqh">VCC</td>
+  </tr>
+  <tr>
+    <td class="tg-baqh">GND</td>
+    <td class="tg-baqh">GND</td>
+  </tr>
+</table>
 
-|Connection Instructions | 
-|----------------- |
-| Place the alcohol sensor to any of the analog pins A1, A2, A3 and A4.             |   
-| Here we are using A1.             | 
-| Connect Vcc of MQ303A with Vcc in Sensything.            | 
-| Connect GND of sensor with GND in Sensything.             | 
-| Connect output of sensor with Analog1 in Sensything.             | 
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg .tg-u8t5{font-family:Tahoma, Geneva, sans-serif !important;;text-align:center}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+  <tr>
+    <th class="tg-u8t5"><span style="font-weight:bold">Connection Instructions</span></th>
+  </tr>
+  <tr>
+    <td class="tg-0lax">- Place the alcohol sensor to any of the analog pins A1, A2, A3 and A4.</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">- Here we are using A1.</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">- Connect VCC of MQ303A with VCC in Sensything.</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">- Connect GND of sensor with GND in Sensything.</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">- Connect output of sensor with Analog 1 in Sensything.</td>
+  </tr>
+</table>
