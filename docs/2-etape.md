@@ -61,7 +61,7 @@ float Vout = (float)((bit32*VFSR*1000)/FSR);     //In  mV
   </tr>
 </table>
 
-
+&ensp;
 
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
