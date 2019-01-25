@@ -15,13 +15,12 @@ Firstly, connect the battery to the Sensything board, then switch on the board.
 .tg  {border-collapse:collapse;border-spacing:0;}
 .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
 .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
-.tg .tg-xldj{border-color:inherit;text-align:left}
-.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+.tg .tg-s268{text-align:left}
 </style>
 <table class="tg">
   <tr>
-    <th class="tg-xldj">Question</th>
-    <th class="tg-xldj">Solution</th>
+    <th class="tg-s268"><span style="font-weight:bold">Question</span></th>
+    <th class="tg-s268"><span style="font-weight:bold">Solution</span></th>
   </tr>
   <tr>
     <td class="tg-xldj">Which microcontroller is used?</td>
