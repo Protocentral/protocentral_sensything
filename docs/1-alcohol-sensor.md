@@ -69,7 +69,7 @@ else
   </tr>
 </table>
 
-
+table { margin-top: 10px; }
 
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
