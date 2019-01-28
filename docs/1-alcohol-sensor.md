@@ -98,3 +98,4 @@ else
     <td class="tg-0lax">- Connect output of sensor with Analog 1 in Sensything.</td>
   </tr>
 </table>
+
