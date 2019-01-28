@@ -6,7 +6,6 @@ weight: 0
 ### Sensything- “Out of the Box”
 One unique feature that stands out with the Sensything is its “out of the box” approach. You may wonder what is so unique about it. Where else can you find a board that you can immediately use once you unbox it. The board is **“READY TO USE”**. For all, you eager enthusiasts, who cannot wait to explore new hardware then do go for it. We would be happy to hear from you!
 
-  <div align="center"> **NO ADDITIONAL PROGRAMMING REQUIRED** </div>
 
 #### What’s in the box?
 * 1x Sensything main Board
