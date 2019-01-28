@@ -103,6 +103,7 @@ MQ2 is a semiconductor sensor for Gas Detection. When we apply a bias to the sen
   </tr>
 </table>
 
+&ensp;
 
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
