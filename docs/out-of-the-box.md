@@ -69,6 +69,8 @@ They can be listed as follows:
   </tr>
 </table>
 
+
+
 A short video suggests how to connect a basic analog sensor like the Piezo vibration sensor to Sensything.
 
 <iframe width="640" height="360" src="https://player.vimeo.com/video/307550473" frameborder="0" allowFullScreen mozallowfullscreen webkitAllowFullScreen></iframe>
