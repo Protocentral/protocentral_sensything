@@ -9,13 +9,13 @@ weight: 0
 Accelerometer sensor(BNO080) with sensything is used for measuring acceleration, which is the rate of change of the velocity of an object. This measure in meters per second squared (m/s2) or in G-forces (g). A single G-force for us here on planet Earth is equivalent to 9.8 m/s2, but this does vary slightly with elevation (and will be a different value on different planets due to variations in gravitational pull). 
 
 #### * Objective
-To determine the sensing vibrations  in systems or for orientation applications.
+To determine the sensing vibrations using sensything in systems or for orientation applications.
 
 #### * Application
-The accelerometer sensor(BNO080) and  it can be used for service robots such as cleaners that employ Simultaneous Localization And Mapping (SLAM) or other ‘intelligent’ navigation solutions and automated movement projects.
+The accelerometer sensor(BNO080) can be used for service robots such as cleaners that employ Simultaneous Localization And Mapping (SLAM) or other ‘intelligent’ navigation solutions and automated projects.
 
 #### * Procedure
-BNO080 accelerometer sensor is used for measuring acceleration. It integrates a triaxial 12-bit accelerometer with a range of ±8g, the sensor can be interfaced with sensything using qwiic connector very quick or just plug to read data from sensor. Once you upload the code given below using Arduino IDE to your sensything you will get x,y and z axes data printed in your serial monitor. Also, be sure to check out the labeling on the front of the board that indicates the orientation of the positive X, Y, and Z axes so you know which way your data is pointing.
+BNO080 accelerometer sensor is used for measuring acceleration. It integrates a triaxial 12-bit accelerometer with a range of ±8g, the sensor can be interfaced with sensything using qwiic connector very quick or just plug to read data from sensor. Once you upload the code given below using Arduino IDE to your sensything you will can read the x,y and z axes data printed in your serial monitor. Also, be sure to check out the labeling on the front of the board that indicates the orientation of the positive X, Y, and Z axes so you know which way your data is pointing.
 
 #### * Excerpts from the code:
 
@@ -41,18 +41,27 @@ float z = myIMU.getAccelZ();         // Accelerometer reading of Z
   <tr>
     <th class="tg-s268"><span style="font-weight:600">Sensything pin label</span></th>
     <th class="tg-nk0m"><span style="font-weight:600">Alcohol Sensor</span></th>
+    <th class="tg-nk0m"><span style="font-weight:600">Colour</span></th>
   </tr>
   <tr>
-    <td class="tg-baqh">A1</td>
-    <td class="tg-baqh">Analog out</td>
+    <td class="tg-baqh">SDA</td>
+    <td class="tg-baqh">Serial Data</td>
+    <td class="tg-baqh">Blue</td>
+  </tr>
+  <tr>
+    <td class="tg-baqh">SCL</td>
+    <td class="tg-baqh">Serial Clock</td>
+    <td class="tg-baqh">Yellow</td>
   </tr>
   <tr>
     <td class="tg-baqh">3V3</td>
-    <td class="tg-baqh">VCC</td>
+    <td class="tg-baqh">3v3</td>
+    <td class="tg-baqh">Red</td>
   </tr>
   <tr>
     <td class="tg-baqh">GND</td>
     <td class="tg-baqh">GND</td>
+    <td class="tg-baqh">Black</td>
   </tr>
 </table> 
 
@@ -74,5 +83,8 @@ float z = myIMU.getAccelZ();         // Accelerometer reading of Z
   </tr>
   <tr>
     <td class="tg-0lax">- Plug the Qwiic Connector for interface between sensor and sensything.</td>
+  </tr>
+     <tr>
+    <td class="tg-0lax">- Upload the code using Arduino IDE and read accelerometer readings.</td>
   </tr>
 </table>
