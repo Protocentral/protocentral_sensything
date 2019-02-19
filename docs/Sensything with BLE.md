@@ -81,15 +81,13 @@ You can download the sensything android application from android playstore, and 
 
  <p align="center">   <img width="400" height="250" src="images/Sensything_App.JPG"> </p>
 
-Kindly refer to the Introduction video on how to download the Application and how to connect.
-http://sensything.protocentral.com/#making-the-connections
+Kindly refer to the Introduction video on how to download the Application and how to [connect](http://sensything.protocentral.com/#making-the-connections)
 
 **Step 5: Reading the sensor values**
 The sensor values are displayed in sensything mobile application and later the data can be logged on to the device.
 
 <p align="center">   <img width="300" height="650" src="images/Reading_the_sensor_values.jpg"> </p>
 
-Kindly refer to the Application section on the main page
-http://sensything.protocentral.com/#understanding-the-sensything-application
+Kindly refer to the Application section on the [main page](http://sensything.protocentral.com/#understanding-the-sensything-application)
 
 [Download the BLE code](https://github.com/Protocentral/protocentral_sensything/tree/master/software/Sensything_Arduino/Sensything_ble)
