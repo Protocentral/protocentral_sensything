@@ -88,4 +88,6 @@ float z = myIMU.getAccelZ();         // Accelerometer reading of Z
     <td class="tg-0lax">- Upload the code using Arduino IDE and read accelerometer readings.</td>
   </tr>
 </table>
+
+
 [Download the Accelerometer Sensor code](https://github.com/Protocentral/protocentral_sensything/tree/master/software/Sensything_Arduino/experiments/Qwiic/BNO080)
