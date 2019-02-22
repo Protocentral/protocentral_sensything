@@ -1,7 +1,7 @@
 ---
-menu: Experiment 3 - Pressure Sensor
+menu: Experiment 2 - Pressure Sensor
 parent: Connecting-qwiic-sensors.md
-weight: 0
+weight: 1
 ---
 
 ### Experiment 2 - Barometric pressure sensor
