@@ -17,6 +17,8 @@ The accelerometer sensor(BNO080) can be used for service robots such as cleaners
 #### * Procedure
 BNO080 accelerometer sensor is used for measuring acceleration. It integrates a triaxial 12-bit accelerometer with a range of ±8g, the sensor can be interfaced with sensything using qwiic connector very quick or just plug to read data from sensor. Once you upload the code given below using Arduino IDE to your sensything you will can read the x,y and z axes data printed in your serial monitor. Also, be sure to check out the labeling on the front of the board that indicates the orientation of the positive X, Y, and Z axes so you know which way your data is pointing.
 
+![Connection.jpg](images/Connection.jpg)
+
 #### * Excerpts from the code:
 
 ```c
