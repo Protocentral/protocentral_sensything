@@ -1,7 +1,7 @@
 ---
 menu: Experiment 1 - Measuring Acceleration
-parent: connecting-sensors.md
-weight: 0
+parent: Connecting-qwiic-sensors.md
+weight: 1
 ---
 ### Experiment 1 - Measuring Acceleration
 
