@@ -25,8 +25,6 @@ float y = myIMU.getAccelY();         // Accelerometer reading of Y
 float z = myIMU.getAccelZ();         // Accelerometer reading of Z
 ```
 
-[Download the Accelerometer Sensor code]()
-
 #### * Pin mapping and connection instructions:
 
 <style type="text/css">
@@ -88,3 +86,4 @@ float z = myIMU.getAccelZ();         // Accelerometer reading of Z
     <td class="tg-0lax">- Upload the code using Arduino IDE and read accelerometer readings.</td>
   </tr>
 </table>
+[Download the Accelerometer Sensor code](https://github.com/Protocentral/protocentral_sensything/tree/master/software/Sensything_Arduino/experiments/Qwiic/BNO080)
