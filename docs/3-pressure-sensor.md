@@ -4,7 +4,7 @@ parent: Connecting-qwiic-sensors.md
 weight: 0
 ---
 
-### Experiment 3 - Barometric pressure sensor
+### Experiment 2 - Barometric pressure sensor
 
 #### * Objective
 
