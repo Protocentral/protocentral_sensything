@@ -1,4 +1,4 @@
-Sensything as an IOT device
+### Sensything as an IOT device
 
 ![Adafruit-IO-Logo](images/Adafruit-IO-Logo.png)
 
