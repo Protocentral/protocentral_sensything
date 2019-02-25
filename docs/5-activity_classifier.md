@@ -1,9 +1,11 @@
 # Activity Classifier
+
 ---
-menu: Experiment 3 - Activity Classifier
+menu: Experiment 1 - Activity Classifier
 parent: Connecting-qwiic-sensors.md
 weight: 0
 ---
+
 ### Experiment 1 - E
 
 #### * Introduction
