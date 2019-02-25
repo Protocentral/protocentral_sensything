@@ -1,9 +1,9 @@
 ---
-menu: Experiment 1 - Measuring Acceleration
+menu: Experiment 2 - Measuring Acceleration
 parent: Connecting-qwiic-sensors.md
 weight: 0
----
-### Experiment 1 - Measuring Acceleration
+---###
+ Experiment 2 - Measuring Acceleration
 
 #### * Introduction
 Accelerometer sensor(BNO080) with sensything is used for measuring acceleration, which is the rate of change of the velocity of an object. This measure in meters per second squared (m/s2) or in G-forces (g). A single G-force for us here on planet Earth is equivalent to 9.8 m/s2, but this does vary slightly with elevation (and will be a different value on different planets due to variations in gravitational pull). 
