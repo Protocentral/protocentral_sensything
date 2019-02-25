@@ -1,12 +1,10 @@
-# Activity Classifier
-
 ---
-menu: Experiment 1 - Activity Classifier
+menu: Experiment 3 - Activity Classifier
 parent: Connecting-qwiic-sensors.md
 weight: 0
----
+---###
 
-### Experiment 1 - E
+ Experiment 3 - Activity Classifier
 
 #### * Introduction
 Activity classification is the task of identifying a pre-defined set of physical actions using motion-sensory inputs.The activity classifier is somewhat similar to the stability classifier which it uses the on-board cortex in the sensor .to determine. 
