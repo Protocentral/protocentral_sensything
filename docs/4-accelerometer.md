@@ -1,5 +1,5 @@
 ---
-menu: Qwiic-Experiment 2 - Measuring Acceleration
+menu: Qwiic-Experiment 1 - Measuring Acceleration
 parent: Connecting-qwiic-sensors.md
 weight: 0
 ---
