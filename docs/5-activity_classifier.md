@@ -7,16 +7,16 @@ weight: 0
 ### Experiment 3 - Activity Classifier
 
 #### * Introduction
-Activity classification is the task of identifying a pre-defined set of physical actions using motion-sensory inputs.The activity classifier is somewhat similar to the stability classifier which it uses the on-board cortex in the sensor .to determine. 
+Activity classification is the task of identifying a pre-defined set of physical actions using motion-sensory inputs. The activity classifier is somewhat similar to the stability classifier which it uses the on-board cortex in the sensor .to determine. 
 
 #### * Objective
-To determine what activity the IMU is doing and create a model using sensything to classify physical activities done by users or system.
+To determine what activity the IMU is doing and create a model using Sensything to classify physical activities done by users or the system.
 
 #### * Application
-The BNO080 Inertial Measurement Unit (IMU) can be used to monitor activity levels for health applications, daily physical action of human-beings with motion-sensory inputs.
+The BNO080 Inertial Measurement Unit (IMU) can be used to monitor activity levels for health applications, the daily physical activity of human-beings with motion-sensory inputs.
 
 #### * Procedure
-BNO080 sensor is used for activity classifier, the sensor data is combined and drift corrected into meaningful, accurate IMU information. It's perfect for any project that needs to sense orientation or motion. The sensor can be interfaced with sensything using Qwiic connector very quick or just plug to read data from sensor. Once you upload the code given below using esp-idf to your sensything you will get the activity classification based on your input or movement in the motion-sensory input hence the data will be printed in your serial monitor. 
+BNO080 sensor is used as an activity classifier, the sensor data is combined and drift corrected into meaningful, accurate IMU information. It is perfect for any project that needs to sense orientation or motion. The sensor can be interfaced with Sensything using the Qwiic connector, which makes it very quick to just plug in to read data from sensor. Once you upload the code given below using the esp-idf to your Sensything,you will get the activity classification based on your input or movement in the motion-sensory input. Hence the data will be printed on your serial monitor. 
 
 ![Connection.jpg](images/Connection.jpg)
 
