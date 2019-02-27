@@ -1,3 +1,7 @@
+---
+menu: Connecting-qwiic-sensors
+weight: 4
+---
 ### Sensything as an IOT device
 
 ![Adafruit-IO-Logo](images/Adafruit-IO-Logo.png)
