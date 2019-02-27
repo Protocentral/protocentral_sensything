@@ -1,5 +1,5 @@
 ---
-menu: Qwiic-Experiment 3 - Activity Classifier
+menu: Experiment 3 - Activity Classifier
 parent: Connecting-qwiic-sensors.md
 weight: 2
 --- 
