@@ -1,5 +1,5 @@
 ---
-menu: Connecting-qwiic-sensors
+menu: Sensything as an IOT device
 weight: 4
 ---
 ### Sensything as an IOT device
