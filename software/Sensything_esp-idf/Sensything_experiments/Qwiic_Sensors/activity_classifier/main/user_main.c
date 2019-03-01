@@ -273,8 +273,8 @@ void ICACHE_FLASH_ATTR init_wifi(bool modeAP) {
 		//Connect to the defined access point.
 		wifi_config_t config;
 		memset(&config, 0, sizeof(config));
-		sprintf((char*)config.sta.ssid, "protocentral");			// @TODO: Changeme
-		sprintf((char*)config.sta.password, "open1234"); 	// @TODO: Changeme
+		sprintf((char*)config.sta.ssid, "SSID");			// @TODO: Changeme
+		sprintf((char*)config.sta.password, "password"); 	// @TODO: Changeme
 		esp_wifi_set_config(WIFI_IF_STA, &config);
 		esp_wifi_connect();
 	}
