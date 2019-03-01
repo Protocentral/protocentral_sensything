@@ -1,0 +1,229 @@
+<html>
+<head><title>Activity Classifier</title>
+</head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<script type="text/javascript" src="../gauge.min.js"></script>
+
+<script language="javascript" type="text/javascript">
+
+  var wsUri = "ws://"+window.location.host+"/websocket/ws.cgi";
+  var output;
+  var gauge;
+
+
+  function init()
+  {
+    output = document.getElementById("output");
+    testWebSocket();
+  }
+
+  function testWebSocket()
+  {
+    websocket = new WebSocket(wsUri);
+    websocket.onopen = function(evt) { onOpen(evt) };
+    websocket.onclose = function(evt) { onClose(evt) };
+    websocket.onmessage = function(evt) { onMessage(evt) };
+    websocket.onerror = function(evt) { onError(evt) };
+  }
+
+  function onOpen(evt)
+  {
+    writeToScreen("");
+    
+  }
+
+  function onClose(evt)
+  {
+    writeToScreen("");
+  }
+
+  function onMessage(evt)
+  {
+    
+    var fl=parseFloat(evt.data);
+    var arr_vals=evt.data.split(',');
+
+    gauge.set(fl);
+
+  }
+
+  function onError(evt)
+  {
+    writeToScreen('<span style="color: red;">ERROR:</span> ' + evt.data);
+  }
+
+  function doSend(message)
+  {
+    writeToScreen("SENT: " + message);
+    websocket.send(message);
+  }
+
+  function writeToScreen(message)
+  {
+    var pre = document.createElement("p");
+    pre.style.wordWrap = "break-word";
+    pre.innerHTML = message;
+    //output.appendChild(pre);
+    //output.replaceChild(pre);
+  }
+
+  window.addEventListener("load", init, false);
+
+  window.onload=function(e) {
+    //triggerReload();
+
+ var opts = {
+  angle: -0.15, // The span of the gauge arc
+  lineWidth: 0.25, // The line thickness
+  radiusScale: 1, // Relative radius
+  pointer: {
+    length: 0.60, // // Relative to gauge radius
+    strokeWidth: 0.024, // The thickness
+    color: '#000000', // Fill color
+  },
+
+  limitMax: false,     // If false, max value increases automatically if value > maxValue
+  limitMin: false,     // If true, the min value of the gauge will be fixed
+  colorStart: '#6FADCF',   // Colors
+  colorStop: '#8FC0DA',    // just experiment with them
+  strokeColor: '#E0E0E0',  // to see which ones work best for you
+  generateGradient: true,
+  highDpiSupport: true,     // High resolution support
+
+         
+     
+  staticLabels: {
+  font: "10px sans-serif",  // Specifies font
+  labels: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],  // Print labels at these values
+  color: "#FFFFFF",  // Optional: Label text color
+  fractionDigits: 0  // Optional: Numerical precision. 0=round off.
+  },
+
+   staticZones: [
+   {strokeStyle: "#d3cdcd", min: 0, max: 1}, 
+   {strokeStyle: "#FFDD00", min: 1, max: 2}, 
+   {strokeStyle: "#30B32D", min: 2, max: 3}, 
+   {strokeStyle: "#dd1616", min: 3, max: 4}, 
+   {strokeStyle: "#878181", min: 4, max: 5},  
+   {strokeStyle: "#8702f4", min: 5, max: 6},
+   {strokeStyle: "#f44602", min: 6, max: 7},
+   {strokeStyle: "#f4023a", min: 7, max: 8},
+   {strokeStyle: "#0297f4", min: 8, max: 9}
+],
+
+
+
+};
+      var target = document.getElementById('canvas-gauge'); // your canvas element
+      gauge = new Gauge(target).setOptions(opts); // create sexy gauge!
+      gauge.maxValue = 9; // set max gauge value
+      gauge.setMinValue(0);  // Prefer setter over gauge.minValue = 0
+      gauge.animationSpeed = 32; // set animation speed (32 is default value)
+      gauge.set('output'); // set actual value
+      gauge.setTextField(document.getElementById("preview-textfield"));
+
+  }
+
+</script>
+</head>
+<body>
+       
+
+    <div class="flex-container-panel">
+      <img style="width:30%; " src="../sensything_pc.svg">
+     
+        <svg width="0" height="30">
+         
+        </svg>
+       
+      
+  </div>
+
+  
+  <div class="flex-container">
+      <div class="flex-item"><canvas id="canvas-gauge" style="width: 700"></canvas>
+      <div id="preview-textfield" class="reset" style="font-size: 46px;" >0</div></div>
+
+      
+  </div>
+
+   
+      
+  </div>
+  <div id="output"></div>
+
+<style>
+table, th, td {
+  
+  
+ 
+  width:15%;
+  text-align:left;
+  font-weight: bold;
+  padding: 0px;
+  margin-top: 150px;
+    margin-left: 900px;
+  background-color: #9aa59a;
+}
+</style>
+
+<table>
+  <tr>
+    <th>Number</th>
+    <th>Activity</th>
+    <th>Colour</th>
+    
+  </tr>
+  <tr>
+    <td>0</td>
+    <td>Unknown</td>
+    <td>White</td>
+    
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>In-vehicle</td>
+    <td>Yellow</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>On-bicycle</td>
+    <td>Green</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>On-foot</td>
+    <td>Red</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>Still</td>
+    <td>Grey</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>Tilting</td>
+    <td>Purple</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>Walking</td>
+    <td>Orange</td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>Running</td>
+    <td>Pink</td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td>On stairs</td>
+    <td>Blue</td>
+  </tr>
+</table>
+
+</body>
+

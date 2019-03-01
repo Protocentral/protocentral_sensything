@@ -1,0 +1,114 @@
+
+body {
+font-family: sans-serif;
+    font-size: 1.5vw;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    margin-top: 0px;
+    margin-right: 450px;
+    color: #FFF; 
+    background-color: #000000; 
+   /* background: linear-gradient(to bottom , #68f25e, #9ca59b);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#68f25e', endColorstr='#68f25e', GradientType=2 ); 
+   font-size: 1.5vw;
+	background: rgba(25,31,41,1);
+	background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(43,93,119,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(100%, rgba(43,93,119,1)));
+	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(233,65,82,1) 100%);
+	background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(233,65,82,1) 100%);
+	background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(233,65,82,1) 100%);
+ 
+  background: linear-gradient(to bottom ,#025ace, #000000 );
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#68f25e', endColorstr=' #9ca59b', GradientType=3 );*/
+}
+
+
+
+h1 { font-size: 2.5vw;
+	 color: #ffffff; text-align: center; margin-top: 25px;}
+
+.flex-container-value {
+	padding: 0;
+	  margin: 0;
+	  list-style: none;
+		width: 50%;
+		height:40%;
+		margin-left: 0px;
+		 
+		
+}
+
+.flex-container-panel {
+	  padding: 5px;
+	  margin: 0;
+	  list-style: none;
+	  text-align: left;
+	  image-rendering: 0px;
+		width: 50%;
+		height:10%;
+		
+		margin-top: 10px;
+	}
+.flex-container-panel1 {
+	  
+	  margin: 0;
+	  list-style: none;
+	  
+	  image-rendering: 0px;
+		width: 20%;
+		height:20%;
+		
+		margin-top: 0px;
+		margin-left:900px; 
+
+	/*  display: -webkit-box;
+	  display: -moz-box;
+	  display: -ms-flexbox;
+	  display: -webkit-flex;
+	  display: flex;
+
+	  -webkit-flex-flow: row wrap;
+	  justify-content: space-around;
+
+	  margin: 2em auto;
+	  padding: 5px;
+
+	  -moz-border-radius: 10px;
+	  -webkit-border-radius: 10px;
+	  border-radius: 10px;
+	  border: 3px solid #FFFFFF;*/
+  }
+
+	.flex-container
+	{
+	padding: 0;
+	margin: 0;
+	margin-top: 0px;
+	margin-left: 400px;
+	list-style: none;
+
+
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+
+	-webkit-flex-flow: row wrap;
+	justify-content: space-around;
+}
+
+
+.flex-item {
+
+	padding: 5px;
+	height: 50px;
+	margin-top: 0px;
+	margin-left: 0px;
+	line-height: 120px;
+	color: white;
+	font-weight: bold;
+	font-size: 3em;
+	text-align: center;
+}

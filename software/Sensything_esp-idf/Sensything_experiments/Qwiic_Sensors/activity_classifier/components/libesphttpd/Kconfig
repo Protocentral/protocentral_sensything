@@ -1,0 +1,107 @@
+#ESP-IDF Kconfig configuration file. Not used for ESP8266 RTOS/non-RTOS SDKs.
+
+menuconfig ESPHTTPD_ENABLED
+    bool "esphttpd"
+    help
+        Select this option to enable libesphttpd and show the submodule with libesphttpd configuration
+
+config ESPHTTPD_STACK_SIZE
+	int "Stack size of ESP-HTTPD task"
+        depends on ESPHTTPD_ENABLED
+	range 1024 16384
+	default 4096
+	help
+		Stack size reserved for the esp-httpd main task plus CGIs.
+
+config ESPHTTPD_PROC_AFFINITY
+	bool "Processor Affinity Support"
+        depends on ESPHTTPD_ENABLED
+	default n
+	help
+		Enable Processor Affinity Support
+
+config ESPHTTPD_PROC_CORE
+	int "Bind to Processor Core"
+        depends on ESPHTTPD_PROC_AFFINITY
+	range 0 1
+	default 0
+	help
+		Select Core 0 or Core 1
+
+config ESPHTTPD_PROC_PRI
+	int "Process Task Priority"
+        depends on ESPHTTPD_ENABLED
+	range 1 17
+	default 4
+	help
+		Set esphttpd Process Task Priority
+
+config ESPHTTPD_SHUTDOWN_SUPPORT
+	bool "Enable shutdown support"
+	depends on ESPHTTPD_ENABLED
+	default n
+	help
+		Add support for server shutdown. Adds ~500 bytes of code.
+
+config ESPHTTPD_CORS_SUPPORT
+    bool "CORS support"
+        depends on ESPHTTPD_ENABLED
+    help
+        Enable support for CORS, cross origin resource sharing.
+        NOTE: Requires 256 bytes of RAM for each connection
+
+config ESPHTTPD_HTMLDIR
+	string "Directory (on the build machine) where the static files served by the webserver are"
+        depends on ESPHTTPD_ENABLED
+	default "html/"
+
+config ESPHTTPD_USEUGLIFYJS
+	bool "Compress JS with uglifyjs"
+        depends on ESPHTTPD_ENABLED
+	default n
+	help
+		Compress JS files with the uglifyjs compressor. Needs uglifyjs installed.
+        
+config ESPHTTPD_USEYUICOMPRESSOR
+	bool "Compress JS and css with yui-compressor"
+        depends on ESPHTTPD_ENABLED
+	default n
+	help
+		Compress JS and css files with the yui-compressor. Needs yui-compressor installed.
+
+config ESPHTTPD_SO_REUSEADDR
+	bool "Set SO_REUSEADDR to avoid waiting for a port in TIME_WAIT."
+	depends on ESPHTTPD_ENABLED
+	default n
+	help
+		Requires LWIP_SO_REUSE to be enabled.
+
+		Sets the SO_REUSEADDR flag on a socket prior to attempting to bind(). Avoids the condition where
+		the bind() calls will fail while the port is in TIME_WAIT for a number of minutes.
+
+config ESPHTTPD_SSL_SUPPORT
+	bool "Enable SSL support"
+        depends on ESPHTTPD_ENABLED
+	default n
+	help
+		SSL connections require ~32k of ram each.
+
+		Enabling this allows the server to be placed into ssl mode.
+
+config ESPHTTPD_BACKLOG_SUPPORT
+	bool "Write data to backlog when it can't be sent"
+        depends on ESPHTTPD_ENABLED
+	default n
+	help
+		A non-os specific option. FreeRTOS uses blocking sockets so data will always be sent and there is
+		no need for the backlog.
+
+		If you are using FreeRTOS you'll save codespace by leaving this option disabled.
+
+config ESPHTTPD_SANITIZE_URLS
+	bool "Sanitize client requests"
+	depends on ESPHTTPD_ENABLED
+	default y
+	help
+		Sanitize client's URL requests by treating multiple repeated slashes in the
+		URL's path as a single slash.
