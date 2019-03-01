@@ -37,7 +37,6 @@ else
 }  
 ```
 
-[Download the Alcohol Sensor code](https://github.com/Protocentral/protocentral_sensything/tree/master/software/Sensything_Arduino/experiments/Analog_Sensors/examples/sensyThing_mq303A)
 
 #### * Pin mapping and connection instructions:
 
@@ -99,3 +98,4 @@ else
   </tr>
 </table>
 
+[Download the Alcohol Sensor code](https://github.com/Protocentral/protocentral_sensything/tree/master/software/Sensything_Arduino/experiments/Analog_Sensors/examples/sensyThing_mq303A)
