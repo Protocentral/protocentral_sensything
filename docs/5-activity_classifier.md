@@ -98,4 +98,5 @@ printActivityName(mostLikelyActivity);
 </table>
 
 
+
 [Download the bno080 Activity Classifier Sensor code]()
