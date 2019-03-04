@@ -14,6 +14,7 @@ Sensything along with Adafruit IO is paves way to a whole new world of IOT. It i
 ### * Sensything Wiring
 
 You will need the following parts for this tutorial but it’s just Plug & Play with Sensything…..!
+
 ![Sensything_Mics5524](images/)
 
 * 1x Sensything Board
