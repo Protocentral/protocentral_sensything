@@ -25,7 +25,7 @@ We will need to connect the following pins from Sensything to Mics5542 :
 * Sensything  A1 to Pin 3 of the Mics5524 
 
 ### * Adafruit IO Setup
-The first thing you will need to do is to login to Adafruit IO and visit the Settings page. Click the VIEW AIO KEY button to retrieve your key.A window will pop up with your Adafruit IO Key. 
+The first thing you will need to do is to log in to Adafruit IO and visit the Settings page. Click the VIEW AIO KEY button to retrieve your key. A window will pop up with your Adafruit IO Key. 
 
 ![Adafruit IO Key](images/Adafruit_IO_Key.png)		
 
@@ -60,17 +60,17 @@ WiFi is enabled by default in config.h, you will only need to modify the wifi_ss
 ![Adafruit Wifi Config](images/Adafruit_Wifi.png)
 
 #### * Arduino Code
-The sensyThing_MICS example  initializes the inbuilt  ADS1220 in your sensything, and also connects your sensything to Adafruit IO. 
+The sensyThing_MICS example initializes the inbuilt  ADS1220 in your sensything, and also connects your sensything to Adafruit IO. 
 ```c
 ADS1220.begin();
 io.connect();
 ```
 The first line of the loop function calls io.run(); this line will need to be present at the top of your loop in every sketch. It helps keep your device connected to Adafruit IO, and processes any incoming data.
-The next chunk of code inside the loop checks the current MICS gas density, and saves the value.
+The next chunk of code inside the loop checks the current MICS gas density and saves the value.
 ```c
 io.run();
 ```
-We then print gas density value to the Arduino Serial Monitor, and save the value to the gas density feed on Adafruit IO.Upload the sketch to your board, and open the Arduino Serial Monitor. Your board should now connect to Adafruit IO. Check your dashboard on Adafruit IO, and you should see the line chart update with the changes in gas sensor.
+We then print gas density value to the Arduino Serial Monitor, and save the value to the gas density feed on Adafruit IO. Upload the sketch to your board and open the Arduino Serial Monitor. Your board should now connect to Adafruit IO. Check your dashboard on Adafruit IO and you should see the line chart update with the changes in gas sensor.
  
 ```c
   float Vout = (float)((bit32*VFSR*1000)/FSR);     //In  mV
