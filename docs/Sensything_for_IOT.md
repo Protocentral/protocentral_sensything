@@ -17,7 +17,7 @@ You will need the following parts for this tutorial but it’s just Plug & Play 
 ![Sensything_Mics5524](images/)
 
 * 1x Sensything Board
-* 1x Mics5524 gas sensor
+* 1x [Mics5524 gas sensor](https://www.adafruit.com/product/3199)
 * 3x Alligator Cables
 * 3x Jumper wires
 
