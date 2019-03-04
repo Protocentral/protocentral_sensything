@@ -36,8 +36,6 @@ The first thing you will need to do is to log in to Adafruit IO and visit the Se
 
 First, you will need to create a feed, If you need help getting started with creating feeds on Adafruit IO, check out the [Adafruit IO Feed Basics guide](https://learn.adafruit.com/adafruit-io-basics-feeds/overview).
 
-![Adafruit IO Feed](images/)	
-
 ### * Arduino Setup
  
 #### * Install the Required Libraries
