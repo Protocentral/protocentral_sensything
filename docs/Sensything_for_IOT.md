@@ -27,7 +27,7 @@ We will need to connect the following pins from Sensything to Mics5542 :
 ### * Adafruit IO Setup
 The first thing you will need to do is to login to Adafruit IO and visit the Settings page. Click the VIEW AIO KEY button to retrieve your key.A window will pop up with your Adafruit IO Key. 
 
-![Adafruit IO Key](images/)		
+![Adafruit IO Key](images/Adafruit_IO_Key.png)		
 
 ### *Creating the Feeds 
 First, you will need to create a feed, If you need help getting started with creating feeds on Adafruit IO, check out the Adafruit IO Feed Basics guide.
@@ -38,21 +38,26 @@ First, you will need to create a feed, If you need help getting started with cre
  
 #### * Install the Required Libraries
 Now we will need to install the Adafruit IO, Adafruit MQTT, and Arduino Http Client libraries using the Arduino Library Manager. Navigate to the Manage Libraries... option in the Sketch -> Include Library menu.
-![Manage Libraries](images/)	
+
+![Manage Libraries](images/Manage_libraries.png)	
 
 Enter Adafruit IO Arduino into the search box, and click Install on the Adafruit IO Arduino library option to install version 2.7.23 or higher.
-![Adafruit IO Arduino](images/)	
+
+![Adafruit IO Arduino](images/Adafruit_IO_Arduino.png)	
 
 You will also need to install the Adafruit MQTT library.
-![Adafruit MQTT](images/)	
+
+![Adafruit MQTT](images/Adafruit_IO_MQTT.png)	
 
 #### * Arduino Network Config
 To configure the network settings, click on the config.h tab in the sketch. You will need to set your Adafruit IO username in the IO_USERNAME define, and your Adafruit IO key in the IO_KEY define.
-![Adafruit IO Config](images/)
+
+![Adafruit IO Config](images/Adafruit_IO_Config.png)
 
 #### * WiFi Config
 WiFi is enabled by default in config.h, you will only need to modify the wifi_ssid and wifi_ssid options in the config.h tab.
-![Adafruit Wifi Config](images/)
+
+![Adafruit Wifi Config](images/Adafruit_Wifi.png)
 
 #### * Arduino Code
 The sensyThing_MICS example  initializes the inbuilt  ADS1220 in your sensything, and also connects your sensything to Adafruit IO. 
@@ -74,9 +79,11 @@ We then print gas density value to the Arduino Serial Monitor, and save the valu
   gas_sensor->save(Vout);
 ```
 Upload the sketch to Sensything, and open the Arduino Serial Monitor. Sensything should now connect to Adafruit IO.
-![Arduino Serial Monitor](images/)
 
-![Adafruit Dashboard Output1](images/)
-![Adafruit Dashboard Output2](images/)
+![Arduino Serial Monitor](images/Serial_monitor.png)
+
+![Adafruit Dashboard Output1](images/Dashboard_output1.png)
+
+![Adafruit Dashboard Output2](images/Dashboard_output2.png)
 
 [Download the Sensything-AdafruitIO code](https://github.com/Protocentral/protocentral_sensything/tree/master/software/)
