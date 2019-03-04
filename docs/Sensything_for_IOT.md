@@ -15,7 +15,7 @@ Sensything along with Adafruit IO is paves way to a whole new world of IOT. It i
 
 You will need the following parts for this tutorial but it’s just Plug & Play with Sensything…..!
 
-![Sensything_Mics5524](images/)
+![Setup](images/Setup.jpg)
 
 * 1x Sensything Board
 * 1x [Mics5524 gas sensor](https://www.adafruit.com/product/3199)
