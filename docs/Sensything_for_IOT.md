@@ -37,6 +37,8 @@ The first thing you will need to do is to log in to [Adafruit IO](https://io.ada
 
 First, you will need to create a feed. If you need help getting started with creating feeds on Adafruit IO, check out the [Adafruit IO Feed Basics guide](https://learn.adafruit.com/adafruit-io-basics-feeds/overview).
 
+![Adafruit Dashboard Output2](images/Dashboard_output2.png)
+
 ### * Arduino Setup
  
 #### * Install the Required Libraries
@@ -93,7 +95,5 @@ Upload the sketch to Sensything, and open the Arduino Serial Monitor. Sensything
 ![Arduino Serial Monitor](images/Serial_monitor.png)
 
 ![Adafruit Dashboard Output1](images/Dashboard_output1.png)
-
-![Adafruit Dashboard Output2](images/Dashboard_output2.png)
 
 [Download the Sensything-AdafruitIO code](https://github.com/Protocentral/protocentral_sensything/tree/master/software/)
